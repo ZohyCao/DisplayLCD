@@ -131,7 +131,7 @@ typedef struct
 #define LCD_9486             ((LCD_TypeDef *) LCD_BASE)
 
 //支持横竖屏快速定义切换，支持8/16位模式切换
-#define USE_HORIZONTAL  	0	//定义是否使用横屏 		0,不使用.1,使用.
+#define USE_HORIZONTAL  	1	//定义是否使用横屏 		0,不使用.1,使用.
 #define LCD_USE8BIT_MODEL   0	//定义数据总线是否使用8位模式 0,使用16位模式.1,使用8位模式
 //////////////////////////////////////////////////////////////////////////////////
 	 

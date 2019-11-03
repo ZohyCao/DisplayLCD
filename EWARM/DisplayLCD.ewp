@@ -1056,6 +1056,12 @@
         <group>
             <name>User</name>
             <group>
+                <name>GUI_Func</name>
+                <file>
+                    <name>$PROJ_DIR$\..\GUI_FUNC\robocon_image.c</name>
+                </file>
+            </group>
+            <group>
                 <name>STemwin</name>
                 <group>
                     <name>GUI_Config</name>

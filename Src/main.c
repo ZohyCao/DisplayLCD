@@ -101,9 +101,12 @@ int main(void)
   //TFT_LCD_Init();
   //SysTick_Config(SystemCoreClock/1000);
   GUI_Init();//要加上这句话，Init
+  GUI_SetBkColor(GUI_WHITE);
   GUI_Clear();
-  //GUIDEMO_Main();
-  GUI_DispStringAt("Hello World!",0,10);
+  extern GUI_BITMAP bmroboconnew;
+  GUI_DrawBitmap(&bmroboconnew,0,60);
+  GUI_SetColor(GUI_ORANGE);
+  GUI_DispStringAt("BUPT 2020",140,250);
   /* USER CODE END 2 */
 
   /* Infinite loop */

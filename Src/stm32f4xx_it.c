@@ -179,11 +179,9 @@ void PendSV_Handler(void)
 /**
   * @brief This function handles System tick timer.
   */
-  extern __IO int32_t OS_TimeMS;
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
-  OS_TimeMS++;
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
