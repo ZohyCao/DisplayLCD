@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "can.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.encoding": "gb2312"
+}
