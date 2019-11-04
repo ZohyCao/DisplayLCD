@@ -175,6 +175,7 @@ void LCD_DisplayOff(void)
 //Ypos:纵坐标
 void LCD_SetCursor(u16 Xpos, u16 Ypos)
 {	 
+	/*
 	LCD_WR_REG(lcddev.setxcmd);	
 	LCD_WR_DATA(Xpos>>8);
 	LCD_WR_DATA(0x00FF&Xpos);		
@@ -186,7 +187,40 @@ void LCD_SetCursor(u16 Xpos, u16 Ypos)
 	LCD_WR_DATA(0x00FF&Ypos);		
 	LCD_WR_DATA((Ypos+1)>>8);
 	LCD_WR_DATA((Ypos+1));
-	LCD_WriteRAM_Prepare();	//开始写入GRAM	
+	LCD_WriteRAM_Prepare();	//开始写入GRAM
+	*/
+	if(lcddev.id==0X9341||lcddev.id==0X5310)
+	{		    
+		LCD_WR_REG(lcddev.setxcmd); 
+		LCD_WR_DATA(Xpos>>8);LCD_WR_DATA(Xpos&0XFF); 			 
+		LCD_WR_REG(lcddev.setycmd); 
+		LCD_WR_DATA(Ypos>>8);LCD_WR_DATA(Ypos&0XFF); 		
+	}else if(lcddev.id==0X1963)
+	{  			 		
+		if(lcddev.dir==0)//x坐标需要变换
+		{
+			Xpos=lcddev.width-1-Xpos;
+			LCD_WR_REG(lcddev.setxcmd); 
+			LCD_WR_DATA(0);LCD_WR_DATA(0); 		
+			LCD_WR_DATA(Xpos>>8);LCD_WR_DATA(Xpos&0XFF);		 	 
+		}else
+		{
+			LCD_WR_REG(lcddev.setxcmd); 
+			LCD_WR_DATA(Xpos>>8);LCD_WR_DATA(Xpos&0XFF); 		
+			LCD_WR_DATA((lcddev.width-1)>>8);LCD_WR_DATA((lcddev.width-1)&0XFF);		 	 			
+		}	
+		LCD_WR_REG(lcddev.setycmd); 
+		LCD_WR_DATA(Ypos>>8);LCD_WR_DATA(Ypos&0XFF); 		
+		LCD_WR_DATA((lcddev.height-1)>>8);LCD_WR_DATA((lcddev.height-1)&0XFF); 			 		
+		
+	}else if(lcddev.id==0X5510)
+	{
+		LCD_WR_REG(lcddev.setxcmd);LCD_WR_DATA(Xpos>>8); 		
+		LCD_WR_REG(lcddev.setxcmd+1);LCD_WR_DATA(Xpos&0XFF);			 
+		LCD_WR_REG(lcddev.setycmd);LCD_WR_DATA(Ypos>>8);  		
+		LCD_WR_REG(lcddev.setycmd+1);LCD_WR_DATA(Ypos&0XFF);			
+	} 
+
 } 		 
 //设置LCD的自动扫描方向
 //注意:其他函数可能会受到此函数设置的影响(尤其是9341/6804这两个奇葩),
@@ -409,7 +443,7 @@ void TFT_LCD_Init(void)
 	HAL_Delay(50); // delay 50 ms 
   
   
-        //delay_ms(10);
+    //delay_ms(10);
 //************* Start Initial Sequence **********//		
 	LCD_WR_REG(0XF9);
 	LCD_WR_DATA(0x00);
@@ -531,7 +565,9 @@ void TFT_LCD_Init(void)
 	lcddev.dir=1;//横屏
 	lcddev.width=480;
 	lcddev.height=320;			
-	LCD_WriteReg(0x36,(1<<3)|(1<<7)|(1<<5));//BGR==1,MY==1,MX==0,MV==1
+	LCD_WriteReg(0x36,(1<<3)|(1<<5)|(0<<6)|(1<<7));//BGR==1,MV==1,MX==0,MY==1
+	//按照起始点和扫描方向选
+	//其中x,y确定点（左上角00），v确定方向（方向自己感受）
 #else//竖屏
 	lcddev.dir=0;//竖屏				 	 		
 	lcddev.width=320;
@@ -559,7 +595,8 @@ void LCD_Clear(u16 color)
 //(sx,sy),(ex,ey):填充矩形对角坐标,区域大小为:(ex-sx+1)*(ey-sy+1)   
 //color:要填充的颜色
 void LCD_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 color)
-{          
+{      
+	/*    
 	u16 i,j;
 	u16 xlen=0;
 	u16 temp;
@@ -586,7 +623,16 @@ void LCD_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 color)
 			LCD_WriteRAM_Prepare();     			//开始写入GRAM	  
 			for(j=0;j<xlen;j++)LCD_9486->LCD_RAM=color;	//显示颜色 	    
 		}
-	}	 
+	}	*/
+	u16 i,j;
+	u16 xlen=0; 
+	xlen=ex-sx+1;	 
+	for(i=sy;i<=ey;i++)
+	{
+		LCD_SetCursor(sx,i);      				//设置光标位置 
+		LCD_WriteRAM_Prepare();     			//开始写入GRAM	  
+		for(j=0;j<xlen;j++)LCD_9486->LCD_RAM=color;	//显示颜色 	    
+	}   
 }  
 //在指定区域内填充指定颜色块			 
 //(sx,sy),(ex,ey):填充矩形对角坐标,区域大小为:(ex-sx+1)*(ey-sy+1)   

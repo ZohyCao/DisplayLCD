@@ -1198,6 +1198,9 @@
             <group>
                 <name>GUI_Func</name>
                 <file>
+                    <name>$PROJ_DIR$\..\GUI_FUNC\GUI_Frame.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\GUI_FUNC\robocon_image.c</name>
                 </file>
             </group>

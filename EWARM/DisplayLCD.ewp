@@ -359,6 +359,7 @@
                     <state>$PROJ_DIR$/../GUI/Config</state>
                     <state>$PROJ_DIR$/../GUI/Inc</state>
                     <state>$PROJ_DIR$/../GUI/OS</state>
+                    <state>$PROJ_DIR$/../GUI_Func</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1057,6 +1058,9 @@
             <name>User</name>
             <group>
                 <name>GUI_Func</name>
+                <file>
+                    <name>$PROJ_DIR$\..\GUI_FUNC\GUI_Frame.c</name>
+                </file>
                 <file>
                     <name>$PROJ_DIR$\..\GUI_FUNC\robocon_image.c</name>
                 </file>

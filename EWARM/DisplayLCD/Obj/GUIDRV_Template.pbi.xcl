@@ -23,6 +23,8 @@ D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM/../GUI/Inc
 -I
 D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM/../GUI/OS
 -I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM/../GUI_Func
+-I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\inc
 -I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\inc\c
@@ -44,6 +46,8 @@ D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\GUI\Config
 D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\GUI\Inc
 -I
 D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\GUI\OS
+-I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\GUI_Func
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

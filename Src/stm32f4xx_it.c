@@ -23,6 +23,7 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "GUI.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -182,6 +183,22 @@ void PendSV_Handler(void)
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
+  extern int time_1ms_cnt;
+  extern int time_1s_cnt;
+  time_1ms_cnt++;
+  if(time_1ms_cnt % 1000 == 0)
+    {
+      time_1s_cnt++;
+      GUI_SetColor(GUI_ORANGE);
+      GUI_DispDecAt(time_1s_cnt/60,0,0,2);
+      GUI_DispStringAt(":",48,0);
+      GUI_DispDecAt(time_1s_cnt%60,72,0,2);
+    } 
+  if(time_1ms_cnt >= 60000)
+    {
+      time_1ms_cnt = 0;
+    }
+
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */

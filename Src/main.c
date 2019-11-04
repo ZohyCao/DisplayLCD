@@ -30,6 +30,7 @@
 /* USER CODE BEGIN Includes */
 #include "ILI93xx.h"
 #include "GUI.h"
+#include "GUI_Frame.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -39,7 +40,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+int time_1s_cnt = 0;
+int time_1ms_cnt = 0;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -98,15 +100,11 @@ int main(void)
   MX_FSMC_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  //TFT_LCD_Init();
-  //SysTick_Config(SystemCoreClock/1000);
   GUI_Init();//要加上这句话，Init
-  GUI_SetBkColor(GUI_WHITE);
+  GUI_SetBkColor(GUI_GRAY);
   GUI_Clear();
-  extern GUI_BITMAP bmroboconnew;
-  GUI_DrawBitmap(&bmroboconnew,0,60);
-  GUI_SetColor(GUI_ORANGE);
-  GUI_DispStringAt("BUPT 2020",140,250);
+  //LCD_Clear(GUI_WHITE);
+  drawCoordiantes(0,0,480,320);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -164,7 +162,20 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+/*
+void HAL_SYSTICK_Callback(void){
+  //static int time_1ms_cnt = 0;
 
+  time_1ms_cnt++;
+  if(time_1ms_cnt % 1000 == 0)
+    {
+      time_1s_cnt++;
+    } 
+  if(time_1ms_cnt >= 60000)
+    {
+      time_1ms_cnt = 0;
+    }
+}*/
 /* USER CODE END 4 */
 
 /**
