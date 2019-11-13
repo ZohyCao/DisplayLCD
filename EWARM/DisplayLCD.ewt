@@ -1201,7 +1201,76 @@
                     <name>$PROJ_DIR$\..\GUI_FUNC\GUI_Frame.c</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\GUI_FUNC\map.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\GUI_FUNC\robocon_image.c</name>
+                </file>
+            </group>
+            <group>
+                <name>SimpleLib</name>
+                <group>
+                    <name>CAN</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\can\can_func.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\can\can_func.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\can\can_utils.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\can\can_utils.h</name>
+                    </file>
+                </group>
+                <group>
+                    <name>CMD</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\cmd\cmd.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\cmd\cmd.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\cmd\cmd_func.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\cmd\cmd_func.h</name>
+                    </file>
+                </group>
+                <group>
+                    <name>core</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\core\flags.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\core\flags.h</name>
+                    </file>
+                </group>
+                <group>
+                    <name>utils</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\utils\hash.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\utils\hash.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\utils\utils.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\simplelib\utils\utils.h</name>
+                    </file>
+                </group>
+                <file>
+                    <name>$PROJ_DIR$\..\simplelib\simplelib.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\simplelib\simplelib.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\simplelib\simplelib_cfg.h</name>
                 </file>
             </group>
             <group>
@@ -1523,10 +1592,16 @@
                 </group>
             </group>
             <file>
+                <name>$PROJ_DIR$\..\Src\adc.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Src\can.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Src\crc.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\dma.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Src\fsmc.c</name>
@@ -1538,6 +1613,12 @@
                 <name>$PROJ_DIR$\..\Src\ILI93xx.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\Src\ledpwm.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Inc\ledpwm.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\Src\main.c</name>
             </file>
             <file>
@@ -1545,6 +1626,9 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Src\stm32f4xx_it.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Src\tim.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Src\usart.c</name>
@@ -1563,6 +1647,12 @@
             <name>STM32F4xx_HAL_Driver</name>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c</name>

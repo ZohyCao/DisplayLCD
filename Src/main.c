@@ -20,8 +20,11 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "can.h"
 #include "crc.h"
+#include "dma.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 #include "fsmc.h"
@@ -31,6 +34,8 @@
 #include "ILI93xx.h"
 #include "GUI.h"
 #include "GUI_Frame.h"
+#include "simplelib.h"
+#include "ledpwm.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -40,8 +45,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-int time_1s_cnt = 0;
-int time_1ms_cnt = 0;
+uint32_t ADC_Value;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -95,16 +99,27 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_CAN1_Init();
   MX_CRC_Init();
   MX_FSMC_Init();
   MX_USART1_UART_Init();
+  MX_ADC1_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   GUI_Init();//要加上这句话，Init
-  GUI_SetBkColor(GUI_GRAY);
-  GUI_Clear();
+  simplelib_init(&huart1, &hcan1);
+  //HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
+
+  HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&ADC_Value, 1);
+  //GUI_SetBkColor(GUI_WHITE);
+  //GUI_Clear();
+  drawMainFrame();
   //LCD_Clear(GUI_WHITE);
-  drawCoordiantes(0,0,480,320);
+  //drawCoordiantes(0,0,480,320);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,6 +129,15 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+    simplelib_run();
+    LED_main();
+    GUI_main();
+    //TIM3->CCR1 = 0;
+    //GUI_GotoXY(420,0);
+    //GUI_DispFloat(ADC_Value,5);
+    //GUI_DispDecShift(ADC_Value,10,5);
+    //GUI_DispDecAt(ADC_Value, 200, 50, 5);
   }
   /* USER CODE END 3 */
 }
@@ -186,7 +210,7 @@ void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
-
+  TIM3->CCR3 = 500;
   /* USER CODE END Error_Handler_Debug */
 }
 

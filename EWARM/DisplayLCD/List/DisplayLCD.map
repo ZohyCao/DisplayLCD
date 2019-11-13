@@ -1,6 +1,6 @@
 ﻿###############################################################################
 #
-# IAR ELF Linker V8.32.1.169/W32 for ARM                  03/Nov/2019  18:12:17
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  13/Nov/2019  22:10:18
 # Copyright 2007-2018 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,22 +8,35 @@
 #    Map file     =  
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\List\DisplayLCD.map
 #    Command line =  
-#        -f C:\Users\zohyc\AppData\Local\Temp\EW30E9.tmp
-#        (D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\can.o
+#        -f C:\Users\zohyc\AppData\Local\Temp\EWFFCF.tmp
+#        (D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\adc.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\can.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\can_func.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\can_utils.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\cmd.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\cmd_func.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\crc.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\dma.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\flags.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\fsmc.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\gpio.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\GUI_Frame.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\GUI_X.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\GUIConf.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\GUIDRV_Template.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\hash.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\ILI93xx.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\LCDConf_FlexColor_Template.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\ledpwm.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\main.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\map.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\robocon_image.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\simplelib.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\startup_stm32f407xx.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\GUI\Lib\STemWin522_CM4_IAR.a
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\stm32f4xx_hal.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\stm32f4xx_hal_adc.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\stm32f4xx_hal_adc_ex.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\stm32f4xx_hal_can.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\stm32f4xx_hal_cortex.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\stm32f4xx_hal_crc.o
@@ -46,7 +59,9 @@
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\stm32f4xx_it.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\stm32f4xx_ll_fsmc.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\system_stm32f4xx.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\tim.o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\usart.o
+#        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj\utils.o
 #        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
 #        --no_out_extension -o
 #        D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Exe\DisplayLCD.out
@@ -64,9 +79,9 @@
 ***
 
 Warning[Lt009]: Inconsistent wchar_t size
-            GUI_DrawBitmapEx.o(STemWin522_CM4_IAR.a) and 138 other objects in
+            GUI_Core.o(STemWin522_CM4_IAR.a) and 149 other objects in
                       STemWin522_CM4_IAR.a have wchar_t size 16 bits
-            can.o and 48 other objects, some of them in dl7M_tlf.a and 11 other
+            adc.o and 78 other objects, some of them in dl7M_tlf.a and 12 other
                       libraries have wchar_t size 32 bits
 
 
@@ -75,6 +90,7 @@ Warning[Lt009]: Inconsistent wchar_t size
 ***
 
 CppFlavor       = *
+__Heap_Handler  = DLMalloc
 __SystemLibrary = DLib
 __dlib_version  = 6
 
@@ -83,10 +99,9 @@ __dlib_version  = 6
 *** HEAP SELECTION
 ***
 
-The basic heap was selected because no calls to memory allocation
-functions were found in the application outside of system library
-functions, and there are calls to deallocation functions in the
-application.
+The advanced heap was selected because the application calls memory
+allocation functions outside of system library functions, and there
+are calls to deallocation functions in the application.
 
 
 *******************************************************************************
@@ -101,280 +116,430 @@ define block HEAP with size = 1792, alignment = 8 { };
           rw, block CSTACK, block HEAP };
 initialize by copy { rw };
 
-  Section            Kind         Address    Size  Object
-  -------            ----         -------    ----  ------
-"A0":                                       0x188
-  .intvec            ro code   0x800'0000   0x188  startup_stm32f407xx.o [1]
-                             - 0x800'0188   0x188
+  Section            Kind         Address     Size  Object
+  -------            ----         -------     ----  ------
+"A0":                                        0x188
+  .intvec            ro code   0x800'0000    0x188  startup_stm32f407xx.o [1]
+                             - 0x800'0188    0x188
 
-"P1":                                      0x6b46
-  .rodata            const     0x800'0188   0xc30  F8x16.o [2]
-  .text              ro code   0x800'0db8   0xb14  WM.o [2]
-  .text              ro code   0x800'18cc    0x30  LCD_SetClipRectEx.o [2]
-  .text              ro code   0x800'18fc   0x630  GUI_Alloc.o [2]
-  .text              ro code   0x800'1f2c    0x40  GUI__IntersectRect.o [2]
-  .text              ro code   0x800'1f6c    0x58  GUI_MergeRect.o [2]
-  .text              ro code   0x800'1fc4    0x10  GUI_WaitEvent.o [2]
-  .text              ro code   0x800'1fd4    0x1c  GUI_MoveRect.o [2]
-  .text              ro code   0x800'1ff0    0x44  GUIDEV.o [2]
-  .text              ro code   0x800'2034     0xe  WM_GetFirstChild.o [2]
-  .text              ro code   0x800'2042    0x62  GUI__IntersectRects.o [2]
-  .text              ro code   0x800'20a4    0x38  GUI_RectsIntersect.o [2]
-  .text              ro code   0x800'20dc    0x40  WM__SendMessage.o [2]
-  .text              ro code   0x800'211c    0x24  GUI_ALLOC_AllocZero.o [2]
-  .text              ro code   0x800'2140    0x82  WM_BringToBottom.o [2]
-  .text              ro code   0x800'21c2    0x3a  zero_init3.o [5]
-  .text              ro code   0x800'21fc    0x24  GUI_SelectLayer.o [2]
-  .text              ro code   0x800'2220   0x4bc  LCD.o [2]
-  .text              ro code   0x800'26dc    0x10  GUI_OnKey.o [2]
-  .text              ro code   0x800'26ec     0x8  GUI_SetColor.o [2]
-  .text              ro code   0x800'26f4   0x1a4  GUI_Core.o [2]
-  .text              ro code   0x800'2898    0x22  WM_GetClientRect.o [2]
-  .text              ro code   0x800'28ba    0x1c  WM_SendToParent.o [2]
-  .text              ro code   0x800'28d8   0x12c  GUI_Device.o [2]
-  .text              ro code   0x800'2a04    0x10  WM_CriticalHandle.o [2]
-  .text              ro code   0x800'2a14    0x96  ABImemmove.o [5]
-  .text              ro code   0x800'2aac     0x6  ABImemclr.o [5]
-  .text              ro code   0x800'2ab2    0x54  GUI__memset.o [2]
-  .text              ro code   0x800'2b08    0xa6  ABImemcpy.o [5]
-  .text              ro code   0x800'2bae    0x12  GUI_SelectLCD.o [2]
-  .text              ro code   0x800'2bc0    0x22  GUIDEV_Usage.o [2]
-  .text              ro code   0x800'2be2    0x22  WM__GetPrevSibling.o [2]
-  .text              ro code   0x800'2c04     0xe  WM_GetParent.o [2]
-  .text              ro code   0x800'2c14    0xb4  LCD_Color.o [2]
-  .text              ro code   0x800'2cc8    0x10  GUI_Goto.o [2]
-  .text              ro code   0x800'2cd8    0x24  GUIConf.o [1]
-  .text              ro code   0x800'2cfc    0x4c  LCDConf_FlexColor_Template.o [1]
-  .text              ro code   0x800'2d48     0x2  GUI_X.o [1]
-  .text              ro code   0x800'2d4c    0x18  WM_GetDesktopWindow.o [2]
-  .text              ro code   0x800'2d64    0x30  GUI_SetOrg.o [2]
-  .text              ro code   0x800'2d94    0x5e  ABImemset.o [5]
-  .text              ro code   0x800'2df4    0x44  LCD_SelectLCD.o [2]
-  .text              ro code   0x800'2e38    0x24  LCD_UpdateColorIndices.o [2]
-  .text              ro code   0x800'2e5c    0x10  WM__GetFirstSibling.o [2]
-  .text              ro code   0x800'2e6c    0x1a  LCD_GetNumDisplays.o [2]
-  .text              ro code   0x800'2e88    0x86  LCD_Set.o [2]
-  .text              ro code   0x800'2f10    0xc2  LCD_GetEx.o [2]
-  .text              ro code   0x800'2fd4   0x370  ILI93xx.o [1]
-  .text              ro code   0x800'3344   0x1d8  stm32f4xx_hal_gpio.o [1]
-  .text              ro code   0x800'351c    0x52  stm32f4xx_hal_sram.o [1]
-  .text              ro code   0x800'3570    0x28  stm32f4xx_hal.o [1]
-  .text              ro code   0x800'3598   0x13c  fsmc.o [1]
-  .text              ro code   0x800'36d4    0xd4  stm32f4xx_ll_fsmc.o [1]
-  .text              ro code   0x800'37a8     0xc  stm32f4xx_hal.o [1]
-  .text              ro code   0x800'37b4     0x6  ABImemclr4.o [5]
-  .text              ro code   0x800'37bc    0xde  main.o [1]
-  .text              ro code   0x800'389c    0x32  ABImemset48.o [5]
-  .text              ro code   0x800'38d0    0x34  stm32f4xx_hal.o [1]
-  .text              ro code   0x800'3904    0xc0  gpio.o [1]
-  .text              ro code   0x800'39c4    0xdc  can.o [1]
-  .text              ro code   0x800'3aa0    0x4c  crc.o [1]
-  .text              ro code   0x800'3aec    0xa8  usart.o [1]
-  .text              ro code   0x800'3b94    0x7e  GUI_Frame.o [1]
-  .text              ro code   0x800'3c14   0x2e0  stm32f4xx_hal_rcc.o [1]
-  .text              ro code   0x800'3ef4   0x19c  stm32f4xx_hal_rcc.o [1]
-  .text              ro code   0x800'4090    0xc4  stm32f4xx_hal_cortex.o [1]
-  .text              ro code   0x800'4154    0x40  stm32f4xx_hal.o [1]
-  .text              ro code   0x800'4194    0x38  stm32f4xx_hal_msp.o [1]
-  .text              ro code   0x800'41cc   0x308  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'44d4    0x22  stm32f4xx_hal_crc.o [1]
-  .text              ro code   0x800'44f8   0x1ee  stm32f4xx_hal_uart.o [1]
-  .text              ro code   0x800'46e8    0x10  GUI_Pen.o [2]
-  .text              ro code   0x800'46f8   0x4d8  GUI_DrawLine.o [2]
-  .text              ro code   0x800'4bd0   0x106  I64DivMod_small.o [5]
-  .text              ro code   0x800'4cd6     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4cd8     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4cda     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4cdc     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4cde     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4ce0     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4ce2     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4ce4     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4ce6     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4ce8     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4cea     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4cec     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4cee     0x2  stm32f4xx_hal_can.o [1]
-  .text              ro code   0x800'4cf0    0x20  GUI_DrawPoint.o [2]
-  .text              ro code   0x800'4d10   0x1ec  GUI_FillPolygon.o [2]
-  .text              ro code   0x800'4efc     0x2  I64DivZer.o [5]
-  .text              ro code   0x800'4f00    0xb4  GUI_Circ.o [2]
-  .text              ro code   0x800'4fb4   0x72c  GUIDRV_Template.o [1]
-  .rodata            const     0x800'56e0   0x718  F6x8.o [2]
-  .text              ro code   0x800'5df8   0x1b4  GUI_CharLine.o [2]
-  .text              ro code   0x800'5fac    0xb0  GUI__ManageCache.o [2]
-  .text              ro code   0x800'605c    0x4c  GUI_UC.o [2]
-  .text              ro code   0x800'60a8    0x54  GUI_Char.o [2]
-  .text              ro code   0x800'60fc   0x174  GUI_CharM.o [2]
-  .rodata            const     0x800'6270   0x100  GUI__DivTbl_255_31.o [2]
-  .rodata            const     0x800'6370   0x100  GUI__DivTbl_255_63.o [2]
-  .text              ro code   0x800'6470    0xfc  GUI_DispString.o [2]
-  .text              ro code   0x800'656c    0xc4  GUI_AddDecShift.o [2]
-  .text              ro code   0x800'6630    0xc0  GUICC_M565.o [2]
-  .text              ro code   0x800'66f0    0xc0  GUICC_0.o [2]
-  .text              ro code   0x800'67b0    0x3e  GUI_CalcColorDist.o [2]
-  .text              ro code   0x800'67f0    0x9e  stm32f4xx_it.o [1]
-  .text              ro code   0x800'688e    0x24  GUI_Val.o [2]
-  .text              ro code   0x800'68b4    0x10  GUI_DispStringAt.o [2]
-  .text              ro code   0x800'68c4    0x10  stm32f4xx_hal.o [1]
-  .text              ro code   0x800'68d4    0x60  system_stm32f4xx.o [1]
-  .rodata            const     0x800'6934    0x40  GUI__DivTbl_63_255.o [2]
-  .text              ro code   0x800'6974    0x38  packbits_init_single.o [5]
-  .rodata            const     0x800'69ac    0x34  GUIDRV_Template.o [1]
-  .text              ro code   0x800'69e0    0x2c  GUICC_M565_Index2Color.o [2]
-  .text              ro code   0x800'6a0c    0x28  data_init.o [5]
-  .text              ro code   0x800'6a34    0x24  GUI_UC_EncodeNone.o [2]
-  .text              ro code   0x800'6a58    0x22  fpinit_M.o [4]
-  .iar.init_table    const     0x800'6a7c    0x20  - Linker created -
-  .rodata            const     0x800'6a9c    0x20  GUI__DivTbl_31_255.o [2]
-  .text              ro code   0x800'6abc    0x1e  cmain.o [5]
-  .text              ro code   0x800'6ada     0x4  low_level_init.o [3]
-  .text              ro code   0x800'6ade     0x4  exit.o [3]
-  .text              ro code   0x800'6ae4     0xa  cexit.o [5]
-  .text              ro code   0x800'6af0    0x14  exit.o [6]
-  .rodata            const     0x800'6b04    0x18  GUICC_M565.o [2]
-  .rodata            const     0x800'6b1c    0x18  GUICC_0.o [2]
-  .text              ro code   0x800'6b34    0x10  startup_stm32f407xx.o [1]
-  .rodata            const     0x800'6b44     0xc  LCD.o [2]
-  .text              ro code   0x800'6b50     0xc  cstartup_M.o [5]
-  .rodata            const     0x800'6b5c     0x8  system_stm32f4xx.o [1]
-  .text              ro code   0x800'6b64     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b68     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b6c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b70     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b74     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b78     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b7c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b80     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b84     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b88     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b8c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b90     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b94     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b98     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6b9c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6ba0     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6ba4     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6ba8     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bac     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bb0     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bb4     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bb8     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bbc     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bc0     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bc4     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bc8     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bcc     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bd0     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bd4     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bd8     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bdc     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6be0     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6be4     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6be8     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bec     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bf0     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bf4     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bf8     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6bfc     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c00     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c04     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c08     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c0c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c10     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c14     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c18     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c1c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c20     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c24     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c28     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c2c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c30     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c34     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c38     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c3c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c40     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c44     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c48     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c4c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c50     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c54     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c58     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c5c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c60     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c64     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c68     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c6c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c70     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c74     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c78     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c7c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c80     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c84     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c88     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c8c     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c90     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c94     0x4  startup_stm32f407xx.o [1]
-  .text              ro code   0x800'6c98     0x4  startup_stm32f407xx.o [1]
-  .rodata            const     0x800'6c9c     0x0  zero_init3.o [5]
-  .rodata            const     0x800'6c9c     0x0  packbits_init_single.o [5]
-  Initializer bytes  const     0x800'6c9c    0x32  <for P2-1>
-                             - 0x800'6cce  0x6b46
+"P1":                                      0x49267
+  .rodata            const     0x800'0188  0x3a980  map.o [1]
+  .text              ro code   0x803'ab08    0xf80  dlmalloc.o [3]
+  .text              ro code   0x803'ba88      0x6  abort.o [3]
+  .text              ro code   0x803'ba8e     0x7a  lz77_init_single.o [5]
+  .text              ro code   0x803'bb08     0x2c  xgetmemchunk.o [3]
+  .text              ro code   0x803'bb34     0x14  exit.o [6]
+  .text              ro code   0x803'bb48    0xf46  xprintffull.o [3]
+  .text              ro code   0x803'ca8e     0x3a  zero_init3.o [5]
+  .text              ro code   0x803'cac8     0x78  xlocale_c.o [3]
+  .text              ro code   0x803'cb40     0x16  strchr.o [5]
+  .text              ro code   0x803'cb56     0x1e  xencoding_8859_1.o [3]
+  .text              ro code   0x803'cb74     0x40  xfail_s.o [3]
+  .text              ro code   0x803'cbb4     0x36  strlen.o [5]
+  .text              ro code   0x803'cbea     0x1a  xsnprout.o [3]
+  .text              ro code   0x803'cc04     0x58  memchr.o [5]
+  .text              ro code   0x803'cc5c      0xa  xmbcurmax.o [3]
+  .text              ro code   0x803'cc68     0xa6  ABImemcpy.o [5]
+  .text              ro code   0x803'cd10    0x230  I64DivMod.o [5]
+  .text              ro code   0x803'cf40    0x1a2  DblMul.o [4]
+  .text              ro code   0x803'd0e4     0x70  frexp.o [4]
+  .text              ro code   0x803'd154     0x2e  DblCmpLe.o [4]
+  .text              ro code   0x803'd184     0x2e  DblCmpGe.o [4]
+  .text              ro code   0x803'd1b4    0x13a  ldexp.o [4]
+  .text              ro code   0x803'd2f0     0x3a  DblToS32.o [4]
+  .text              ro code   0x803'd32c     0x22  S32ToDbl.o [4]
+  .text              ro code   0x803'd350     0xe2  DblSub.o [4]
+  .text              ro code   0x803'd434    0x246  DblDiv.o [4]
+  .text              ro code   0x803'd67c     0x28  DblToU32.o [4]
+  .text              ro code   0x803'd6a4     0x1a  U32ToDbl.o [4]
+  .text              ro code   0x803'd6c0      0x2  I64DivZer.o [5]
+  .text              ro code   0x803'd6c4    0x16a  DblAdd.o [4]
+  .rodata            const     0x803'd830    0xca0  F8x16.o [2]
+  .text              ro code   0x803'e4d0    0xb14  WM.o [2]
+  .text              ro code   0x803'efe4     0x30  LCD_SetClipRectEx.o [2]
+  .text              ro code   0x803'f014    0x668  GUI_Alloc.o [2]
+  .text              ro code   0x803'f67c     0x40  GUI__IntersectRect.o [2]
+  .text              ro code   0x803'f6bc     0x58  GUI_MergeRect.o [2]
+  .text              ro code   0x803'f714     0x10  GUI_WaitEvent.o [2]
+  .text              ro code   0x803'f724     0x1c  GUI_MoveRect.o [2]
+  .text              ro code   0x803'f740     0x44  GUIDEV.o [2]
+  .text              ro code   0x803'f784      0xe  WM_GetFirstChild.o [2]
+  .text              ro code   0x803'f792     0x62  GUI__IntersectRects.o [2]
+  .text              ro code   0x803'f7f4     0x38  GUI_RectsIntersect.o [2]
+  .text              ro code   0x803'f82c     0x40  WM__SendMessage.o [2]
+  .text              ro code   0x803'f86c     0x24  GUI_ALLOC_AllocZero.o [2]
+  .text              ro code   0x803'f890     0x82  WM_BringToBottom.o [2]
+  .text              ro code   0x803'f914     0x24  GUI_SelectLayer.o [2]
+  .text              ro code   0x803'f938    0x4bc  LCD.o [2]
+  .text              ro code   0x803'fdf4     0x10  GUI_OnKey.o [2]
+  .text              ro code   0x803'fe04      0x8  GUI_SetColor.o [2]
+  .text              ro code   0x803'fe0c    0x1a4  GUI_Core.o [2]
+  .text              ro code   0x803'ffb0     0x40  WM_GetClientRect.o [2]
+  .text              ro code   0x803'fff0     0x1c  WM_SendToParent.o [2]
+  .text              ro code   0x804'000c    0x12c  GUI_Device.o [2]
+  .text              ro code   0x804'0138     0x10  WM_CriticalHandle.o [2]
+  .text              ro code   0x804'0148     0x96  ABImemmove.o [5]
+  .text              ro code   0x804'01e0      0x6  ABImemclr.o [5]
+  .text              ro code   0x804'01e6     0x54  GUI__memset.o [2]
+  .text              ro code   0x804'023a     0x12  GUI_SelectLCD.o [2]
+  .text              ro code   0x804'024c     0x22  GUIDEV_Usage.o [2]
+  .text              ro code   0x804'026e     0x22  WM__GetPrevSibling.o [2]
+  .text              ro code   0x804'0290      0xe  WM_GetParent.o [2]
+  .text              ro code   0x804'02a0     0xf8  LCD_Color.o [2]
+  .text              ro code   0x804'0398     0x10  GUI_Goto.o [2]
+  .text              ro code   0x804'03a8     0x24  GUIConf.o [1]
+  .text              ro code   0x804'03cc     0x4e  LCDConf_FlexColor_Template.o [1]
+  .text              ro code   0x804'041c      0x2  GUI_X.o [1]
+  .text              ro code   0x804'0420     0x18  WM_GetDesktopWindow.o [2]
+  .text              ro code   0x804'0438     0x30  GUI_SetOrg.o [2]
+  .text              ro code   0x804'0468     0x66  ABImemset.o [5]
+  .text              ro code   0x804'04d0     0x44  LCD_SelectLCD.o [2]
+  .text              ro code   0x804'0514     0x24  LCD_UpdateColorIndices.o [2]
+  .text              ro code   0x804'0538     0x10  WM__GetFirstSibling.o [2]
+  .text              ro code   0x804'0548     0x1a  LCD_GetNumDisplays.o [2]
+  .text              ro code   0x804'0564     0x86  LCD_Set.o [2]
+  .text              ro code   0x804'05ec     0xee  LCD_GetEx.o [2]
+  .text              ro code   0x804'06dc    0x778  ILI93xx.o [1]
+  .text              ro code   0x804'0e54    0x29c  stm32f4xx_hal_gpio.o [1]
+  .text              ro code   0x804'10f0     0x5c  stm32f4xx_hal_sram.o [1]
+  .text              ro code   0x804'114c     0x28  stm32f4xx_hal.o [1]
+  .text              ro code   0x804'1174    0x1a4  gpio.o [1]
+  .text              ro code   0x804'1318    0x17c  fsmc.o [1]
+  .text              ro code   0x804'1494     0xec  stm32f4xx_ll_fsmc.o [1]
+  .text              ro code   0x804'1580      0xc  stm32f4xx_hal.o [1]
+  .text              ro code   0x804'158c      0x6  ABImemclr4.o [5]
+  .text              ro code   0x804'1594    0x158  stm32f4xx_hal_cortex.o [1]
+  .text              ro code   0x804'16ec    0x6d0  GUI_Frame.o [1]
+  .text              ro code   0x804'1dbc    0x138  main.o [1]
+  .text              ro code   0x804'1ef4     0x32  ABImemset48.o [5]
+  .text              ro code   0x804'1f28     0xec  GUI_DrawBitmap.o [2]
+  .text              ro code   0x804'2014     0x10  GUI_Pen.o [2]
+  .text              ro code   0x804'2024    0x4d8  GUI_DrawLine.o [2]
+  .text              ro code   0x804'24fc     0x14  GUI_SetFont.o [2]
+  .text              ro code   0x804'2510     0x14  GUI_SetTextMode.o [2]
+  .text              ro code   0x804'2524     0x6a  GUI_Val.o [2]
+  .text              ro code   0x804'2590     0x4c  GUI_DrawHLine.o [2]
+  .text              ro code   0x804'25dc     0x44  GUI_DrawVLine.o [2]
+  .text              ro code   0x804'2620    0x188  GUI_DispStringInRect.o [2]
+  .text              ro code   0x804'27a8      0xe  GUI_DispStringAtCEOL.o [2]
+  .text              ro code   0x804'27b8     0x10  GUI_DispStringAt.o [2]
+  .text              ro code   0x804'27c8     0x48  GUI_DrawPoint.o [2]
+  .text              ro code   0x804'2810     0xf0  GUI_Valf.o [2]
+  .text              ro code   0x804'2900     0x34  stm32f4xx_hal.o [1]
+  .text              ro code   0x804'2934     0x50  dma.o [1]
+  .text              ro code   0x804'2984     0xf4  can.o [1]
+  .text              ro code   0x804'2a78     0x48  crc.o [1]
+  .text              ro code   0x804'2ac0    0x14c  usart.o [1]
+  .text              ro code   0x804'2c0c    0x140  adc.o [1]
+  .text              ro code   0x804'2d4c    0x178  tim.o [1]
+  .text              ro code   0x804'2ec4     0x80  simplelib.o [1]
+  .text              ro code   0x804'2f44    0x5ca  stm32f4xx_hal_tim.o [1]
+  .text              ro code   0x804'3510    0x752  stm32f4xx_hal_adc.o [1]
+  .text              ro code   0x804'3c64     0xc0  ledpwm.o [1]
+  .text              ro code   0x804'3d24    0x380  stm32f4xx_hal_rcc.o [1]
+  .text              ro code   0x804'40a4    0x224  stm32f4xx_hal_rcc.o [1]
+  .text              ro code   0x804'42c8      0x4  GUI_SetDrawMode.o [2]
+  .text              ro code   0x804'42cc    0x1ec  GUI_FillPolygon.o [2]
+  .text              ro code   0x804'44b8    0x100  GUI_AddDecShift.o [2]
+  .text              ro code   0x804'45b8     0xfc  GUI_DispString.o [2]
+  .text              ro code   0x804'46b4     0x54  GUI_Char.o [2]
+  .text              ro code   0x804'4708      0xa  GUI_GetClientRect.o [2]
+  .text              ro code   0x804'4714    0x1b4  GUI_CharLine.o [2]
+  .text              ro code   0x804'48c8     0x4c  GUI_UC.o [2]
+  .text              ro code   0x804'4914     0x16  GUI__HandleEOLine.o [2]
+  .text              ro code   0x804'492c     0x18  WM_SetUserClipRect.o [2]
+  .text              ro code   0x804'4944     0x2c  GUI_DispCEOL.o [2]
+  .text              ro code   0x804'4970     0xb4  GUI_Circ.o [2]
+  .text              ro code   0x804'4a24     0x66  ceil.o [4]
+  .text              ro code   0x804'4a8c     0x68  floor.o [4]
+  .text              ro code   0x804'4af4     0x68  DblToFlt.o [4]
+  .text              ro code   0x804'4b5c     0x48  FltToDbl.o [4]
+  .text              ro code   0x804'4ba4     0x4c  stm32f4xx_hal.o [1]
+  .text              ro code   0x804'4bf0     0x40  stm32f4xx_hal_msp.o [1]
+  .text              ro code   0x804'4c30    0x6a4  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'52d4     0x28  stm32f4xx_hal_crc.o [1]
+  .text              ro code   0x804'52fc    0x8ec  stm32f4xx_hal_uart.o [1]
+  .text              ro code   0x804'5be8    0x550  stm32f4xx_hal_dma.o [1]
+  .text              ro code   0x804'6138     0x4e  stm32f4xx_hal_tim_ex.o [1]
+  .text              ro code   0x804'6188    0x344  cmd.o [1]
+  .text              ro code   0x804'64cc    0x1bc  can_utils.o [1]
+  .text              ro code   0x804'6688     0x2c  cmd_func.o [1]
+  .text              ro code   0x804'66b4     0x22  can_func.o [1]
+  .text              ro code   0x804'66d6      0x2  stm32f4xx_hal_tim.o [1]
+  .text              ro code   0x804'66d8      0x2  stm32f4xx_hal_adc.o [1]
+  .text              ro code   0x804'66dc      0x2  stm32f4xx_hal_adc_ex.o [1]
+  .text              ro code   0x804'66de      0x2  stm32f4xx_hal_adc.o [1]
+  .text              ro code   0x804'66e0      0x2  stm32f4xx_hal_adc.o [1]
+  .text              ro code   0x804'66e2      0x2  stm32f4xx_hal_adc.o [1]
+  .text              ro code   0x804'66e4     0xb0  GUI__ManageCache.o [2]
+  .text              ro code   0x804'6794      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'6796      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'6798      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'679a      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'679c      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'679e      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'67a0      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'67a2      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'67a4      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'67a6      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'67a8      0x2  stm32f4xx_hal_can.o [1]
+  .text              ro code   0x804'67aa      0x2  stm32f4xx_hal_uart.o [1]
+  .text              ro code   0x804'67ac      0x2  stm32f4xx_hal_uart.o [1]
+  .text              ro code   0x804'67ae      0x2  stm32f4xx_hal_uart.o [1]
+  .text              ro code   0x804'67b0      0x2  stm32f4xx_hal_uart.o [1]
+  .text              ro code   0x804'67b4    0x224  hash.o [1]
+  .text              ro code   0x804'69d8     0x18  strcpy.o [5]
+  .text              ro code   0x804'69f0     0x4c  strtok.o [3]
+  .text              ro code   0x804'6a3c     0x3c  vsnprint.o [3]
+  .text              ro code   0x804'6a78     0x12  strcmp.o [5]
+  .text              ro code   0x804'6a8c     0x24  ABIassert.o [6]
+  .text              ro code   0x804'6ab0     0x22  strspn.o [3]
+  .text              ro code   0x804'6ad2     0x22  strcspn.o [3]
+  .text              ro code   0x804'6af4    0x974  GUIDRV_Template.o [1]
+  .rodata            const     0x804'7468    0x718  F6x8.o [2]
+  .rodata            const     0x804'7b80    0x620  F08_ASCII.o [2]
+  .text              ro code   0x804'81a0    0x22c  LCD_NextPixelAPI.o [2]
+  .text              ro code   0x804'83cc    0x1bc  GUI__DrawBitmap16bpp.o [2]
+  .text              ro code   0x804'8588     0x16  GUI_GetColor.o [2]
+  .text              ro code   0x804'85a0     0x18  LCD_GetColorIndex.o [2]
+  .text              ro code   0x804'85b8    0x174  GUI_CharM.o [2]
+  .text              ro code   0x804'872c    0x12c  GUI_CharP.o [2]
+  .rodata            const     0x804'8858    0x100  GUI__DivTbl_255_31.o [2]
+  .rodata            const     0x804'8958    0x100  GUI__DivTbl_255_63.o [2]
+  .rodata            const     0x804'8a58    0x100  LCD_Mirror.o [2]
+  .text              ro code   0x804'8b58     0xf4  stm32f4xx_it.o [1]
+  .text              ro code   0x804'8c4c     0x18  stm32f4xx_hal.o [1]
+  .text              ro code   0x804'8c64     0xc0  GUICC_M565.o [2]
+  .text              ro code   0x804'8d24     0xc0  GUICC_0.o [2]
+  .text              ro code   0x804'8de4     0x3e  GUI_CalcColorDist.o [2]
+  .text              ro code   0x804'8e24     0x60  system_stm32f4xx.o [1]
+  .rodata            const     0x804'8e84     0x54  hash.o [1]
+  .rodata            const     0x804'8ed8     0x40  GUI__DivTbl_63_255.o [2]
+  .rodata            const     0x804'8f18     0x34  GUIDRV_Template.o [1]
+  .text              ro code   0x804'8f4c     0x2c  GUI_DrawBitmap_565.o [2]
+  .text              ro code   0x804'8f78     0x2c  GUICC_M565_Index2Color.o [2]
+  .text              ro code   0x804'8fa4     0x2c  GUICC_565_Index2Color.o [2]
+  .text              ro code   0x804'8fd0     0x28  data_init.o [5]
+  .text              ro code   0x804'8ff8     0x24  GUI_UC_EncodeNone.o [2]
+  .text              ro code   0x804'901c     0x22  fpinit_M.o [4]
+  .iar.init_table    const     0x804'9040     0x20  - Linker created -
+  .rodata            const     0x804'9060     0x20  hash.o [1]
+  .rodata            const     0x804'9080     0x20  GUI__DivTbl_31_255.o [2]
+  .text              ro code   0x804'90a0     0x1e  cmain.o [5]
+  .text              ro code   0x804'90be      0x4  low_level_init.o [3]
+  .text              ro code   0x804'90c2      0x4  exit.o [3]
+  .text              ro code   0x804'90c8      0xa  cexit.o [5]
+  .rodata            const     0x804'90d4     0x18  simplelib.o [1]
+  .rodata            const     0x804'90ec     0x18  GUICC_M565.o [2]
+  .rodata            const     0x804'9104     0x18  GUICC_0.o [2]
+  .rodata            const     0x804'911c     0x14  map.o [1]
+  .rodata            const     0x804'9130     0x10  cmd.o [1]
+  .rodata            const     0x804'9140     0x10  cmd.o [1]
+  .rodata            const     0x804'9150     0x10  cmd_func.o [1]
+  .rodata            const     0x804'9160     0x10  system_stm32f4xx.o [1]
+  .text              ro code   0x804'9170     0x10  startup_stm32f407xx.o [1]
+  .rodata            const     0x804'9180      0xc  cmd.o [1]
+  .rodata            const     0x804'918c      0xc  hash.o [1]
+  .rodata            const     0x804'9198      0xc  GUI_DrawBitmap_565.o [2]
+  .rodata            const     0x804'91a4      0xc  LCD.o [2]
+  .text              ro code   0x804'91b0      0xc  cstartup_M.o [5]
+  .rodata            const     0x804'91bc      0x8  cmd.o [1]
+  .rodata            const     0x804'91c4      0x8  cmd.o [1]
+  .rodata            const     0x804'91cc      0x8  cmd.o [1]
+  .rodata            const     0x804'91d4      0x8  cmd_func.o [1]
+  .rodata            const     0x804'91dc      0x8  cmd_func.o [1]
+  .rodata            const     0x804'91e4      0x8  GUI_Frame.o [1]
+  .rodata            const     0x804'91ec      0x8  GUI_Frame.o [1]
+  .rodata            const     0x804'91f4      0x8  GUI_Frame.o [1]
+  .rodata            const     0x804'91fc      0x8  GUIDRV_Template.o [1]
+  .rodata            const     0x804'9204      0x8  GUIDRV_Template.o [1]
+  .rodata            const     0x804'920c      0x8  GUIDRV_Template.o [1]
+  .rodata            const     0x804'9214      0x8  hash.o [1]
+  .rodata            const     0x804'921c      0x8  stm32f4xx_hal_dma.o [1]
+  .rodata            const     0x804'9224      0x8  system_stm32f4xx.o [1]
+  .rodata            const     0x804'922c      0x8  tim.o [1]
+  .rodata            const     0x804'9234      0x6  xlocale_c.o [3]
+  .rodata            const     0x804'923c      0x4  GUIDRV_Template.o [1]
+  .text              ro code   0x804'9240      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9244      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9248      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'924c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9250      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9254      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9258      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'925c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9260      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9264      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9268      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'926c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9270      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9274      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9278      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'927c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9280      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9284      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9288      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'928c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9290      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9294      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9298      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'929c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92a0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92a4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92a8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92ac      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92b0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92b4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92b8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92bc      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92c0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92c4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92c8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92cc      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92d0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92d4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92d8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92dc      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92e0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92e4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92e8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92ec      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92f0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92f4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92f8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'92fc      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9300      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9304      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9308      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'930c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9310      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9314      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9318      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'931c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9320      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9324      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9328      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'932c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9330      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9334      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9338      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'933c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9340      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9344      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9348      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'934c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code   0x804'9350      0x4  startup_stm32f407xx.o [1]
+  .rodata            const     0x804'9354      0x0  zero_init3.o [5]
+  .rodata            const     0x804'9354      0x0  lz77_init_single.o [5]
+  Initializer bytes  const     0x804'9354     0x9b  <for P2-1>
+                             - 0x804'93ef  0x49267
 
-"P2", part 1 of 3:                           0x58
-  P2-1                        0x2000'0000    0x58  <Init block>
-    .data            inited   0x2000'0000    0x14  ILI93xx.o [1]
-    .data            inited   0x2000'0014     0xc  stm32f4xx_hal.o [1]
-    .data            inited   0x2000'0020     0x4  system_stm32f4xx.o [1]
-    .data            inited   0x2000'0024    0x10  GUI_Core.o [2]
-    .data            inited   0x2000'0034     0x4  LCD.o [2]
-    .data            inited   0x2000'0038    0x10  LCD_Color.o [2]
-    .data            inited   0x2000'0048     0xc  GUI_OnKey.o [2]
-    .data            inited   0x2000'0054     0x4  GUI_CharLine.o [2]
-                            - 0x2000'0058    0x58
+"P2", part 1 of 3:                           0x11f
+  P2-1                        0x2000'0000    0x11f  <Init block>
+    .data            inited   0x2000'0000      0x4  cmd.o [1]
+    .data            inited   0x2000'0004     0x18  cmd.o [1]
+    .data            inited   0x2000'001c      0x8  GUI_Frame.o [1]
+    .data            inited   0x2000'0024      0x8  GUI_Frame.o [1]
+    .data            inited   0x2000'002c      0x8  GUI_Frame.o [1]
+    .data            inited   0x2000'0034      0x8  GUI_Frame.o [1]
+    .data            inited   0x2000'003c      0x8  GUI_Frame.o [1]
+    .data            inited   0x2000'0044      0x8  GUI_Frame.o [1]
+    .data            inited   0x2000'004c      0x4  stm32f4xx_hal.o [1]
+    .data            inited   0x2000'0050      0x4  system_stm32f4xx.o [1]
+    .data            inited   0x2000'0054     0x10  GUI_Core.o [2]
+    .data            inited   0x2000'0064      0x4  GUI_Core.o [2]
+    .data            inited   0x2000'0068      0x4  LCD.o [2]
+    .data            inited   0x2000'006c     0x10  LCD_Color.o [2]
+    .data            inited   0x2000'007c      0x4  GUI_CharLine.o [2]
+    .data            inited   0x2000'0080      0xc  GUI_OnKey.o [2]
+    .data            inited   0x2000'008c     0x10  LCD_NextPixelAPI.o [2]
+    .data            inited   0x2000'009c     0x38  xlocale_c.o [3]
+    .data            inited   0x2000'00d4     0x48  xlocale_c.o [3]
+    .data            inited   0x2000'011c      0x1  GUI_Frame.o [1]
+    .data            inited   0x2000'011d      0x1  GUI_Frame.o [1]
+    .data            inited   0x2000'011e      0x1  stm32f4xx_hal.o [1]
+                            - 0x2000'011f    0x11f
 
-"P2", part 2 of 3:                         0xcbd4
-  .bss               zero     0x2000'0058  0xc800  GUIConf.o [1]
-  .bss               zero     0x2000'c858    0xbc  GUI_Alloc.o [2]
-  .bss               zero     0x2000'c914    0x80  GUI_Core.o [2]
-  .bss               zero     0x2000'c994    0x70  WM.o [2]
-  .bss               zero     0x2000'ca04    0x58  GUI_OnKey.o [2]
-  .bss               zero     0x2000'ca5c    0x50  fsmc.o [1]
-  .bss               zero     0x2000'caac    0x50  ILI93xx.o [1]
-  .bss               zero     0x2000'cafc    0x40  usart.o [1]
-  .bss               zero     0x2000'cb3c    0x40  WM_Touch.o [2]
-  .bss               zero     0x2000'cb7c    0x28  can.o [1]
-  .bss               zero     0x2000'cba4    0x1c  GUI_FillPolygon.o [2]
-  .bss               zero     0x2000'cbc0    0x14  GUI_Alloc.o [2]
-  .bss               zero     0x2000'cbd4    0x10  WM_Touch.o [2]
-  .bss               zero     0x2000'cbe4     0xc  GUI_Core.o [2]
-  .bss               zero     0x2000'cbf0     0x8  crc.o [1]
-  .bss               zero     0x2000'cbf8     0x8  GUICC_M565.o [2]
-  .bss               zero     0x2000'cc00     0x8  GUI__ManageCache.o [2]
-  .bss               zero     0x2000'cc08     0x4  fsmc.o [1]
-  .bss               zero     0x2000'cc0c     0x4  main.o [1]
-  .bss               zero     0x2000'cc10     0x4  main.o [1]
-  .bss               zero     0x2000'cc14     0x4  GUI_Core.o [2]
-  .bss               zero     0x2000'cc18     0x4  GUI_Core.o [2]
-  .bss               zero     0x2000'cc1c     0x4  GUI_Core.o [2]
-  .bss               zero     0x2000'cc20     0x4  GUI_WaitEvent.o [2]
-  .bss               zero     0x2000'cc24     0x4  WM__SendMessage.o [2]
-  .bss               zero     0x2000'cc28     0x2  GUI_Core.o [2]
-  .bss               zero     0x2000'cc2a     0x2  GUI_Core.o [2]
-                            - 0x2000'cc2c  0xcbd4
+"P2", part 2 of 3:                         0x149f4
+  .bss               zero     0x2000'0120  0x14000  GUIConf.o [1]
+  .bss               zero     0x2001'4120    0x1d8  dlmalloc.o [3]
+  .bss               zero     0x2001'42f8     0xbc  GUI_Alloc.o [2]
+  .bss               zero     0x2001'43b4     0x80  GUI_Core.o [2]
+  .bss               zero     0x2001'4434     0x70  WM.o [2]
+  .bss               zero     0x2001'44a4     0x68  cmd.o [1]
+  .bss               zero     0x2001'450c     0x64  cmd.o [1]
+  .bss               zero     0x2001'4570     0x64  cmd.o [1]
+  .bss               zero     0x2001'45d4     0x60  adc.o [1]
+  .bss               zero     0x2001'4634     0x60  usart.o [1]
+  .bss               zero     0x2001'4694     0x60  usart.o [1]
+  .bss               zero     0x2001'46f4     0x58  GUI_OnKey.o [2]
+  .bss               zero     0x2001'474c     0x50  fsmc.o [1]
+  .bss               zero     0x2001'479c     0x50  ILI93xx.o [1]
+  .bss               zero     0x2001'47ec     0x48  adc.o [1]
+  .bss               zero     0x2001'4834     0x40  cmd.o [1]
+  .bss               zero     0x2001'4874     0x40  tim.o [1]
+  .bss               zero     0x2001'48b4     0x40  usart.o [1]
+  .bss               zero     0x2001'48f4     0x40  WM_Touch.o [2]
+  .bss               zero     0x2001'4934     0x30  cmd.o [1]
+  .bss               zero     0x2001'4964     0x30  LCD_NextPixelAPI.o [2]
+  .bss               zero     0x2001'4994     0x28  can.o [1]
+  .bss               zero     0x2001'49bc     0x28  can_utils.o [1]
+  .bss               zero     0x2001'49e4     0x1c  can_utils.o [1]
+  .bss               zero     0x2001'4a00     0x1c  GUI_FillPolygon.o [2]
+  .bss               zero     0x2001'4a1c     0x18  can_utils.o [1]
+  .bss               zero     0x2001'4a34     0x18  dlmalloc.o [3]
+  .bss               zero     0x2001'4a4c     0x14  GUI_Alloc.o [2]
+  .bss               zero     0x2001'4a60     0x10  ILI93xx.o [1]
+  .bss               zero     0x2001'4a70     0x10  WM_Touch.o [2]
+  .bss               zero     0x2001'4a80      0xc  GUI_Core.o [2]
+  .bss               zero     0x2001'4a8c      0x4  can_utils.o [1]
+  .bss               zero     0x2001'4a90      0x8  can_utils.o [1]
+  .bss               zero     0x2001'4a98      0x8  can_utils.o [1]
+  .bss               zero     0x2001'4aa0      0x8  crc.o [1]
+  .bss               zero     0x2001'4aa8      0x8  GUICC_M565.o [2]
+  .bss               zero     0x2001'4ab0      0x8  GUI__ManageCache.o [2]
+  .bss               zero     0x2001'4ab8      0x4  can_utils.o [1]
+  .bss               zero     0x2001'4abc      0x4  can_utils.o [1]
+  .bss               zero     0x2001'4ac0      0x4  can_utils.o [1]
+  .bss               zero     0x2001'4ac4      0x4  cmd.o [1]
+  .bss               zero     0x2001'4ac8      0x4  cmd.o [1]
+  .bss               zero     0x2001'4acc      0x4  cmd.o [1]
+  .bss               zero     0x2001'4ad0      0x4  flags.o [1]
+  .bss               zero     0x2001'4ad4      0x4  fsmc.o [1]
+  .bss               zero     0x2001'4ad8      0x4  GUI_Frame.o [1]
+  .bss               zero     0x2001'4adc      0x4  GUI_Frame.o [1]
+  .bss               zero     0x2001'4ae0      0x4  GUI_Frame.o [1]
+  .bss               zero     0x2001'4ae4      0x4  main.o [1]
+  .bss               zero     0x2001'4ae8      0x4  stm32f4xx_hal.o [1]
+  .bss               zero     0x2001'4aec      0x4  GUI_Core.o [2]
+  .bss               zero     0x2001'4af0      0x4  GUI_Core.o [2]
+  .bss               zero     0x2001'4af4      0x4  GUI_Core.o [2]
+  .bss               zero     0x2001'4af8      0x4  GUI_WaitEvent.o [2]
+  .bss               zero     0x2001'4afc      0x4  WM__SendMessage.o [2]
+  .bss               zero     0x2001'4b00      0x4  strtok.o [3]
+  .bss               zero     0x2001'4b04      0x4  xfail_s.o [3]
+  .bss               zero     0x2001'4b08      0x4  xgetmemchunk.o [3]
+  .bss               zero     0x2001'4b0c      0x2  GUI_Core.o [2]
+  .bss               zero     0x2001'4b0e      0x2  GUI_Core.o [2]
+  .bss               zero     0x2001'4b10      0x1  GUI_Frame.o [1]
+  .bss               zero     0x2001'4b11      0x1  GUI_Frame.o [1]
+                            - 0x2001'4b12  0x149f2
 
-"P2", part 3 of 3:                          0x600
-  CSTACK                      0x2000'cc30   0x600  <Block>
-    CSTACK           uninit   0x2000'cc30   0x600  <Block tail>
-                            - 0x2000'd230   0x600
+"P2", part 3 of 3:                           0xd00
+  CSTACK                      0x2001'4b18    0x600  <Block>
+    CSTACK           uninit   0x2001'4b18    0x600  <Block tail>
+  HEAP                        0x2001'5118    0x700  <Block>
+    HEAP             uninit   0x2001'5118    0x700  <Block tail>
+                            - 0x2001'5818    0xd00
 
 Unused ranges:
 
          From           To      Size
          ----           --      ----
-   0x800'6cce   0x80f'ffff  0xf'9332
-  0x2000'cc2c  0x2000'cc2f       0x4
-  0x2000'd230  0x2001'ffff  0x1'2dd0
+   0x804'93ef   0x80f'ffff  0xb'6c11
+  0x2000'011f  0x2000'011f       0x1
+  0x2001'4b14  0x2001'4b17       0x4
+  0x2001'5818  0x2001'ffff    0xa7e8
 
 
 *******************************************************************************
@@ -384,14 +549,14 @@ Unused ranges:
           Address      Size
           -------      ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0xcbd4:
-          0x2000'0058  0xcbd4
+    1 destination range, total size 0x149f2:
+          0x2000'0120  0x149f2
 
-Copy/packbits (__iar_packbits_init_single3)
-    1 source range, total size 0x32 (56% of destination):
-           0x800'6c9c    0x32
-    1 destination range, total size 0x58:
-          0x2000'0000    0x58
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x9b (54% of destination):
+           0x804'9354     0x9b
+    1 destination range, total size 0x11f:
+          0x2000'0000    0x11f
 
 
 
@@ -406,83 +571,121 @@ command line/config:
     Total:
 
 D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj: [1]
-    GUIConf.o                          36            51 200
-    GUIDRV_Template.o               1 836       52
-    GUI_Frame.o                       126
+    GUIConf.o                          36            81 920
+    GUIDRV_Template.o               2 420       80
+    GUI_Frame.o                     1 744       51       64
     GUI_X.o                             2
-    ILI93xx.o                         880       11      100
-    LCDConf_FlexColor_Template.o       76
-    can.o                             220                40
-    crc.o                              76                 8
-    fsmc.o                            316                84
-    gpio.o                            192
-    main.o                            222                 8
-    startup_stm32f407xx.o             720
-    stm32f4xx_hal.o                   184        7       12
-    stm32f4xx_hal_can.o               802
-    stm32f4xx_hal_cortex.o            196
-    stm32f4xx_hal_crc.o                34
-    stm32f4xx_hal_gpio.o              472
-    stm32f4xx_hal_msp.o                56
-    stm32f4xx_hal_rcc.o             1 148
-    stm32f4xx_hal_sram.o               82
-    stm32f4xx_hal_uart.o              494
-    stm32f4xx_it.o                    158
-    stm32f4xx_ll_fsmc.o               212
-    system_stm32f4xx.o                 96       10        4
-    usart.o                           168                64
+    ILI93xx.o                       1 912                96
+    LCDConf_FlexColor_Template.o       78
+    adc.o                             320               168
+    can.o                             244                40
+    can_func.o                         34
+    can_utils.o                       444               124
+    cmd.o                             836       83      456
+    cmd_func.o                         44       32
+    crc.o                              72                 8
+    dma.o                              80
+    flags.o                                               4
+    fsmc.o                            380                84
+    gpio.o                            420
+    hash.o                            548      136
+    ledpwm.o                          192
+    main.o                            312                 4
+    map.o                                  240 020
+    simplelib.o                       128       24
+    startup_stm32f407xx.o             684
+    stm32f4xx_hal.o                   204        3        9
+    stm32f4xx_hal_adc.o             1 882
+    stm32f4xx_hal_adc_ex.o              2
+    stm32f4xx_hal_can.o             1 722
+    stm32f4xx_hal_cortex.o            344
+    stm32f4xx_hal_crc.o                40
+    stm32f4xx_hal_dma.o             1 360        8
+    stm32f4xx_hal_gpio.o              668
+    stm32f4xx_hal_msp.o                64
+    stm32f4xx_hal_rcc.o             1 444
+    stm32f4xx_hal_sram.o               92
+    stm32f4xx_hal_tim.o             1 484
+    stm32f4xx_hal_tim_ex.o             78
+    stm32f4xx_hal_uart.o            2 292
+    stm32f4xx_it.o                    244
+    stm32f4xx_ll_fsmc.o               236
+    system_stm32f4xx.o                 96       26        4
+    tim.o                             376        8       64
+    usart.o                           332               256
     -------------------------------------------------------
-    Total:                          8 804       80   51 520
+    Total:                         23 890  240 471   83 301
 
 STemWin522_CM4_IAR.a: [2]
+    F08_ASCII.o                              1 568
     F6x8.o                                   1 816
-    F8x16.o                                  3 120
+    F8x16.o                                  3 232
     GUICC_0.o                         192       24
+    GUICC_565_Index2Color.o            44
     GUICC_M565.o                      192       24        8
     GUICC_M565_Index2Color.o           44
     GUIDEV.o                           68
     GUIDEV_Usage.o                     34
     GUI_ALLOC_AllocZero.o              36
-    GUI_AddDecShift.o                 196
-    GUI_Alloc.o                     1 584               208
+    GUI_AddDecShift.o                 256
+    GUI_Alloc.o                     1 640               208
     GUI_CalcColorDist.o                62
     GUI_Char.o                         84
     GUI_CharLine.o                    436        3        4
     GUI_CharM.o                       372
+    GUI_CharP.o                       300
     GUI_Circ.o                        180
-    GUI_Core.o                        420        9      172
+    GUI_Core.o                        420       11      176
     GUI_Device.o                      300
+    GUI_DispCEOL.o                     44
     GUI_DispString.o                  252
     GUI_DispStringAt.o                 16
+    GUI_DispStringAtCEOL.o             14
+    GUI_DispStringInRect.o            392
+    GUI_DrawBitmap.o                  236
+    GUI_DrawBitmap_565.o               44       12
+    GUI_DrawHLine.o                    76
     GUI_DrawLine.o                  1 240
-    GUI_DrawPoint.o                    32
+    GUI_DrawPoint.o                    72
+    GUI_DrawVLine.o                    68
     GUI_FillPolygon.o                 492                28
+    GUI_GetClientRect.o                10
+    GUI_GetColor.o                     22
     GUI_Goto.o                         16
     GUI_MergeRect.o                    88
     GUI_MoveRect.o                     28
-    GUI_OnKey.o                        16        7      100
+    GUI_OnKey.o                        16        6      100
     GUI_Pen.o                          16
     GUI_RectsIntersect.o               56
     GUI_SelectLCD.o                    18
     GUI_SelectLayer.o                  36
     GUI_SetColor.o                      8
+    GUI_SetDrawMode.o                   4
+    GUI_SetFont.o                      20
     GUI_SetOrg.o                       48
+    GUI_SetTextMode.o                  20
     GUI_UC.o                           76
     GUI_UC_EncodeNone.o                36
-    GUI_Val.o                          36
+    GUI_Val.o                         106
+    GUI_Valf.o                        240
     GUI_WaitEvent.o                    16                 4
     GUI__DivTbl_255_31.o                       256
     GUI__DivTbl_255_63.o                       256
     GUI__DivTbl_31_255.o                        32
     GUI__DivTbl_63_255.o                        64
+    GUI__DrawBitmap16bpp.o            444
+    GUI__HandleEOLine.o                22
     GUI__IntersectRect.o               64
     GUI__IntersectRects.o              98
     GUI__ManageCache.o                176                 8
     GUI__memset.o                      84
     LCD.o                           1 212       14        4
-    LCD_Color.o                       180        9       16
-    LCD_GetEx.o                       194
+    LCD_Color.o                       248        8       16
+    LCD_GetColorIndex.o                24
+    LCD_GetEx.o                       238
     LCD_GetNumDisplays.o               26
+    LCD_Mirror.o                               256
+    LCD_NextPixelAPI.o                556        9       64
     LCD_SelectLCD.o                    68
     LCD_Set.o                         134
     LCD_SetClipRectEx.o                48
@@ -490,469 +693,861 @@ STemWin522_CM4_IAR.a: [2]
     WM.o                            2 836               112
     WM_BringToBottom.o                130
     WM_CriticalHandle.o                16
-    WM_GetClientRect.o                 34
+    WM_GetClientRect.o                 64
     WM_GetDesktopWindow.o              24
     WM_GetFirstChild.o                 14
     WM_GetParent.o                     14
     WM_SendToParent.o                  28
+    WM_SetUserClipRect.o               24
     WM_Touch.o                                           80
     WM__GetFirstSibling.o              16
     WM__GetPrevSibling.o               34
     WM__SendMessage.o                  64                 4
     -------------------------------------------------------
-    Total:                         12 256    5 634      748
+    Total:                         15 228    7 591      816
 
 dl7M_tlf.a: [3]
+    abort.o                             6
+    dlmalloc.o                      3 968               496
     exit.o                              4
     low_level_init.o                    4
+    strcspn.o                          34
+    strspn.o                           34
+    strtok.o                           76                 4
+    vsnprint.o                         60
+    xencoding_8859_1.o                 30
+    xfail_s.o                          64                 4
+    xgetmemchunk.o                     44                 4
+    xlocale_c.o                       120       75      128
+    xmbcurmax.o                        10
+    xprintffull.o                   3 910
+    xsnprout.o                         26
     -------------------------------------------------------
-    Total:                              8
+    Total:                          8 390       75      636
 
 m7M_tls.a: [4]
+    DblAdd.o                          362
+    DblCmpGe.o                         46
+    DblCmpLe.o                         46
+    DblDiv.o                          582
+    DblMul.o                          418
+    DblSub.o                          226
+    DblToFlt.o                        104
+    DblToS32.o                         58
+    DblToU32.o                         40
+    FltToDbl.o                         72
+    S32ToDbl.o                         34
+    U32ToDbl.o                         26
+    ceil.o                            102
+    floor.o                           104
     fpinit_M.o                         34
+    frexp.o                           112
+    ldexp.o                           314
     -------------------------------------------------------
-    Total:                             34
+    Total:                          2 680
 
 rt7M_tl.a: [5]
     ABImemclr.o                         6
     ABImemclr4.o                        6
     ABImemcpy.o                       166
     ABImemmove.o                      150
-    ABImemset.o                        94
+    ABImemset.o                       102
     ABImemset48.o                      50
-    I64DivMod_small.o                 262
+    I64DivMod.o                       560
     I64DivZer.o                         2
     cexit.o                            10
     cmain.o                            30
     cstartup_M.o                       12
     data_init.o                        40
-    packbits_init_single.o             56
+    lz77_init_single.o                122
+    memchr.o                           88
+    strchr.o                           22
+    strcmp.o                           18
+    strcpy.o                           24
+    strlen.o                           54
     zero_init3.o                       58
     -------------------------------------------------------
-    Total:                            942
+    Total:                          1 520
 
 shb_l.a: [6]
+    ABIassert.o                        36
     exit.o                             20
     -------------------------------------------------------
-    Total:                             20
+    Total:                             56
 
-    Gaps                               42        2
-    Linker created                              32    1 536
+    Gaps                               74        8
+    Linker created                              32    3 328
 -----------------------------------------------------------
-    Grand Total:                   22 106    5 748   53 804
+    Grand Total:                   51 838  248 177   88 081
 
 
 *******************************************************************************
 *** ENTRY LIST
 ***
 
-Entry                       Address    Size  Type      Object
------                       -------    ----  ----      ------
-.iar.init_table$$Base    0x800'6a7c           --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'6a9c           --   Gb  - Linker created -
-?main                    0x800'6abd          Code  Gb  cmain.o [5]
-AHBPrescTable            0x800'6924    0x10  Data  Gb  system_stm32f4xx.o [1]
-APBPrescTable            0x800'6b5c     0x8  Data  Gb  system_stm32f4xx.o [1]
-BACK_COLOR              0x2000'0012     0x2  Data  Gb  ILI93xx.o [1]
-BusFault_Handler         0x800'67f7     0x2  Code  Gb  stm32f4xx_it.o [1]
-CAN1_RX0_IRQHandler      0x800'6871     0x2  Code  Gb  stm32f4xx_it.o [1]
-CAN1_RX1_IRQHandler      0x800'6875     0x2  Code  Gb  stm32f4xx_it.o [1]
-CAN1_SCE_IRQHandler      0x800'688d     0x2  Code  Gb  stm32f4xx_it.o [1]
-CSTACK$$Base            0x2000'cc30           --   Gb  - Linker created -
-CSTACK$$Limit           0x2000'd230           --   Gb  - Linker created -
-DebugMon_Handler         0x800'67fd     0x2  Code  Gb  stm32f4xx_it.o [1]
-Error_Handler            0x800'3899     0x2  Code  Gb  main.o [1]
-FSMC_Initialized        0x2000'cc08     0x4  Data  Lc  fsmc.o [1]
+Entry                       Address     Size  Type      Object
+-----                       -------     ----  ----      ------
+.iar.init_table$$Base    0x804'9040            --   Gb  - Linker created -
+.iar.init_table$$Limit   0x804'9060            --   Gb  - Linker created -
+?main                    0x804'90a1           Code  Gb  cmain.o [5]
+ADC_DMAConvCplt          0x804'3bbd     0x7a  Code  Lc  stm32f4xx_hal_adc.o [1]
+ADC_DMAError             0x804'3c49     0x1a  Code  Lc  stm32f4xx_hal_adc.o [1]
+ADC_DMAHalfConvCplt      0x804'3c39      0xe  Code  Lc  stm32f4xx_hal_adc.o [1]
+ADC_IRQHandler           0x804'8bbf      0xa  Code  Gb  stm32f4xx_it.o [1]
+ADC_Init                 0x804'3a3d    0x15a  Code  Lc  stm32f4xx_hal_adc.o [1]
+ADC_Value               0x2001'4ae4      0x4  Data  Gb  main.o [1]
+AHBPrescTable            0x804'9160     0x10  Data  Gb  system_stm32f4xx.o [1]
+APBPrescTable            0x804'9224      0x8  Data  Gb  system_stm32f4xx.o [1]
+BusFault_Handler         0x804'8b5f      0x2  Code  Gb  stm32f4xx_it.o [1]
+CAN1_RX0_IRQHandler      0x804'8bc9      0xa  Code  Gb  stm32f4xx_it.o [1]
+CAN1_RX1_IRQHandler      0x804'8bd3      0xa  Code  Gb  stm32f4xx_it.o [1]
+CAN1_SCE_IRQHandler      0x804'8bdd      0xa  Code  Gb  stm32f4xx_it.o [1]
+CAN_config               0x804'656f     0x52  Code  Lc  can_utils.o [1]
+CMD_USART               0x2001'4834     0x40  Data  Gb  cmd.o [1]
+CSTACK$$Base            0x2001'4b18            --   Gb  - Linker created -
+CSTACK$$Limit           0x2001'5118            --   Gb  - Linker created -
+CacheMore                0x803'cacd     0x24  Code  Lc  xlocale_c.o [3]
+DMA2_Stream0_IRQHandler
+                         0x804'8c0b      0xa  Code  Gb  stm32f4xx_it.o [1]
+DMA2_Stream2_IRQHandler
+                         0x804'8c15      0xa  Code  Gb  stm32f4xx_it.o [1]
+DMA2_Stream7_IRQHandler
+                         0x804'8c1f      0xa  Code  Gb  stm32f4xx_it.o [1]
+DMAUSART_RX_BUF         0x2001'4570     0x64  Data  Gb  cmd.o [1]
+DMA_CalcBaseAndBitshift
+                         0x804'605d     0x30  Code  Lc  stm32f4xx_hal_dma.o [1]
+DMA_CalcBaseAndBitshift::flagBitshiftOffset
+                         0x804'921c      0x8  Data  Lc  stm32f4xx_hal_dma.o [1]
+DMA_CheckFifoParam       0x804'609d     0x9c  Code  Lc  stm32f4xx_hal_dma.o [1]
+DMA_RxOK_Flag           0x2001'4ac8      0x4  Data  Gb  cmd.o [1]
+DMA_SetConfig            0x804'602f     0x2e  Code  Lc  stm32f4xx_hal_dma.o [1]
+DMAaRxBuffer            0x2001'450c     0x64  Data  Gb  cmd.o [1]
+DebugMon_Handler         0x804'8b65      0x2  Code  Gb  stm32f4xx_it.o [1]
+EXTI2_IRQHandler         0x804'8ba1      0xa  Code  Gb  stm32f4xx_it.o [1]
+EXTI3_IRQHandler         0x804'8bab      0xa  Code  Gb  stm32f4xx_it.o [1]
+EXTI4_IRQHandler         0x804'8bb5      0xa  Code  Gb  stm32f4xx_it.o [1]
+EXTI9_5_IRQHandler       0x804'8be7      0xa  Code  Gb  stm32f4xx_it.o [1]
+Error_Handler            0x804'1ecb      0xa  Code  Gb  main.o [1]
+FSMC_Initialized        0x2001'4ad4      0x4  Data  Lc  fsmc.o [1]
 FSMC_NORSRAM_Extended_Timing_Init
-                         0x800'3765    0x3c  Code  Gb  stm32f4xx_ll_fsmc.o [1]
-FSMC_NORSRAM_Init        0x800'36d5    0x50  Code  Gb  stm32f4xx_ll_fsmc.o [1]
+                         0x804'1535     0x44  Code  Gb  stm32f4xx_ll_fsmc.o [1]
+FSMC_NORSRAM_Init        0x804'1495     0x5a  Code  Gb  stm32f4xx_ll_fsmc.o [1]
 FSMC_NORSRAM_Timing_Init
-                         0x800'3725    0x40  Code  Gb  stm32f4xx_ll_fsmc.o [1]
-FontMono8x16x3           0x800'0d80    0x14  Data  Lc  F8x16.o [2]
-GL_DrawLine              0x800'4b43    0x10  Code  Gb  GUI_DrawLine.o [2]
-GL_DrawLine1Ex           0x800'4857   0x1b4  Code  Gb  GUI_DrawLine.o [2]
-GL_DrawLineEx            0x800'4a1b   0x128  Code  Gb  GUI_DrawLine.o [2]
-GL_DrawPoint             0x800'4cf1    0x1c  Code  Gb  GUI_DrawPoint.o [2]
-GL_FP_Cnt               0x2000'cbbc     0x4  Data  Lc  GUI_FillPolygon.o [2]
-GL_FillCircle            0x800'4f01    0xae  Code  Gb  GUI_Circ.o [2]
-GL_FillPolygon           0x800'4d9d   0x154  Code  Gb  GUI_FillPolygon.o [2]
-GUIDRV_Template_API      0x800'69ac    0x34  Data  Gb  GUIDRV_Template.o [1]
-GUIMONO_DispChar         0x800'60fd   0x106  Code  Gb  GUI_CharM.o [2]
-GUIMONO_GetCharDistX     0x800'621d    0x12  Code  Gb  GUI_CharM.o [2]
-GUIMONO_GetFontInfo      0x800'6235     0x6  Code  Gb  GUI_CharM.o [2]
-GUIMONO_IsInFont         0x800'623b    0x36  Code  Gb  GUI_CharM.o [2]
-GUI_ALLOC_AllocNoInit    0x800'1e77     0xa  Code  Gb  GUI_Alloc.o [2]
-GUI_ALLOC_AllocZero      0x800'211d    0x24  Code  Gb  GUI_ALLOC_AllocZero.o [2]
-GUI_ALLOC_AssignMemory   0x800'1ed1     0xc  Code  Gb  GUI_Alloc.o [2]
-GUI_ALLOC_Free           0x800'1ef5    0x2c  Code  Gb  GUI_Alloc.o [2]
+                         0x804'14ef     0x46  Code  Gb  stm32f4xx_ll_fsmc.o [1]
+FontMono8x16             0x803'e428     0x14  Data  Lc  F8x16.o [2]
+FontMono8x16x2           0x803'e460     0x14  Data  Lc  F8x16.o [2]
+FontMono8x16x3           0x803'e474     0x14  Data  Lc  F8x16.o [2]
+GL_DrawBitmap            0x804'1f29     0x90  Code  Gb  GUI_DrawBitmap.o [2]
+GL_DrawLine              0x804'246f     0x10  Code  Gb  GUI_DrawLine.o [2]
+GL_DrawLine1Ex           0x804'2183    0x1b4  Code  Gb  GUI_DrawLine.o [2]
+GL_DrawLineEx            0x804'2347    0x128  Code  Gb  GUI_DrawLine.o [2]
+GL_DrawPoint             0x804'27c9     0x1c  Code  Gb  GUI_DrawPoint.o [2]
+GL_FP_Cnt               0x2001'4a18      0x4  Data  Lc  GUI_FillPolygon.o [2]
+GL_FillCircle            0x804'4971     0xae  Code  Gb  GUI_Circ.o [2]
+GL_FillPolygon           0x804'4359    0x154  Code  Gb  GUI_FillPolygon.o [2]
+GUIDRV_Template_API      0x804'8f18     0x34  Data  Gb  GUIDRV_Template.o [1]
+GUIMONO_DispChar         0x804'85b9    0x106  Code  Gb  GUI_CharM.o [2]
+GUIMONO_GetCharDistX     0x804'86d9     0x12  Code  Gb  GUI_CharM.o [2]
+GUIMONO_GetFontInfo      0x804'86f1      0x6  Code  Gb  GUI_CharM.o [2]
+GUIMONO_IsInFont         0x804'86f7     0x36  Code  Gb  GUI_CharM.o [2]
+GUIPROP_DispChar         0x804'8741     0xc8  Code  Gb  GUI_CharP.o [2]
+GUIPROP_GetCharDistX     0x804'8809     0x36  Code  Gb  GUI_CharP.o [2]
+GUIPROP_GetFontInfo      0x804'8845      0x6  Code  Gb  GUI_CharP.o [2]
+GUIPROP_IsInFont         0x804'884b      0xe  Code  Gb  GUI_CharP.o [2]
+GUIPROP__FindChar        0x804'872d     0x14  Code  Gb  GUI_CharP.o [2]
+GUI_ALLOC_AllocNoInit    0x803'f58f      0xa  Code  Gb  GUI_Alloc.o [2]
+GUI_ALLOC_AllocZero      0x803'f86d     0x24  Code  Gb  GUI_ALLOC_AllocZero.o [2]
+GUI_ALLOC_AssignMemory   0x803'f61f      0xc  Code  Gb  GUI_Alloc.o [2]
+GUI_ALLOC_Free           0x803'f643     0x2c  Code  Gb  GUI_Alloc.o [2]
 GUI_ALLOC_FreeFixedBlock
-                         0x800'1dbf    0x10  Code  Gb  GUI_Alloc.o [2]
+                         0x803'f4d7     0x10  Code  Gb  GUI_Alloc.o [2]
 GUI_ALLOC_GetFixedBlock
-                         0x800'1dcf    0xa8  Code  Gb  GUI_Alloc.o [2]
-GUI_ALLOC_LockH          0x800'1e91    0x16  Code  Gb  GUI_Alloc.o [2]
+                         0x803'f4e7     0xa8  Code  Gb  GUI_Alloc.o [2]
+GUI_ALLOC_GetMaxSize     0x803'f5e9     0x36  Code  Gb  GUI_Alloc.o [2]
+GUI_ALLOC_LockH          0x803'f5a9     0x16  Code  Gb  GUI_Alloc.o [2]
 GUI_ALLOC_SetAvBlockSize
-                         0x800'1edd    0x18  Code  Gb  GUI_Alloc.o [2]
-GUI_ALLOC_UnlockH        0x800'1ea7    0x2a  Code  Gb  GUI_Alloc.o [2]
-GUI_ALLOC__Context      0x2000'c858    0xbc  Data  Gb  GUI_Alloc.o [2]
-GUI_ALLOC_h2p            0x800'1e81    0x10  Code  Gb  GUI_Alloc.o [2]
-GUI_AddDecShift          0x800'656d    0x96  Code  Gb  GUI_AddDecShift.o [2]
-GUI_CalcColorDist        0x800'67b1    0x3e  Code  Gb  GUI_CalcColorDist.o [2]
-GUI_CharLine_pfLog2Vis  0x2000'0054     0x4  Data  Gb  GUI_CharLine.o [2]
-GUI_Clear                0x800'2777    0x1a  Code  Gb  GUI_Core.o [2]
-GUI_ClearRect            0x800'271d    0x5a  Code  Gb  GUI_Core.o [2]
-GUI_DEVICE_Create        0x800'2927    0x46  Code  Gb  GUI_Device.o [2]
+                         0x803'f62b     0x18  Code  Gb  GUI_Alloc.o [2]
+GUI_ALLOC_UnlockH        0x803'f5bf     0x2a  Code  Gb  GUI_Alloc.o [2]
+GUI_ALLOC__Context      0x2001'42f8     0xbc  Data  Gb  GUI_Alloc.o [2]
+GUI_ALLOC_h2p            0x803'f599     0x10  Code  Gb  GUI_Alloc.o [2]
+GUI_AddDecShift          0x804'44f5     0x96  Code  Gb  GUI_AddDecShift.o [2]
+GUI_AddSign              0x804'44dd     0x18  Code  Gb  GUI_AddDecShift.o [2]
+GUI_BitmapMethods565     0x804'9198      0xc  Data  Gb  GUI_DrawBitmap_565.o [2]
+GUI_CalcColorDist        0x804'8de5     0x3e  Code  Gb  GUI_CalcColorDist.o [2]
+GUI_CharLine_pfLog2Vis  0x2000'007c      0x4  Data  Gb  GUI_CharLine.o [2]
+GUI_Clear                0x803'fe8f     0x1a  Code  Gb  GUI_Core.o [2]
+GUI_ClearRect            0x803'fe35     0x5a  Code  Gb  GUI_Core.o [2]
+GUI_DEVICE_Create        0x804'005b     0x46  Code  Gb  GUI_Device.o [2]
 GUI_DEVICE_CreateAndLink
-                         0x800'29d9    0x24  Code  Gb  GUI_Device.o [2]
-GUI_DEVICE_Delete        0x800'2923     0x4  Code  Gb  GUI_Device.o [2]
-GUI_DEVICE_Link          0x800'296f    0x6a  Code  Gb  GUI_Device.o [2]
-GUI_DEVICE_Unlink        0x800'296d     0x2  Code  Gb  GUI_Device.o [2]
-GUI_DEVICE__GetpDriver   0x800'2903    0x20  Code  Gb  GUI_Device.o [2]
-GUI_DecChar             0x2000'0024     0x1  Data  Gb  GUI_Core.o [2]
-GUI_DispDecAt            0x800'688f    0x24  Code  Gb  GUI_Val.o [2]
-GUI_DispString           0x800'6471    0xfc  Code  Gb  GUI_DispString.o [2]
-GUI_DispStringAt         0x800'68b5    0x10  Code  Gb  GUI_DispStringAt.o [2]
-GUI_DrawLine             0x800'4b53    0x30  Code  Gb  GUI_DrawLine.o [2]
-GUI_F6x8_Mono            0x800'5dc0    0x14  Data  Lc  F6x8.o [2]
-GUI_F6x8_TI8859_1        0x800'5db8     0x8  Data  Lc  F6x8.o [2]
-GUI_F6x8_TL8859_1        0x800'5bf8   0x1c0  Data  Lc  F6x8.o [2]
-GUI_Font6x8              0x800'5dd4    0x24  Data  Gb  F6x8.o [2]
-GUI_Font8x16x3x3         0x800'0d94    0x24  Data  Gb  F8x16.o [2]
-GUI_GetCharDistX         0x800'60df     0x6  Code  Gb  GUI_Char.o [2]
-GUI_GetCharDistXEx       0x800'60ed     0x8  Code  Gb  GUI_Char.o [2]
-GUI_GetFontDistY         0x800'60d5     0xa  Code  Gb  GUI_Char.o [2]
-GUI_GetYAdjust           0x800'60a9    0x2c  Code  Gb  GUI_Char.o [2]
-GUI_GotoXY               0x800'2cc9     0xc  Code  Gb  GUI_Goto.o [2]
-GUI_Init                 0x800'27b3    0xa6  Code  Gb  GUI_Core.o [2]
-GUI_MEMDEV_Delete        0x800'1ff1    0x3a  Code  Gb  GUIDEV.o [2]
-GUI_MergeRect            0x800'1f6d    0x58  Code  Gb  GUI_MergeRect.o [2]
-GUI_MoveRect             0x800'1fd5    0x1c  Code  Gb  GUI_MoveRect.o [2]
-GUI_OrgX                0x2000'cc28     0x2  Data  Gb  GUI_Core.o [2]
-GUI_OrgY                0x2000'cc2a     0x2  Data  Gb  GUI_Core.o [2]
-GUI_Pow10                0x800'6608    0x28  Data  Gb  GUI_AddDecShift.o [2]
-GUI_RectsIntersect       0x800'20a5    0x38  Code  Gb  GUI_RectsIntersect.o [2]
-GUI_SelectLCD            0x800'2baf    0x12  Code  Gb  GUI_SelectLCD.o [2]
-GUI_SelectLayer          0x800'21fd    0x1c  Code  Gb  GUI_SelectLayer.o [2]
-GUI_SetBkColor           0x800'26ed     0x4  Code  Gb  GUI_SetColor.o [2]
-GUI_SetColor             0x800'26f1     0x4  Code  Gb  GUI_SetColor.o [2]
-GUI_SetDefaultFont       0x800'2717     0x6  Code  Gb  GUI_Core.o [2]
-GUI_SetOrg               0x800'2d65    0x30  Code  Gb  GUI_SetOrg.o [2]
-GUI_SetPenSize           0x800'46e9     0xc  Code  Gb  GUI_Pen.o [2]
-GUI_SignalEvent          0x800'1fc5     0xc  Code  Gb  GUI_WaitEvent.o [2]
-GUI_StoreKey             0x800'26dd     0xc  Code  Gb  GUI_OnKey.o [2]
-GUI_UC_None              0x800'6a48    0x10  Data  Gb  GUI_UC_EncodeNone.o [2]
-GUI_UC__GetCharCodeInc   0x800'605d    0x22  Code  Gb  GUI_UC.o [2]
+                         0x804'010d     0x24  Code  Gb  GUI_Device.o [2]
+GUI_DEVICE_Delete        0x804'0057      0x4  Code  Gb  GUI_Device.o [2]
+GUI_DEVICE_Link          0x804'00a3     0x6a  Code  Gb  GUI_Device.o [2]
+GUI_DEVICE_Unlink        0x804'00a1      0x2  Code  Gb  GUI_Device.o [2]
+GUI_DEVICE__GetpDriver   0x804'0037     0x20  Code  Gb  GUI_Device.o [2]
+GUI_DecChar             0x2000'0054      0x1  Data  Gb  GUI_Core.o [2]
+GUI_DispCEOL             0x804'4945     0x2c  Code  Gb  GUI_DispCEOL.o [2]
+GUI_DispDecAt            0x804'256b     0x24  Code  Gb  GUI_Val.o [2]
+GUI_DispDecShift         0x804'2525     0x10  Code  Gb  GUI_Val.o [2]
+GUI_DispFloat            0x804'2899     0x44  Code  Gb  GUI_Valf.o [2]
+GUI_DispSDecShift        0x804'2535     0x2c  Code  Gb  GUI_Val.o [2]
+GUI_DispString           0x804'45b9     0xfc  Code  Gb  GUI_DispString.o [2]
+GUI_DispStringAt         0x804'27b9     0x10  Code  Gb  GUI_DispStringAt.o [2]
+GUI_DispStringAtCEOL     0x804'27a9      0xe  Code  Gb  GUI_DispStringAtCEOL.o [2]
+GUI_DispStringInRect     0x804'27a3      0x6  Code  Gb  GUI_DispStringInRect.o [2]
+GUI_DispStringInRectMax
+                         0x804'2761     0x42  Code  Gb  GUI_DispStringInRect.o [2]
+GUI_DrawBitmap           0x804'1fb9     0x54  Code  Gb  GUI_DrawBitmap.o [2]
+GUI_DrawHLine            0x804'2591     0x4c  Code  Gb  GUI_DrawHLine.o [2]
+GUI_DrawLine             0x804'247f     0x30  Code  Gb  GUI_DrawLine.o [2]
+GUI_DrawPoint            0x804'27e5     0x28  Code  Gb  GUI_DrawPoint.o [2]
+GUI_DrawVLine            0x804'25dd     0x44  Code  Gb  GUI_DrawVLine.o [2]
+GUI_F6x8_Mono            0x804'7b48     0x14  Data  Lc  F6x8.o [2]
+GUI_F6x8_TI8859_1        0x804'7b40      0x8  Data  Lc  F6x8.o [2]
+GUI_F6x8_TL8859_1        0x804'7980    0x1c0  Data  Lc  F6x8.o [2]
+GUI_Font6x8              0x804'7b5c     0x24  Data  Gb  F6x8.o [2]
+GUI_Font8ASCII_Prop      0x804'8170      0xc  Data  Gb  F08_ASCII.o [2]
+GUI_Font8_ASCII          0x804'817c     0x24  Data  Gb  F08_ASCII.o [2]
+GUI_Font8_ASCII_CharInfo
+                         0x804'7e78    0x2f8  Data  Lc  F08_ASCII.o [2]
+GUI_Font8x16x2x2         0x803'e488     0x24  Data  Gb  F8x16.o [2]
+GUI_Font8x16x3x3         0x803'e4ac     0x24  Data  Gb  F8x16.o [2]
+GUI_Font8x18             0x803'e43c     0x24  Data  Gb  F8x16.o [2]
+GUI_GetBitsPerPixelEx    0x804'061b      0xe  Code  Gb  LCD_GetEx.o [2]
+GUI_GetBkColor           0x804'8589      0x8  Code  Gb  GUI_GetColor.o [2]
+GUI_GetCharDistX         0x804'46eb      0x6  Code  Gb  GUI_Char.o [2]
+GUI_GetCharDistXEx       0x804'46f9      0x8  Code  Gb  GUI_Char.o [2]
+GUI_GetClientRect        0x804'4709      0xa  Code  Gb  GUI_GetClientRect.o [2]
+GUI_GetColor             0x804'8591      0x6  Code  Gb  GUI_GetColor.o [2]
+GUI_GetFontDistY         0x804'46e1      0xa  Code  Gb  GUI_Char.o [2]
+GUI_GetYAdjust           0x804'46b5     0x2c  Code  Gb  GUI_Char.o [2]
+GUI_GetpfColor2IndexEx   0x804'0653      0xc  Code  Gb  LCD_GetEx.o [2]
+GUI_GetpfIndex2ColorEx   0x804'0647      0xc  Code  Gb  LCD_GetEx.o [2]
+GUI_GotoXY               0x804'0399      0xc  Code  Gb  GUI_Goto.o [2]
+GUI_Init                 0x803'fecb     0xa6  Code  Gb  GUI_Core.o [2]
+GUI_Long2Len             0x804'44b9     0x24  Code  Gb  GUI_AddDecShift.o [2]
+GUI_MEMDEV_Delete        0x803'f741     0x3a  Code  Gb  GUIDEV.o [2]
+GUI_MergeRect            0x803'f6bd     0x58  Code  Gb  GUI_MergeRect.o [2]
+GUI_MoveRect             0x803'f725     0x1c  Code  Gb  GUI_MoveRect.o [2]
+GUI_OrgX                0x2001'4b0c      0x2  Data  Gb  GUI_Core.o [2]
+GUI_OrgY                0x2001'4b0e      0x2  Data  Gb  GUI_Core.o [2]
+GUI_Pow10                0x804'4590     0x28  Data  Gb  GUI_AddDecShift.o [2]
+GUI_RectsIntersect       0x803'f7f5     0x38  Code  Gb  GUI_RectsIntersect.o [2]
+GUI_Reload               0x804'1db1      0xc  Code  Gb  GUI_Frame.o [1]
+GUI_SelectLCD            0x804'023b     0x12  Code  Gb  GUI_SelectLCD.o [2]
+GUI_SelectLayer          0x803'f915     0x1c  Code  Gb  GUI_SelectLayer.o [2]
+GUI_SetBkColor           0x803'fe05      0x4  Code  Gb  GUI_SetColor.o [2]
+GUI_SetColor             0x803'fe09      0x4  Code  Gb  GUI_SetColor.o [2]
+GUI_SetDefaultFont       0x803'fe2f      0x6  Code  Gb  GUI_Core.o [2]
+GUI_SetDrawMode          0x804'42c9      0x4  Code  Gb  GUI_SetDrawMode.o [2]
+GUI_SetFont              0x804'24fd     0x14  Code  Gb  GUI_SetFont.o [2]
+GUI_SetOrg               0x804'0439     0x30  Code  Gb  GUI_SetOrg.o [2]
+GUI_SetPenSize           0x804'2015      0xc  Code  Gb  GUI_Pen.o [2]
+GUI_SetTextMode          0x804'2511     0x14  Code  Gb  GUI_SetTextMode.o [2]
+GUI_SignalEvent          0x803'f715      0xc  Code  Gb  GUI_WaitEvent.o [2]
+GUI_StoreKey             0x803'fdf5      0xc  Code  Gb  GUI_OnKey.o [2]
+GUI_UC_None              0x804'900c     0x10  Data  Gb  GUI_UC_EncodeNone.o [2]
+GUI_UC__GetCharCodeInc   0x804'48c9     0x22  Code  Gb  GUI_UC.o [2]
 GUI_UC__NumChars2NumBytes
-                         0x800'607f    0x24  Code  Gb  GUI_UC.o [2]
-GUI_USAGE_DecUseCnt      0x800'2bc1    0x22  Code  Gb  GUIDEV_Usage.o [2]
-GUI_X_Config             0x800'2cd9    0x24  Code  Gb  GUIConf.o [1]
-GUI_X_Config::aMemory   0x2000'0058  0xc800  Data  Lc  GUIConf.o [1]
-GUI_X_Init               0x800'2d49     0x2  Code  Gb  GUI_X.o [1]
-GUI__Config              0x800'2791    0x22  Code  Gb  GUI_Core.o [2]
-GUI__Context            0x2000'c914    0x78  Data  Lc  GUI_Core.o [2]
-GUI__DispLine            0x800'5eff    0x9e  Code  Gb  GUI_CharLine.o [2]
-GUI__GetLineDistX        0x800'5eb1    0x4e  Code  Gb  GUI_CharLine.o [2]
-GUI__GetLineNumChars     0x800'5e5f    0x36  Code  Gb  GUI_CharLine.o [2]
-GUI__GetOverlap          0x800'5e95    0x1c  Code  Gb  GUI_CharLine.o [2]
-GUI__IntersectRect       0x800'1f2d    0x40  Code  Gb  GUI__IntersectRect.o [2]
-GUI__IntersectRects      0x800'2043    0x62  Code  Gb  GUI__IntersectRects.o [2]
-GUI__ManageCache         0x800'6049     0xa  Code  Gb  GUI__ManageCache.o [2]
-GUI__ManageCacheEx       0x800'5fad    0x90  Code  Gb  GUI__ManageCache.o [2]
-GUI__RegisterExit        0x800'2859     0xa  Code  Gb  GUI_Core.o [2]
-GUI__aConvert_255_31     0x800'6270   0x100  Data  Gb  GUI__DivTbl_255_31.o [2]
-GUI__aConvert_255_63     0x800'6370   0x100  Data  Gb  GUI__DivTbl_255_63.o [2]
-GUI__aConvert_31_255     0x800'6a9c    0x20  Data  Gb  GUI__DivTbl_31_255.o [2]
-GUI__aConvert_63_255     0x800'6934    0x40  Data  Gb  GUI__DivTbl_63_255.o [2]
-GUI__apDevice           0x2000'c98c     0x8  Data  Gb  GUI_Core.o [2]
-GUI__memset              0x800'2ab3    0x54  Code  Gb  GUI__memset.o [2]
-GUI__pFontDefault       0x2000'002c     0x4  Data  Gb  GUI_Core.o [2]
-GUI_acFont6x8            0x800'56e0   0x518  Data  Lc  F6x8.o [2]
-GUI_cos                  0x800'4755     0x6  Code  Gb  GUI_DrawLine.o [2]
-GUI_pContext            0x2000'0030     0x4  Data  Gb  GUI_Core.o [2]
-GUI_pLCD_APIList        0x2000'cc18     0x4  Data  Gb  GUI_Core.o [2]
-GUI_pUC_API             0x2000'0028     0x4  Data  Gb  GUI_Core.o [2]
-GUI_pfDispCharStyle     0x2000'cc14     0x4  Data  Gb  GUI_Core.o [2]
-GUI_sin                  0x800'4703    0x52  Code  Gb  GUI_DrawLine.o [2]
-HAL_CAN_IRQHandler       0x800'42dd   0x1f8  Code  Gb  stm32f4xx_hal_can.o [1]
-HAL_CAN_Init             0x800'41cd    0xe2  Code  Gb  stm32f4xx_hal_can.o [1]
-HAL_CAN_MspInit          0x800'39f9    0x96  Code  Gb  can.o [1]
-HAL_CRC_Init             0x800'44d5    0x22  Code  Gb  stm32f4xx_hal_crc.o [1]
-HAL_CRC_MspInit          0x800'3ab9    0x26  Code  Gb  crc.o [1]
-HAL_Delay                0x800'3571    0x28  Code  Wk  stm32f4xx_hal.o [1]
-HAL_GPIO_Init            0x800'3345   0x1a4  Code  Gb  stm32f4xx_hal_gpio.o [1]
-HAL_GPIO_WritePin        0x800'34e9     0x8  Code  Gb  stm32f4xx_hal_gpio.o [1]
-HAL_GetTick              0x800'37a9     0xc  Code  Wk  stm32f4xx_hal.o [1]
-HAL_IncTick              0x800'68c5    0x10  Code  Wk  stm32f4xx_hal.o [1]
-HAL_Init                 0x800'38d1    0x30  Code  Gb  stm32f4xx_hal.o [1]
-HAL_InitTick             0x800'4155    0x40  Code  Wk  stm32f4xx_hal.o [1]
-HAL_MspInit              0x800'4195    0x38  Code  Gb  stm32f4xx_hal_msp.o [1]
-HAL_NVIC_EnableIRQ       0x800'40ff    0x16  Code  Gb  stm32f4xx_hal_cortex.o [1]
-HAL_NVIC_SetPriority     0x800'40c5    0x3a  Code  Gb  stm32f4xx_hal_cortex.o [1]
+                         0x804'48eb     0x24  Code  Gb  GUI_UC.o [2]
+GUI_USAGE_DecUseCnt      0x804'024d     0x22  Code  Gb  GUIDEV_Usage.o [2]
+GUI_X_Config             0x804'03a9     0x24  Code  Gb  GUIConf.o [1]
+GUI_X_Config::aMemory   0x2000'0120  0x14000  Data  Lc  GUIConf.o [1]
+GUI_X_Init               0x804'041d      0x2  Code  Gb  GUI_X.o [1]
+GUI__Config              0x803'fea9     0x22  Code  Gb  GUI_Core.o [2]
+GUI__Context            0x2001'43b4     0x78  Data  Lc  GUI_Core.o [2]
+GUI__DispLine            0x804'481b     0x9e  Code  Gb  GUI_CharLine.o [2]
+GUI__DispStringInRect    0x804'2621    0x13c  Code  Gb  GUI_DispStringInRect.o [2]
+GUI__DrawBitmap16bpp     0x804'83cd    0x1bc  Code  Gb  GUI__DrawBitmap16bpp.o [2]
+GUI__GetLineDistX        0x804'47cd     0x4e  Code  Gb  GUI_CharLine.o [2]
+GUI__GetLineNumChars     0x804'477b     0x36  Code  Gb  GUI_CharLine.o [2]
+GUI__GetOverlap          0x804'47b1     0x1c  Code  Gb  GUI_CharLine.o [2]
+GUI__HandleEOLine        0x804'4915     0x16  Code  Gb  GUI__HandleEOLine.o [2]
+GUI__IntersectRect       0x803'f67d     0x40  Code  Gb  GUI__IntersectRect.o [2]
+GUI__IntersectRects      0x803'f793     0x62  Code  Gb  GUI__IntersectRects.o [2]
+GUI__ManageCache         0x804'6781      0xa  Code  Gb  GUI__ManageCache.o [2]
+GUI__ManageCacheEx       0x804'66e5     0x90  Code  Gb  GUI__ManageCache.o [2]
+GUI__RegisterExit        0x803'ff71      0xa  Code  Gb  GUI_Core.o [2]
+GUI__aConvert_255_31     0x804'8858    0x100  Data  Gb  GUI__DivTbl_255_31.o [2]
+GUI__aConvert_255_63     0x804'8958    0x100  Data  Gb  GUI__DivTbl_255_63.o [2]
+GUI__aConvert_31_255     0x804'9080     0x20  Data  Gb  GUI__DivTbl_31_255.o [2]
+GUI__aConvert_63_255     0x804'8ed8     0x40  Data  Gb  GUI__DivTbl_63_255.o [2]
+GUI__apDevice           0x2001'442c      0x8  Data  Gb  GUI_Core.o [2]
+GUI__memset              0x804'01e7     0x54  Code  Gb  GUI__memset.o [2]
+GUI__pFontDefault       0x2000'005c      0x4  Data  Gb  GUI_Core.o [2]
+GUI_acFont6x8            0x804'7468    0x518  Data  Lc  F6x8.o [2]
+GUI_cos                  0x804'2081      0x6  Code  Gb  GUI_DrawLine.o [2]
+GUI_main                 0x804'1da5      0xc  Code  Gb  GUI_Frame.o [1]
+GUI_pContext            0x2000'0060      0x4  Data  Gb  GUI_Core.o [2]
+GUI_pLCD_APIList        0x2001'4af0      0x4  Data  Gb  GUI_Core.o [2]
+GUI_pUC_API             0x2000'0058      0x4  Data  Gb  GUI_Core.o [2]
+GUI_pfDispCharStyle     0x2001'4aec      0x4  Data  Gb  GUI_Core.o [2]
+GUI_pfGetpPalConvTable  0x2000'0064      0x4  Data  Gb  GUI_Core.o [2]
+GUI_sin                  0x804'202f     0x52  Code  Gb  GUI_DrawLine.o [2]
+HAL_ADCEx_InjectedConvCpltCallback
+                         0x804'66dd      0x2  Code  Wk  stm32f4xx_hal_adc_ex.o [1]
+HAL_ADC_ConfigChannel    0x804'38c1    0x17c  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_IRQHandler       0x804'3577    0x1e6  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_Init             0x804'3511     0x66  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_MspInit          0x804'2c7b     0xb2  Code  Gb  adc.o [1]
+HAL_ADC_Start_DMA        0x804'375d    0x164  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_CAN_ActivateNotification
+                         0x804'507d     0x34  Code  Gb  stm32f4xx_hal_can.o [1]
+HAL_CAN_ConfigFilter     0x804'4d9d    0x128  Code  Gb  stm32f4xx_hal_can.o [1]
+HAL_CAN_GetRxMessage     0x804'4f25    0x158  Code  Gb  stm32f4xx_hal_can.o [1]
+HAL_CAN_IRQHandler       0x804'50b1    0x224  Code  Gb  stm32f4xx_hal_can.o [1]
+HAL_CAN_Init             0x804'4c31    0x16c  Code  Gb  stm32f4xx_hal_can.o [1]
+HAL_CAN_MspInit          0x804'29cb     0x98  Code  Gb  can.o [1]
+HAL_CAN_RxFifo0FullCallback
+                         0x804'656d      0x2  Code  Gb  can_utils.o [1]
+HAL_CAN_RxFifo0MsgPendingCallback
+                         0x804'6539     0x34  Code  Gb  can_utils.o [1]
+HAL_CAN_Start            0x804'4ec5     0x5c  Code  Gb  stm32f4xx_hal_can.o [1]
+HAL_CRC_Init             0x804'52d5     0x28  Code  Gb  stm32f4xx_hal_crc.o [1]
+HAL_CRC_MspInit          0x804'2a8f     0x26  Code  Gb  crc.o [1]
+HAL_DMA_Abort            0x804'5d63     0x9c  Code  Gb  stm32f4xx_hal_dma.o [1]
+HAL_DMA_Abort_IT         0x804'5dff     0x28  Code  Gb  stm32f4xx_hal_dma.o [1]
+HAL_DMA_IRQHandler       0x804'5e27    0x208  Code  Gb  stm32f4xx_hal_dma.o [1]
+HAL_DMA_Init             0x804'5be9     0xe2  Code  Gb  stm32f4xx_hal_dma.o [1]
+HAL_DMA_Start_IT         0x804'5ccb     0x98  Code  Gb  stm32f4xx_hal_dma.o [1]
+HAL_Delay                0x804'114d     0x28  Code  Wk  stm32f4xx_hal.o [1]
+HAL_FSMC_MspInit         0x804'13c1     0xa8  Code  Lc  fsmc.o [1]
+HAL_GPIO_EXTI_Callback   0x804'12c3     0x3e  Code  Gb  gpio.o [1]
+HAL_GPIO_EXTI_IRQHandler
+                         0x804'1095     0x20  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_Init            0x804'0e55    0x210  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_ReadPin         0x804'1065     0x16  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_WritePin        0x804'107b     0x1a  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GetTick              0x804'1581      0xc  Code  Wk  stm32f4xx_hal.o [1]
+HAL_IncTick              0x804'8c4d     0x18  Code  Wk  stm32f4xx_hal.o [1]
+HAL_Init                 0x804'2901     0x30  Code  Gb  stm32f4xx_hal.o [1]
+HAL_InitTick             0x804'4ba5     0x4c  Code  Wk  stm32f4xx_hal.o [1]
+HAL_MspInit              0x804'4bf1     0x40  Code  Gb  stm32f4xx_hal_msp.o [1]
+HAL_NVIC_EnableIRQ       0x804'16b3      0xe  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority     0x804'1689     0x2a  Code  Gb  stm32f4xx_hal_cortex.o [1]
 HAL_NVIC_SetPriorityGrouping
-                         0x800'40ab    0x1a  Code  Gb  stm32f4xx_hal_cortex.o [1]
-HAL_RCC_ClockConfig      0x800'3ef5    0xfa  Code  Gb  stm32f4xx_hal_rcc.o [1]
-HAL_RCC_GetPCLK1Freq     0x800'3ffb    0x10  Code  Gb  stm32f4xx_hal_rcc.o [1]
-HAL_RCC_GetPCLK2Freq     0x800'400b     0xe  Code  Gb  stm32f4xx_hal_rcc.o [1]
-HAL_RCC_OscConfig        0x800'3c15   0x2e0  Code  Wk  stm32f4xx_hal_rcc.o [1]
-HAL_SRAM_Init            0x800'351d    0x52  Code  Gb  stm32f4xx_hal_sram.o [1]
-HAL_SRAM_MspInit         0x800'3633    0x6c  Code  Gb  fsmc.o [1]
-HAL_SYSTICK_Config       0x800'4115    0x28  Code  Gb  stm32f4xx_hal_cortex.o [1]
-HAL_UART_Init            0x800'44f9    0x1e  Code  Gb  stm32f4xx_hal_uart.o [1]
-HAL_UART_MspInit         0x800'3b1d    0x66  Code  Gb  usart.o [1]
-HardFault_Handler        0x800'67f3     0x2  Code  Gb  stm32f4xx_it.o [1]
-LCD_API_ColorConv_0      0x800'6b1c    0x18  Data  Gb  GUICC_0.o [2]
-LCD_API_ColorConv_M565   0x800'6b04    0x18  Data  Gb  GUICC_M565.o [2]
-LCD_Color2Index          0x800'2675    0x12  Code  Gb  LCD.o [2]
-LCD_DrawBitmap           0x800'23bf   0x1d8  Code  Gb  LCD.o [2]
-LCD_DrawHLine            0x800'22e1    0x3a  Code  Gb  LCD.o [2]
-LCD_DrawPixel            0x800'2287    0x5a  Code  Gb  LCD.o [2]
-LCD_DrawVLine            0x800'231b    0x3a  Code  Gb  LCD.o [2]
-LCD_Fast_DrawPoint       0x800'308f    0x42  Code  Gb  ILI93xx.o [1]
-LCD_FillRect             0x800'236b    0x54  Code  Gb  LCD.o [2]
-LCD_GetBitsPerPixelEx    0x800'2f2f     0x4  Code  Gb  LCD_GetEx.o [2]
-LCD_GetNumColors         0x800'2f37     0x8  Code  Gb  LCD_GetEx.o [2]
-LCD_GetNumColorsEx       0x800'2f33     0x4  Code  Gb  LCD_GetEx.o [2]
-LCD_GetNumLayers         0x800'2e6d    0x1a  Code  Gb  LCD_GetNumDisplays.o [2]
-LCD_GetPalette           0x800'2f55     0x8  Code  Gb  LCD_GetEx.o [2]
-LCD_GetPaletteEx         0x800'2f3f    0x16  Code  Gb  LCD_GetEx.o [2]
-LCD_Index2Color          0x800'2687    0x12  Code  Gb  LCD.o [2]
-LCD_Index2Color_M565     0x800'69e1    0x2c  Code  Gb  GUICC_M565_Index2Color.o [2]
-LCD_InitColors           0x800'2c25    0x28  Code  Gb  LCD_Color.o [2]
-LCD_InitLUT              0x800'2c4d    0x6c  Code  Gb  LCD_Color.o [2]
-LCD_ReadPoint            0x800'3305    0x22  Code  Gb  ILI93xx.o [1]
-LCD_SelectLCD            0x800'2df5    0x44  Code  Gb  LCD_SelectLCD.o [2]
-LCD_SetBkColor           0x800'26bd     0x8  Code  Gb  LCD.o [2]
-LCD_SetBkColorIndex      0x800'26ab    0x12  Code  Gb  LCD.o [2]
-LCD_SetClipRectEx        0x800'18cd    0x30  Code  Gb  LCD_SetClipRectEx.o [2]
-LCD_SetClipRectMax       0x800'25d5    0x14  Code  Gb  LCD.o [2]
-LCD_SetColor             0x800'26c5     0x8  Code  Gb  LCD.o [2]
-LCD_SetColorIndex        0x800'2699    0x12  Code  Gb  LCD.o [2]
-LCD_SetCursor            0x800'2fd5    0xba  Code  Gb  ILI93xx.o [1]
-LCD_SetDrawMode          0x800'227d     0xa  Code  Gb  LCD.o [2]
-LCD_SetLUTEntryEx        0x800'2eeb    0x24  Code  Gb  LCD_Set.o [2]
-LCD_SetSizeEx            0x800'2ead    0x24  Code  Gb  LCD_Set.o [2]
-LCD_SetVSizeEx           0x800'2e89    0x24  Code  Gb  LCD_Set.o [2]
-LCD_UpdateColorIndices   0x800'2e39    0x24  Code  Gb  LCD_UpdateColorIndices.o [2]
-LCD_X_Config             0x800'2cfd    0x22  Code  Gb  LCDConf_FlexColor_Template.o [1]
-LCD_X_DisplayDriver      0x800'2d35    0x14  Code  Gb  LCDConf_FlexColor_Template.o [1]
-LCD__GetBPP              0x800'2f61    0x72  Code  Gb  LCD_GetEx.o [2]
-LCD__aConvTable         0x2000'003c     0x4  Data  Gb  LCD_Color.o [2]
-LCD__pSetColorAPI       0x2000'0034     0x4  Data  Gb  LCD.o [2]
-MX_CAN1_Init             0x800'39c5    0x34  Code  Gb  can.o [1]
-MX_CRC_Init              0x800'3aa1    0x18  Code  Gb  crc.o [1]
-MX_FSMC_Init             0x800'3599    0x9a  Code  Gb  fsmc.o [1]
-MX_GPIO_Init             0x800'3905    0xaa  Code  Gb  gpio.o [1]
-MX_USART1_UART_Init      0x800'3aed    0x30  Code  Gb  usart.o [1]
-MemManage_Handler        0x800'67f5     0x2  Code  Gb  stm32f4xx_it.o [1]
-NMI_Handler              0x800'67f1     0x2  Code  Gb  stm32f4xx_it.o [1]
-POINT_COLOR             0x2000'0010     0x2  Data  Gb  ILI93xx.o [1]
-PendSV_Handler           0x800'67ff     0x2  Code  Gb  stm32f4xx_it.o [1]
-Region$$Table$$Base      0x800'6a7c           --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'6a9c           --   Gb  - Linker created -
-SVC_Handler              0x800'67fb     0x2  Code  Gb  stm32f4xx_it.o [1]
-SysTick_Handler          0x800'6801    0x70  Code  Gb  stm32f4xx_it.o [1]
-SystemClock_Config       0x800'37fb    0x92  Code  Gb  main.o [1]
-SystemCoreClock         0x2000'0020     0x4  Data  Gb  system_stm32f4xx.o [1]
-SystemInit               0x800'68d5    0x3a  Code  Gb  system_stm32f4xx.o [1]
-TFTSRAM_Handler         0x2000'caac    0x50  Data  Gb  ILI93xx.o [1]
-TFT_LCD_Init             0x800'30d9   0x22c  Code  Gb  ILI93xx.o [1]
-TransInfo8x16            0x800'0d78     0x8  Data  Lc  F8x16.o [2]
-TransList8x16            0x800'0bb8   0x1c0  Data  Lc  F8x16.o [2]
-UART_SetConfig           0x800'456f   0x126  Code  Lc  stm32f4xx_hal_uart.o [1]
-UsageFault_Handler       0x800'67f9     0x2  Code  Gb  stm32f4xx_it.o [1]
-WM_Activate              0x800'178f     0xc  Code  Gb  WM.o [2]
-WM_BringToBottom         0x800'2141    0x82  Code  Gb  WM_BringToBottom.o [2]
-WM_CreateWindowAsChild   0x800'1333   0x13e  Code  Gb  WM.o [2]
-WM_DefaultProc           0x800'179b    0x44  Code  Gb  WM.o [2]
-WM_GetDesktopWindow      0x800'2d4d    0x18  Code  Gb  WM_GetDesktopWindow.o [2]
-WM_GetFirstChild         0x800'2035     0xe  Code  Gb  WM_GetFirstChild.o [2]
-WM_GetParent             0x800'2c05     0xe  Code  Gb  WM_GetParent.o [2]
-WM_Init                  0x800'17fb    0xb2  Code  Gb  WM.o [2]
-WM_InvalidateRect        0x800'12b9    0x76  Code  Gb  WM.o [2]
-WM_InvalidateWindow      0x800'132f     0x4  Code  Gb  WM.o [2]
+                         0x804'167d      0xc  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_RCC_ClockConfig      0x804'40a5    0x13e  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq      0x804'41e3      0x6  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq     0x804'41e9     0x16  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq     0x804'41ff     0x16  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x804'3d25    0x380  Code  Wk  stm32f4xx_hal_rcc.o [1]
+HAL_SRAM_Init            0x804'10f1     0x5c  Code  Gb  stm32f4xx_hal_sram.o [1]
+HAL_SRAM_MspInit         0x804'1469      0xa  Code  Gb  fsmc.o [1]
+HAL_SYSTICK_Config       0x804'16c1      0xc  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_TIMEx_MasterConfigSynchronization
+                         0x804'6139     0x4e  Code  Gb  stm32f4xx_hal_tim_ex.o [1]
+HAL_TIM_Base_Init        0x804'2f45     0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_Base_MspInit     0x804'2e35     0x26  Code  Gb  tim.o [1]
+HAL_TIM_ConfigClockSource
+                         0x804'3115     0xec  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_MspPostInit      0x804'2e5b     0x50  Code  Gb  tim.o [1]
+HAL_TIM_PWM_ConfigChannel
+                         0x804'3015    0x100  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PWM_Init         0x804'2f7d     0x38  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PWM_Start        0x804'2fb5     0x58  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_UART_DMAStop         0x804'54bf     0x72  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_IDLECallback    0x804'6219     0x88  Code  Gb  cmd.o [1]
+HAL_UART_IRQHandler      0x804'5531    0x14a  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_Init            0x804'52fd     0x76  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_MspInit         0x804'2af5     0xf2  Code  Gb  usart.o [1]
+HAL_UART_Receive_DMA     0x804'5409     0xb6  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_Transmit_DMA    0x804'5373     0x96  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_TxCpltCallback
+                         0x804'63cd      0x2  Code  Gb  cmd.o [1]
+HCAN                    0x2001'49bc     0x28  Data  Gb  can_utils.o [1]
+HEAP$$Base              0x2001'5118            --   Gb  - Linker created -
+HEAP$$Limit             0x2001'5818            --   Gb  - Linker created -
+HardFault_Handler        0x804'8b5b      0x2  Code  Gb  stm32f4xx_it.o [1]
+HashTable_create         0x804'67ef     0x5a  Code  Gb  hash.o [1]
+HashTable_get            0x804'68e3     0x60  Code  Gb  hash.o [1]
+HashTable_insert         0x804'6849     0x9a  Code  Gb  hash.o [1]
+HashTable_map            0x804'6943     0x74  Code  Gb  hash.o [1]
+LCD_API_ColorConv_0      0x804'9104     0x18  Data  Gb  GUICC_0.o [2]
+LCD_API_ColorConv_M565   0x804'90ec     0x18  Data  Gb  GUICC_M565.o [2]
+LCD_Color2Index          0x803'fd8d     0x12  Code  Gb  LCD.o [2]
+LCD_DrawBitmap           0x803'fad7    0x1d8  Code  Gb  LCD.o [2]
+LCD_DrawHLine            0x803'f9f9     0x3a  Code  Gb  LCD.o [2]
+LCD_DrawPixel            0x803'f99f     0x5a  Code  Gb  LCD.o [2]
+LCD_DrawVLine            0x803'fa33     0x3a  Code  Gb  LCD.o [2]
+LCD_Fast_DrawPoint       0x804'0843     0x58  Code  Gb  ILI93xx.o [1]
+LCD_FillRect             0x803'fa83     0x54  Code  Gb  LCD.o [2]
+LCD_GetBitsPerPixelEx    0x804'060b      0x4  Code  Gb  LCD_GetEx.o [2]
+LCD_GetBkColorIndex      0x804'85a1      0xa  Code  Gb  LCD_GetColorIndex.o [2]
+LCD_GetColorIndex        0x804'85ab      0xa  Code  Gb  LCD_GetColorIndex.o [2]
+LCD_GetNextPixelAPI      0x804'8393     0x24  Code  Gb  LCD_NextPixelAPI.o [2]
+LCD_GetNumColors         0x804'0613      0x8  Code  Gb  LCD_GetEx.o [2]
+LCD_GetNumColorsEx       0x804'060f      0x4  Code  Gb  LCD_GetEx.o [2]
+LCD_GetNumLayers         0x804'0549     0x1a  Code  Gb  LCD_GetNumDisplays.o [2]
+LCD_GetPalette           0x804'063f      0x8  Code  Gb  LCD_GetEx.o [2]
+LCD_GetPaletteEx         0x804'0629     0x16  Code  Gb  LCD_GetEx.o [2]
+LCD_GetpPalConvTableBM   0x804'031b      0x2  Code  Gb  LCD_Color.o [2]
+LCD_GetpPalConvTableUncached
+                         0x804'02d9     0x42  Code  Gb  LCD_Color.o [2]
+LCD_Index2Color          0x803'fd9f     0x12  Code  Gb  LCD.o [2]
+LCD_Index2Color_565      0x804'8fa5     0x2c  Code  Gb  GUICC_565_Index2Color.o [2]
+LCD_Index2Color_M565     0x804'8f79     0x2c  Code  Gb  GUICC_M565_Index2Color.o [2]
+LCD_InitColors           0x804'02b1     0x28  Code  Gb  LCD_Color.o [2]
+LCD_InitLUT              0x804'031d     0x6c  Code  Gb  LCD_Color.o [2]
+LCD_RD_DATA              0x804'06ed      0xa  Code  Gb  ILI93xx.o [1]
+LCD_ReInit               0x804'0ba9    0x242  Code  Gb  ILI93xx.o [1]
+LCD_ReadPoint            0x804'0df9     0x40  Code  Gb  ILI93xx.o [1]
+LCD_SelectLCD            0x804'04d1     0x44  Code  Gb  LCD_SelectLCD.o [2]
+LCD_SetBkColor           0x803'fdd5      0x8  Code  Gb  LCD.o [2]
+LCD_SetBkColorIndex      0x803'fdc3     0x12  Code  Gb  LCD.o [2]
+LCD_SetClipRectEx        0x803'efe5     0x30  Code  Gb  LCD_SetClipRectEx.o [2]
+LCD_SetClipRectMax       0x803'fced     0x14  Code  Gb  LCD.o [2]
+LCD_SetColor             0x803'fddd      0x8  Code  Gb  LCD.o [2]
+LCD_SetColorIndex        0x803'fdb1     0x12  Code  Gb  LCD.o [2]
+LCD_SetCursor            0x804'0705    0x13e  Code  Gb  ILI93xx.o [1]
+LCD_SetDrawMode          0x803'f995      0xa  Code  Gb  LCD.o [2]
+LCD_SetLUTEntryEx        0x804'05c7     0x24  Code  Gb  LCD_Set.o [2]
+LCD_SetSizeEx            0x804'0589     0x24  Code  Gb  LCD_Set.o [2]
+LCD_SetVSizeEx           0x804'0565     0x24  Code  Gb  LCD_Set.o [2]
+LCD_UpdateColorIndices   0x804'0515     0x24  Code  Gb  LCD_UpdateColorIndices.o [2]
+LCD_WR_DATA              0x804'06e5      0x8  Code  Gb  ILI93xx.o [1]
+LCD_WR_REG               0x804'06dd      0x8  Code  Gb  ILI93xx.o [1]
+LCD_WriteReg             0x804'06f7      0xe  Code  Gb  ILI93xx.o [1]
+LCD_X_Config             0x804'03cd     0x2c  Code  Gb  LCDConf_FlexColor_Template.o [1]
+LCD_X_DisplayDriver      0x804'0401     0x1a  Code  Gb  LCDConf_FlexColor_Template.o [1]
+LCD__GetBPP              0x804'0669     0x72  Code  Gb  LCD_GetEx.o [2]
+LCD__aConvTable         0x2000'0070      0x4  Data  Gb  LCD_Color.o [2]
+LCD__pSetColorAPI       0x2000'0068      0x4  Data  Gb  LCD.o [2]
+LCD_aMirror              0x804'8a58    0x100  Data  Gb  LCD_Mirror.o [2]
+LED_main                 0x804'3cd9     0x30  Code  Gb  ledpwm.o [1]
+LoadInt                  0x803'bd0b     0x7a  Code  Lc  xprintffull.o [3]
+MX_ADC1_Init             0x804'2c0d     0x6e  Code  Gb  adc.o [1]
+MX_CAN1_Init             0x804'2985     0x46  Code  Gb  can.o [1]
+MX_CRC_Init              0x804'2a79     0x16  Code  Gb  crc.o [1]
+MX_DMA_Init              0x804'2935     0x50  Code  Gb  dma.o [1]
+MX_FSMC_Init             0x804'1319     0xa8  Code  Gb  fsmc.o [1]
+MX_GPIO_Init             0x804'1175    0x14e  Code  Gb  gpio.o [1]
+MX_TIM3_Init             0x804'2d4d     0xe8  Code  Gb  tim.o [1]
+MX_USART1_UART_Init      0x804'2ac1     0x34  Code  Gb  usart.o [1]
+MemManage_Handler        0x804'8b5d      0x2  Code  Gb  stm32f4xx_it.o [1]
+NMI_Handler              0x804'8b59      0x2  Code  Gb  stm32f4xx_it.o [1]
+NVIC_EncodePriority      0x804'160d     0x40  Code  Lc  stm32f4xx_hal_cortex.o [1]
+PendSV_Handler           0x804'8b67      0x2  Code  Gb  stm32f4xx_it.o [1]
+Region$$Table$$Base      0x804'9040            --   Gb  - Linker created -
+Region$$Table$$Limit     0x804'9060            --   Gb  - Linker created -
+RxHeader                0x2001'49e4     0x1c  Data  Gb  can_utils.o [1]
+SVC_Handler              0x804'8b63      0x2  Code  Gb  stm32f4xx_it.o [1]
+SysTick_Config           0x804'164d     0x30  Code  Lc  stm32f4xx_hal_cortex.o [1]
+SysTick_Handler          0x804'8b69     0x38  Code  Gb  stm32f4xx_it.o [1]
+SystemClock_Config       0x804'1e29     0xa2  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'0050      0x4  Data  Gb  system_stm32f4xx.o [1]
+SystemInit               0x804'8e25     0x40  Code  Gb  system_stm32f4xx.o [1]
+TFTSRAM_Handler         0x2001'479c     0x50  Data  Gb  ILI93xx.o [1]
+TFT_LCD_Init             0x804'089b    0x30e  Code  Gb  ILI93xx.o [1]
+TIM_Base_SetConfig       0x804'3201     0xc0  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_CCxChannelCmd        0x804'34eb     0x24  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_ETR_SetConfig        0x804'34d3     0x18  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_ITRx_SetConfig       0x804'34c3     0x10  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC1_SetConfig        0x804'32c1     0x64  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC2_SetConfig        0x804'3325     0x6e  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_OC3_SetConfig        0x804'3393     0x6c  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC4_SetConfig        0x804'33ff     0x4c  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI1_ConfigInputStage
+                         0x804'3479     0x24  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI2_ConfigInputStage
+                         0x804'349d     0x26  Code  Lc  stm32f4xx_hal_tim.o [1]
+TransInfo8x16            0x803'e420      0x8  Data  Lc  F8x16.o [2]
+TransList8x16            0x803'e260    0x1c0  Data  Lc  F8x16.o [2]
+TxHeader                0x2001'4a1c     0x18  Data  Gb  can_utils.o [1]
+UART_DMAAbortOnError     0x804'57a5     0x16  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_DMAError            0x804'5715     0x58  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_DMAReceiveCplt      0x804'56c1     0x44  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_DMARxHalfCplt       0x804'5705      0xe  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_DMATransmitCplt     0x804'567d     0x34  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_DMATxHalfCplt       0x804'56b1      0xe  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_EndRxTransfer       0x804'5781     0x20  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_EndTransmit_IT      0x804'582b     0x20  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_EndTxTransfer       0x804'576d     0x14  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_Receive_IT          0x804'584b     0xae  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_SetConfig           0x804'58f9    0x2e2  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_Transmit_IT         0x804'57bd     0x6e  Code  Lc  stm32f4xx_hal_uart.o [1]
+USART1_IRQHandler        0x804'8bf1     0x1a  Code  Gb  stm32f4xx_it.o [1]
+UsageFault_Handler       0x804'8b61      0x2  Code  Gb  stm32f4xx_it.o [1]
+WM_Activate              0x803'eea7      0xc  Code  Gb  WM.o [2]
+WM_BringToBottom         0x803'f891     0x82  Code  Gb  WM_BringToBottom.o [2]
+WM_CreateWindowAsChild   0x803'ea4b    0x13e  Code  Gb  WM.o [2]
+WM_DefaultProc           0x803'eeb3     0x44  Code  Gb  WM.o [2]
+WM_GetClientRect         0x803'ffd3     0x12  Code  Gb  WM_GetClientRect.o [2]
+WM_GetDesktopWindow      0x804'0421     0x18  Code  Gb  WM_GetDesktopWindow.o [2]
+WM_GetFirstChild         0x803'f785      0xe  Code  Gb  WM_GetFirstChild.o [2]
+WM_GetParent             0x804'0291      0xe  Code  Gb  WM_GetParent.o [2]
+WM_Init                  0x803'ef13     0xb2  Code  Gb  WM.o [2]
+WM_InvalidateRect        0x803'e9d1     0x76  Code  Gb  WM.o [2]
+WM_InvalidateWindow      0x803'ea47      0x4  Code  Gb  WM.o [2]
 WM_InvalidateWindowAndDescsEx
-                         0x800'100f    0x54  Code  Gb  WM.o [2]
-WM_MULTIBUF__pAPI       0x2000'c9e8     0x4  Data  Gb  WM.o [2]
-WM_SelectWindow          0x800'14a7    0x36  Code  Gb  WM.o [2]
-WM_SendToParent          0x800'28bb    0x1c  Code  Gb  WM_SendToParent.o [2]
-WM__ActivateClipRect     0x800'0ee9    0x3e  Code  Gb  WM.o [2]
-WM__AddCriticalHandle    0x800'2a05     0xa  Code  Gb  WM_CriticalHandle.o [2]
-WM__Client2Screen        0x800'0fbd    0x10  Code  Gb  WM.o [2]
+                         0x803'e727     0x54  Code  Gb  WM.o [2]
+WM_MULTIBUF__pAPI       0x2001'4488      0x4  Data  Gb  WM.o [2]
+WM_SelectWindow          0x803'ebbf     0x36  Code  Gb  WM.o [2]
+WM_SendToParent          0x803'fff1     0x1c  Code  Gb  WM_SendToParent.o [2]
+WM_SetUserClipRect       0x804'492d     0x18  Code  Gb  WM_SetUserClipRect.o [2]
+WM__ActivateClipRect     0x803'e601     0x3e  Code  Gb  WM.o [2]
+WM__AddCriticalHandle    0x804'0139      0xa  Code  Gb  WM_CriticalHandle.o [2]
+WM__Client2Screen        0x803'e6d5     0x10  Code  Gb  WM.o [2]
 WM__ClipAtParentBorders
-                         0x800'0ea7    0x42  Code  Gb  WM.o [2]
-WM__CreateFlags         0x2000'c9e0     0x4  Data  Gb  WM.o [2]
-WM__FirstWin            0x2000'c9d0     0x4  Data  Gb  WM.o [2]
-WM__GetClientRectEx      0x800'2899    0x22  Code  Gb  WM_GetClientRect.o [2]
-WM__GetClientRectWin     0x800'12a1    0x18  Code  Gb  WM.o [2]
-WM__GetFirstSibling      0x800'2e5d    0x10  Code  Gb  WM__GetFirstSibling.o [2]
-WM__GetNextIVR           0x800'161b    0x36  Code  Gb  WM.o [2]
-WM__GetPrevSibling       0x800'2be3    0x22  Code  Gb  WM__GetPrevSibling.o [2]
-WM__GetTopLevelLayer     0x800'147b    0x18  Code  Gb  WM.o [2]
-WM__InitIVRSearch        0x800'1651    0xd8  Code  Gb  WM.o [2]
+                         0x803'e5bf     0x42  Code  Gb  WM.o [2]
+WM__CreateFlags         0x2001'4480      0x4  Data  Gb  WM.o [2]
+WM__FirstWin            0x2001'4470      0x4  Data  Gb  WM.o [2]
+WM__GetClientRectEx      0x803'ffb1     0x22  Code  Gb  WM_GetClientRect.o [2]
+WM__GetClientRectWin     0x803'e9b9     0x18  Code  Gb  WM.o [2]
+WM__GetFirstSibling      0x804'0539     0x10  Code  Gb  WM__GetFirstSibling.o [2]
+WM__GetNextIVR           0x803'ed33     0x36  Code  Gb  WM.o [2]
+WM__GetPrevSibling       0x804'026f     0x22  Code  Gb  WM__GetPrevSibling.o [2]
+WM__GetTopLevelLayer     0x803'eb93     0x18  Code  Gb  WM.o [2]
+WM__InitIVRSearch        0x803'ed69     0xd8  Code  Gb  WM.o [2]
 WM__InsertWindowIntoList
-                         0x800'0f27    0x96  Code  Gb  WM.o [2]
-WM__Invalidate1Abs       0x800'0ea3     0x4  Code  Gb  WM.o [2]
+                         0x803'e63f     0x96  Code  Gb  WM.o [2]
+WM__Invalidate1Abs       0x803'e5bb      0x4  Code  Gb  WM.o [2]
 WM__InvalidateDrawAndDescs
-                         0x800'0fcd    0x42  Code  Gb  WM.o [2]
-WM__InvalidateRect       0x800'106d    0x70  Code  Gb  WM.o [2]
-WM__InvalidateRectEx     0x800'10dd     0x4  Code  Gb  WM.o [2]
-WM__NumInvalidWindows   0x2000'c9b0     0x2  Data  Gb  WM.o [2]
-WM__NumWindows          0x2000'c9ae     0x2  Data  Gb  WM.o [2]
-WM__PaintCallbackCnt    0x2000'c9ac     0x1  Data  Gb  WM.o [2]
-WM__RectIsNZ             0x800'10e7    0x20  Code  Gb  WM.o [2]
+                         0x803'e6e5     0x42  Code  Gb  WM.o [2]
+WM__InvalidateRect       0x803'e785     0x70  Code  Gb  WM.o [2]
+WM__InvalidateRectEx     0x803'e7f5      0x4  Code  Gb  WM.o [2]
+WM__NumInvalidWindows   0x2001'4450      0x2  Data  Gb  WM.o [2]
+WM__NumWindows          0x2001'444e      0x2  Data  Gb  WM.o [2]
+WM__PaintCallbackCnt    0x2001'444c      0x1  Data  Gb  WM.o [2]
+WM__RectIsNZ             0x803'e7ff     0x20  Code  Gb  WM.o [2]
 WM__SelectTopLevelLayer
-                         0x800'1493    0x14  Code  Gb  WM.o [2]
-WM__SendMessage          0x800'20dd    0x40  Code  Gb  WM__SendMessage.o [2]
-WM__SendMsgNoData        0x800'128f    0x12  Code  Gb  WM.o [2]
-WM__TouchedLayer        0x2000'c9cc     0x4  Data  Gb  WM.o [2]
-WM__TransWindowCnt      0x2000'c9ec     0x4  Data  Gb  WM.o [2]
-WM__aBkColor            0x2000'c9d8     0x8  Data  Gb  WM.o [2]
-WM__aCHWinLast          0x2000'cb54    0x10  Data  Gb  WM_Touch.o [2]
-WM__aCHWinModal         0x2000'cbd4    0x10  Data  Gb  WM_Touch.o [2]
-WM__aCHWinMouseOver     0x2000'cb64    0x10  Data  Gb  WM_Touch.o [2]
-WM__ahCapture           0x2000'c9bc     0x8  Data  Gb  WM.o [2]
-WM__ahDesktopWin        0x2000'c9b4     0x8  Data  Gb  WM.o [2]
-WM__ahWinFocus          0x2000'c9c4     0x8  Data  Gb  WM.o [2]
-WM__hATransWindow       0x2000'c9f0     0x4  Data  Gb  WM.o [2]
+                         0x803'ebab     0x14  Code  Gb  WM.o [2]
+WM__SendMessage          0x803'f82d     0x40  Code  Gb  WM__SendMessage.o [2]
+WM__SendMsgNoData        0x803'e9a7     0x12  Code  Gb  WM.o [2]
+WM__TouchedLayer        0x2001'446c      0x4  Data  Gb  WM.o [2]
+WM__TransWindowCnt      0x2001'448c      0x4  Data  Gb  WM.o [2]
+WM__aBkColor            0x2001'4478      0x8  Data  Gb  WM.o [2]
+WM__aCHWinLast          0x2001'490c     0x10  Data  Gb  WM_Touch.o [2]
+WM__aCHWinModal         0x2001'4a70     0x10  Data  Gb  WM_Touch.o [2]
+WM__aCHWinMouseOver     0x2001'491c     0x10  Data  Gb  WM_Touch.o [2]
+WM__ahCapture           0x2001'445c      0x8  Data  Gb  WM.o [2]
+WM__ahDesktopWin        0x2001'4454      0x8  Data  Gb  WM.o [2]
+WM__ahWinFocus          0x2001'4464      0x8  Data  Gb  WM.o [2]
+WM__hATransWindow       0x2001'4490      0x4  Data  Gb  WM.o [2]
 WM__pFirstCriticalHandle
-                        0x2000'c9d4     0x4  Data  Gb  WM.o [2]
-WM_pfPollPID            0x2000'c9e4     0x4  Data  Gb  WM.o [2]
-_Add                     0x800'4d6f    0x2e  Code  Lc  GUI_FillPolygon.o [2]
-_AddFreeMemory           0x800'1957    0x78  Code  Lc  GUI_Alloc.o [2]
-_Alloc                   0x800'1cdb    0xe4  Code  Lc  GUI_Alloc.o [2]
-_CalcSizeOfChar          0x800'6a3d     0x4  Code  Lc  GUI_UC_EncodeNone.o [2]
-_CheckYInterSect         0x800'4d11    0x5e  Code  Lc  GUI_FillPolygon.o [2]
-_ClipContext            0x2000'c994    0x18  Data  Lc  WM.o [2]
-_Color2IndexBulk         0x800'6657    0x3a  Code  Lc  GUICC_M565.o [2]
-_Color2Index_0           0x800'66f1    0x50  Code  Lc  GUICC_0.o [2]
-_Color2Index_M565        0x800'6631    0x20  Code  Lc  GUICC_M565.o [2]
-_Config                 0x2000'cbc0     0xc  Data  Lc  GUI_Alloc.o [2]
-_DeleteWindows          0x2000'c9f8     0x4  Data  Lc  WM.o [2]
-_DesktopHandle2Index     0x800'0db9    0x1e  Code  Lc  WM.o [2]
-_DispLine                0x800'5dfb    0x64  Code  Lc  GUI_CharLine.o [2]
-_DrawBitLine16BPP        0x800'53af    0x1e  Code  Lc  GUIDRV_Template.o [1]
-_DrawBitLine1BPP         0x800'5065    0xa6  Code  Lc  GUIDRV_Template.o [1]
-_DrawBitLine2BPP         0x800'511d    0xc0  Code  Lc  GUIDRV_Template.o [1]
-_DrawBitLine32BPP        0x800'53cd    0x1e  Code  Lc  GUIDRV_Template.o [1]
-_DrawBitLine4BPP         0x800'51e9    0xc0  Code  Lc  GUIDRV_Template.o [1]
-_DrawBitLine8BPP         0x800'531f    0x84  Code  Lc  GUIDRV_Template.o [1]
-_DrawBitmap              0x800'53ff    0xf0  Code  Lc  GUIDRV_Template.o [1]
-_DrawHLine               0x800'5051     0x6  Code  Lc  GUIDRV_Template.o [1]
-_DrawVLine               0x800'5057     0x6  Code  Lc  GUIDRV_Template.o [1]
-_Encode                  0x800'6a41     0x6  Code  Lc  GUI_UC_EncodeNone.o [2]
-_EnlargeBlocks           0x800'1b91    0x88  Code  Lc  GUI_Alloc.o [2]
-_FillRect                0x800'4ff9    0x58  Code  Lc  GUIDRV_Template.o [1]
-_FindNext_IVR            0x800'14dd   0x12e  Code  Lc  WM.o [2]
-_Findx0                  0x800'11af    0x70  Code  Lc  WM.o [2]
-_Findx1                  0x800'1227    0x5c  Code  Lc  WM.o [2]
-_Findy1                  0x800'1107    0x92  Code  Lc  WM.o [2]
-_GetCharCode             0x800'6a35     0x4  Code  Lc  GUI_UC_EncodeNone.o [2]
-_GetCharSize             0x800'6a39     0x4  Code  Lc  GUI_UC_EncodeNone.o [2]
-_GetDevData              0x800'557d     0x4  Code  Lc  GUIDRV_Template.o [1]
-_GetDevFunc              0x800'5671    0x32  Code  Lc  GUIDRV_Template.o [1]
-_GetDevProp              0x800'5541    0x3c  Code  Lc  GUIDRV_Template.o [1]
-_GetDevProp              0x800'2f11    0x1e  Code  Lc  LCD_GetEx.o [2]
-_GetIndexMask_0          0x800'675f    0x52  Code  Lc  GUICC_0.o [2]
-_GetIndexMask_M565       0x800'6651     0x6  Code  Lc  GUICC_M565.o [2]
-_GetMinIndex             0x800'18fd    0x18  Code  Lc  GUI_Alloc.o [2]
-_GetPixelIndex           0x800'4fc3    0x10  Code  Lc  GUIDRV_Template.o [1]
-_GetRect                 0x800'5581    0x16  Code  Lc  GUIDRV_Template.o [1]
-_HL_APIList              0x800'2890     0x8  Data  Lc  GUI_Core.o [2]
-_Index2ColorBulk         0x800'6691    0x4c  Code  Lc  GUICC_M565.o [2]
-_Index2Color_0           0x800'6741    0x1e  Code  Lc  GUICC_0.o [2]
-_Init                    0x800'5629    0x18  Code  Lc  GUIDRV_Template.o [1]
-_InitOnce                0x800'5515    0x2a  Code  Lc  GUIDRV_Template.o [1]
-_InitOnce                0x800'1c19    0xa2  Code  Lc  GUI_Alloc.o [2]
-_Invalidate1Abs          0x800'0e21    0x82  Code  Lc  WM.o [2]
-_IsInited               0x2000'c9ad     0x1  Data  Lc  WM.o [2]
-_IsInitialized          0x2000'cbe4     0x4  Data  Lc  GUI_Core.o [2]
-_Key                    0x2000'0050     0x4  Data  Lc  GUI_OnKey.o [2]
-_Log2VisBuffered         0x800'5df9     0x2  Code  Lc  GUI_CharLine.o [2]
-_NextDrawWin            0x2000'c9f4     0x4  Data  Lc  WM.o [2]
-_NumColors              0x2000'0038     0x4  Data  Lc  LCD_Color.o [2]
-_Off                     0x800'5647     0x4  Code  Lc  GUIDRV_Template.o [1]
-_On                      0x800'5641     0x6  Code  Lc  GUIDRV_Template.o [1]
-_OnExit                  0x800'1b5f    0x32  Code  Lc  GUI_Alloc.o [2]
-_OnExit                  0x800'26f5    0x22  Code  Lc  GUI_Core.o [2]
-_OnExit                  0x800'17df    0x1c  Code  Lc  WM.o [2]
-_OnExit                  0x800'2c15    0x10  Code  Lc  LCD_Color.o [2]
-_PushFreeBlock           0x800'1cbb    0x20  Code  Lc  GUI_Alloc.o [2]
-_RemoveFreeBlock         0x800'1925    0x32  Code  Lc  GUI_Alloc.o [2]
-_RemoveHoles             0x800'19cf    0x94  Code  Lc  GUI_Alloc.o [2]
-_SetBkColor              0x800'2221    0x1c  Code  Lc  LCD.o [2]
+                        0x2001'4474      0x4  Data  Gb  WM.o [2]
+WM_pfPollPID            0x2001'4484      0x4  Data  Gb  WM.o [2]
+_Add                     0x804'432b     0x2e  Code  Lc  GUI_FillPolygon.o [2]
+_AddFreeMemory           0x803'f06f     0x78  Code  Lc  GUI_Alloc.o [2]
+_Alloc                   0x803'f3f3     0xe4  Code  Lc  GUI_Alloc.o [2]
+_CalcSizeOfChar          0x804'9001      0x4  Code  Lc  GUI_UC_EncodeNone.o [2]
+_CheckYInterSect         0x804'42cd     0x5e  Code  Lc  GUI_FillPolygon.o [2]
+_ClipContext            0x2001'4434     0x18  Data  Lc  WM.o [2]
+_Color2IndexBulk         0x804'8c8b     0x3a  Code  Lc  GUICC_M565.o [2]
+_Color2Index_0           0x804'8d25     0x50  Code  Lc  GUICC_0.o [2]
+_Color2Index_M565        0x804'8c65     0x20  Code  Lc  GUICC_M565.o [2]
+_Config                 0x2001'4a4c      0xc  Data  Lc  GUI_Alloc.o [2]
+_Context                0x2001'4964     0x30  Data  Lc  LCD_NextPixelAPI.o [2]
+_DeleteWindows          0x2001'4498      0x4  Data  Lc  WM.o [2]
+_DesktopHandle2Index     0x803'e4d1     0x1e  Code  Lc  WM.o [2]
+_DispFloatFix            0x804'2859     0x3e  Code  Lc  GUI_Valf.o [2]
+_DispLine                0x804'4717     0x64  Code  Lc  GUI_CharLine.o [2]
+_DrawBitLine16BPP        0x804'70b3     0x30  Code  Lc  GUIDRV_Template.o [1]
+_DrawBitLine1BPP         0x804'6bfb    0x108  Code  Lc  GUIDRV_Template.o [1]
+_DrawBitLine2BPP         0x804'6d03    0x170  Code  Lc  GUIDRV_Template.o [1]
+_DrawBitLine32BPP        0x804'70e3     0x30  Code  Lc  GUIDRV_Template.o [1]
+_DrawBitLine4BPP         0x804'6e73    0x170  Code  Lc  GUIDRV_Template.o [1]
+_DrawBitLine8BPP         0x804'6fe3     0xd0  Code  Lc  GUIDRV_Template.o [1]
+_DrawBitmap              0x804'7113    0x11e  Code  Lc  GUIDRV_Template.o [1]
+_DrawBitmap              0x804'8f4d     0x12  Code  Lc  GUI_DrawBitmap_565.o [2]
+_DrawHLine               0x804'6bc7     0x1a  Code  Lc  GUIDRV_Template.o [1]
+_DrawVLine               0x804'6be1     0x1a  Code  Lc  GUIDRV_Template.o [1]
+_Encode                  0x804'9005      0x6  Code  Lc  GUI_UC_EncodeNone.o [2]
+_Encoding_8859_1_Mbrlen
+                         0x803'cb69      0x2  Code  Gb  xencoding_8859_1.o [3]
+_Encoding_8859_1_Wctomb
+                         0x803'cb57     0x12  Code  Gb  xencoding_8859_1.o [3]
+_EnlargeBlocks           0x803'f2a9     0x88  Code  Lc  GUI_Alloc.o [2]
+_FillRect                0x804'6b61     0x66  Code  Lc  GUIDRV_Template.o [1]
+_FindNext_IVR            0x803'ebf5    0x12e  Code  Lc  WM.o [2]
+_Findx0                  0x803'e8c7     0x70  Code  Lc  WM.o [2]
+_Findx1                  0x803'e93f     0x5c  Code  Lc  WM.o [2]
+_Findy1                  0x803'e81f     0x92  Code  Lc  WM.o [2]
+_GenldFull               0x803'c769    0x274  Code  Lc  xprintffull.o [3]
+_GetCharCode             0x804'8ff9      0x4  Code  Lc  GUI_UC_EncodeNone.o [2]
+_GetCharSize             0x804'8ffd      0x4  Code  Lc  GUI_UC_EncodeNone.o [2]
+_GetDevData              0x804'72c7      0x6  Code  Lc  GUIDRV_Template.o [1]
+_GetDevFunc              0x804'73f5     0x42  Code  Lc  GUIDRV_Template.o [1]
+_GetDevProp              0x804'7261     0x66  Code  Lc  GUIDRV_Template.o [1]
+_GetDevProp              0x804'05ed     0x1e  Code  Lc  LCD_GetEx.o [2]
+_GetIndexMask_0          0x804'8d93     0x52  Code  Lc  GUICC_0.o [2]
+_GetIndexMask_M565       0x804'8c85      0x6  Code  Lc  GUICC_M565.o [2]
+_GetMinIndex             0x803'f015     0x18  Code  Lc  GUI_Alloc.o [2]
+_GetPixelIndex           0x804'6b15     0x1c  Code  Lc  GUIDRV_Template.o [1]
+_GetRect                 0x804'72cd     0x18  Code  Lc  GUIDRV_Template.o [1]
+_HL_APIList              0x803'ffa8      0x8  Data  Lc  GUI_Core.o [2]
+_Index2ColorBulk         0x804'8cc5     0x4c  Code  Lc  GUICC_M565.o [2]
+_Index2Color_0           0x804'8d75     0x1e  Code  Lc  GUICC_0.o [2]
+_Init                    0x804'7397     0x1a  Code  Lc  GUIDRV_Template.o [1]
+_InitOnce                0x804'7231     0x30  Code  Lc  GUIDRV_Template.o [1]
+_InitOnce                0x803'f331     0xa2  Code  Lc  GUI_Alloc.o [2]
+_Invalidate1Abs          0x803'e539     0x82  Code  Lc  WM.o [2]
+_IsInited               0x2001'444d      0x1  Data  Lc  WM.o [2]
+_IsInitialized          0x2001'4a80      0x4  Data  Lc  GUI_Core.o [2]
+_Key                    0x2000'0088      0x4  Data  Lc  GUI_OnKey.o [2]
+_LdtobFull               0x803'c365    0x3d6  Code  Lc  xprintffull.o [3]
+_LitobFull               0x803'c215    0x10a  Code  Lc  xprintffull.o [3]
+_Locale_lconv           0x2000'009c     0x38  Data  Lc  xlocale_c.o [3]
+_Log2VisBuffered         0x804'4715      0x2  Code  Lc  GUI_CharLine.o [2]
+_NextDrawWin            0x2001'4494      0x4  Data  Lc  WM.o [2]
+_NextPixel_API          0x2000'008c     0x10  Data  Lc  LCD_NextPixelAPI.o [2]
+_NextPixel_End           0x804'8375     0x1e  Code  Lc  LCD_NextPixelAPI.o [2]
+_NextPixel_FlushBuffer   0x804'81a1     0x48  Code  Lc  LCD_NextPixelAPI.o [2]
+_NextPixel_NextLine      0x804'835d     0x18  Code  Lc  LCD_NextPixelAPI.o [2]
+_NextPixel_SetPixel      0x804'8279     0xe4  Code  Lc  LCD_NextPixelAPI.o [2]
+_NextPixel_Start         0x804'81e9     0x90  Code  Lc  LCD_NextPixelAPI.o [2]
+_NumColors              0x2000'006c      0x4  Data  Lc  LCD_Color.o [2]
+_Off                     0x804'73c1     0x10  Code  Lc  GUIDRV_Template.o [1]
+_On                      0x804'73b1     0x10  Code  Lc  GUIDRV_Template.o [1]
+_OnExit                  0x803'fe0d     0x22  Code  Lc  GUI_Core.o [2]
+_OnExit                  0x803'f277     0x32  Code  Lc  GUI_Alloc.o [2]
+_OnExit                  0x804'02a1     0x10  Code  Lc  LCD_Color.o [2]
+_OnExit                  0x803'eef7     0x1c  Code  Lc  WM.o [2]
+_PrintfFull              0x803'bb49    0x1aa  Code  Gb  xprintffull.o [3]
+_PushFreeBlock           0x803'f3d3     0x20  Code  Lc  GUI_Alloc.o [2]
+_PutcharsFull            0x803'c9dd     0x2e  Code  Lc  xprintffull.o [3]
+_PutfldFull              0x803'bd85    0x2d4  Code  Lc  xprintffull.o [3]
+_PutstrFull              0x803'c14f     0xc6  Code  Lc  xprintffull.o [3]
+_PuttxtFull              0x803'c059     0xf6  Code  Lc  xprintffull.o [3]
+_RemoveFreeBlock         0x803'f03d     0x32  Code  Lc  GUI_Alloc.o [2]
+_RemoveHoles             0x803'f0e7     0x94  Code  Lc  GUI_Alloc.o [2]
+_RoundHalfUp             0x804'2811     0x3c  Code  Lc  GUI_Valf.o [2]
+_SNProut                 0x803'cbeb     0x1a  Code  Gb  xsnprout.o [3]
+_SetBkColor              0x803'f939     0x1c  Code  Lc  LCD.o [2]
 _SetClipRectUserIntersect
-                         0x800'0dd7    0x4a  Code  Lc  WM.o [2]
-_SetColor                0x800'223d    0x1c  Code  Lc  LCD.o [2]
-_SetColorAPI             0x800'6b44     0xc  Data  Lc  LCD.o [2]
-_SetDrawMode             0x800'2259    0x24  Code  Lc  LCD.o [2]
-_SetLUTEntry             0x800'5651    0x18  Code  Lc  GUIDRV_Template.o [1]
-_SetLineColor            0x800'47df    0x78  Code  Lc  GUI_DrawLine.o [2]
-_SetOrg                  0x800'5599    0x18  Code  Lc  GUIDRV_Template.o [1]
-_SetPixelIndex           0x800'4fb5     0xe  Code  Lc  GUIDRV_Template.o [1]
-_SetSize                 0x800'55f1    0x38  Code  Lc  GUIDRV_Template.o [1]
-_SetVRAMAddr             0x800'55b1    0x28  Code  Lc  GUIDRV_Template.o [1]
-_SetVSize                0x800'55d9    0x18  Code  Lc  GUIDRV_Template.o [1]
-_SwapInt                 0x800'46f9     0xa  Code  Lc  GUI_DrawLine.o [2]
-_TestRAM                 0x800'1a63    0xfc  Code  Lc  GUI_Alloc.o [2]
-_UnlinkDevice            0x800'28d9    0x2a  Code  Lc  GUI_Device.o [2]
-_WriteTagData            0x800'1915    0x10  Code  Lc  GUI_Alloc.o [2]
-_XorPixel                0x800'4fd3    0x26  Code  Lc  GUIDRV_Template.o [1]
-__NVIC_SetPriority       0x800'4091    0x1a  Code  Lc  stm32f4xx_hal_cortex.o [1]
-__aeabi_ldiv0            0x800'4efd          Code  Gb  I64DivZer.o [5]
-__aeabi_memclr           0x800'2aad          Code  Gb  ABImemclr.o [5]
-__aeabi_memclr4          0x800'37b5          Code  Gb  ABImemclr4.o [5]
-__aeabi_memcpy           0x800'2b09          Code  Gb  ABImemcpy.o [5]
-__aeabi_memcpy4          0x800'2b29          Code  Gb  ABImemcpy.o [5]
-__aeabi_memcpy8          0x800'2b29          Code  Gb  ABImemcpy.o [5]
-__aeabi_memmove          0x800'2a15          Code  Gb  ABImemmove.o [5]
-__aeabi_memmove4         0x800'2a15          Code  Gb  ABImemmove.o [5]
-__aeabi_memmove8         0x800'2a15          Code  Gb  ABImemmove.o [5]
-__cmain                  0x800'6abd          Code  Gb  cmain.o [5]
-__exit                   0x800'6af1    0x14  Code  Gb  exit.o [6]
-__iar_Memset4_word       0x800'389d          Code  Gb  ABImemset48.o [5]
-__iar_Memset8_word       0x800'389d          Code  Gb  ABImemset48.o [5]
-__iar_Memset_word        0x800'2d95          Code  Gb  ABImemset.o [5]
-__iar_data_init3         0x800'6a0d    0x28  Code  Gb  data_init.o [5]
-__iar_init_vfp           0x800'6a59          Code  Gb  fpinit_M.o [4]
-__iar_packbits_init_single3
-                         0x800'6975    0x38  Code  Gb  packbits_init_single.o [5]
-__iar_program_start      0x800'6b51          Code  Gb  cstartup_M.o [5]
-__iar_small_uldivmod     0x800'4bd1          Code  Gb  I64DivMod_small.o [5]
-__iar_zero_init3         0x800'21c3    0x3a  Code  Gb  zero_init3.o [5]
-__low_level_init         0x800'6adb     0x4  Code  Gb  low_level_init.o [3]
-__vector_table           0x800'0000          Data  Gb  startup_stm32f407xx.o [1]
-_aState                 0x2000'ca04    0x58  Data  Lc  GUI_OnKey.o [2]
-_aStateLast             0x2000'cb3c    0x18  Data  Lc  WM_Touch.o [2]
-_aX                     0x2000'cba4    0x18  Data  Lc  GUI_FillPolygon.o [2]
-_atan2                   0x800'475b    0x84  Code  Lc  GUI_DrawLine.o [2]
-_call_main               0x800'6ac9          Code  Gb  cmain.o [5]
-_exit                    0x800'6ae5          Code  Gb  cexit.o [5]
-_main                    0x800'6ad7          Code  Gb  cmain.o [5]
-_pFirstExit             0x2000'cc1c     0x4  Data  Lc  GUI_Core.o [2]
-_pReadKey               0x2000'0048     0x4  Data  Lc  GUI_OnKey.o [2]
-_pWriteKey              0x2000'004c     0x4  Data  Lc  GUI_OnKey.o [2]
-_pcbMotion              0x2000'cb74     0x4  Data  Lc  WM_Touch.o [2]
-_pcbToolTip             0x2000'cb78     0x4  Data  Lc  WM_Touch.o [2]
-_pfColor2IndexBulk      0x2000'cbf8     0x4  Data  Lc  GUICC_M565.o [2]
-_pfIndex2ColorBulk      0x2000'cbfc     0x4  Data  Lc  GUICC_M565.o [2]
-_pfSignalEvent          0x2000'cc20     0x4  Data  Lc  GUI_WaitEvent.o [2]
-aSin                     0x800'4b88    0x24  Data  Lc  GUI_DrawLine.o [2]
-aTan                     0x800'4bac    0x24  Data  Gb  GUI_DrawLine.o [2]
-acFont8x16               0x800'0188   0xa30  Data  Lc  F8x16.o [2]
-cbBackWin                0x800'1745    0x4a  Code  Lc  WM.o [2]
-drawCoordiantes          0x800'3b95    0x7e  Code  Gb  GUI_Frame.o [1]
-emWin_LCD_Init           0x800'25e9    0x8c  Code  Gb  LCD.o [2]
-exit                     0x800'6adf     0x4  Code  Gb  exit.o [3]
-hcan1                   0x2000'cb7c    0x28  Data  Gb  can.o [1]
-hcrc                    0x2000'cbf0     0x8  Data  Gb  crc.o [1]
-hsram1                  0x2000'ca5c    0x50  Data  Gb  fsmc.o [1]
-huart1                  0x2000'cafc    0x40  Data  Gb  usart.o [1]
-lcddev                  0x2000'0000    0x10  Data  Gb  ILI93xx.o [1]
-main                     0x800'37bd    0x3e  Code  Gb  main.o [1]
-time_1ms_cnt            0x2000'cc10     0x4  Data  Gb  main.o [1]
-time_1s_cnt             0x2000'cc0c     0x4  Data  Gb  main.o [1]
-uwTick                  0x2000'0018     0x4  Data  Gb  stm32f4xx_hal.o [1]
-uwTickFreq              0x2000'0014     0x1  Data  Gb  stm32f4xx_hal.o [1]
-uwTickPrio              0x2000'001c     0x4  Data  Gb  stm32f4xx_hal.o [1]
+                         0x803'e4ef     0x4a  Code  Lc  WM.o [2]
+_SetColor                0x803'f955     0x1c  Code  Lc  LCD.o [2]
+_SetColorAPI             0x804'91a4      0xc  Data  Lc  LCD.o [2]
+_SetDrawMode             0x803'f971     0x24  Code  Lc  LCD.o [2]
+_SetLUTEntry             0x804'73d1     0x24  Code  Lc  GUIDRV_Template.o [1]
+_SetLineColor            0x804'210b     0x78  Code  Lc  GUI_DrawLine.o [2]
+_SetOrg                  0x804'72e5     0x22  Code  Lc  GUIDRV_Template.o [1]
+_SetPixelIndex           0x804'6af5     0x20  Code  Lc  GUIDRV_Template.o [1]
+_SetSize                 0x804'7353     0x44  Code  Lc  GUIDRV_Template.o [1]
+_SetVRAMAddr             0x804'7307     0x2c  Code  Lc  GUIDRV_Template.o [1]
+_SetVSize                0x804'7333     0x20  Code  Lc  GUIDRV_Template.o [1]
+_Strtok_ssave           0x2001'4b00      0x4  Data  Lc  strtok.o [3]
+_SwapInt                 0x804'2025      0xa  Code  Lc  GUI_DrawLine.o [2]
+_TestRAM                 0x803'f17b     0xfc  Code  Lc  GUI_Alloc.o [2]
+_UnlinkDevice            0x804'000d     0x2a  Code  Lc  GUI_Device.o [2]
+_WriteTagData            0x803'f02d     0x10  Code  Lc  GUI_Alloc.o [2]
+_XorPixel                0x804'6b31     0x30  Code  Lc  GUIDRV_Template.o [1]
+__NVIC_EnableIRQ         0x804'15c3     0x1e  Code  Lc  stm32f4xx_hal_cortex.o [1]
+__NVIC_GetPriorityGrouping
+                         0x804'15b7      0xc  Code  Lc  stm32f4xx_hal_cortex.o [1]
+__NVIC_SetPriority       0x804'15e1     0x2c  Code  Lc  stm32f4xx_hal_cortex.o [1]
+__NVIC_SetPriorityGrouping
+                         0x804'1595     0x22  Code  Lc  stm32f4xx_hal_cortex.o [1]
+__aeabi_assert           0x804'6a8d     0x24  Code  Gb  ABIassert.o [6]
+__aeabi_cdcmple          0x803'd155           Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple         0x803'd185           Code  Gb  DblCmpGe.o [4]
+__aeabi_d2f              0x804'4af5           Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz             0x803'd2f1           Code  Gb  DblToS32.o [4]
+__aeabi_d2uiz            0x803'd67d           Code  Gb  DblToU32.o [4]
+__aeabi_ddiv             0x803'd435           Code  Gb  DblDiv.o [4]
+__aeabi_dmul             0x803'cf41           Code  Gb  DblMul.o [4]
+__aeabi_dsub             0x803'd351           Code  Gb  DblSub.o [4]
+__aeabi_f2d              0x804'4b5d           Code  Gb  FltToDbl.o [4]
+__aeabi_i2d              0x803'd32d           Code  Gb  S32ToDbl.o [4]
+__aeabi_ldiv0            0x803'd6c1           Code  Gb  I64DivZer.o [5]
+__aeabi_memclr           0x804'01e1           Code  Gb  ABImemclr.o [5]
+__aeabi_memclr4          0x804'158d           Code  Gb  ABImemclr4.o [5]
+__aeabi_memcpy           0x803'cc69           Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4          0x803'cc89           Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8          0x803'cc89           Code  Gb  ABImemcpy.o [5]
+__aeabi_memmove          0x804'0149           Code  Gb  ABImemmove.o [5]
+__aeabi_memmove4         0x804'0149           Code  Gb  ABImemmove.o [5]
+__aeabi_memmove8         0x804'0149           Code  Gb  ABImemmove.o [5]
+__aeabi_memset           0x804'0469           Code  Gb  ABImemset.o [5]
+__aeabi_ui2d             0x803'd6a5           Code  Gb  U32ToDbl.o [4]
+__aeabi_uldivmod         0x803'cd11           Code  Gb  I64DivMod.o [5]
+__cmain                  0x804'90a1           Code  Gb  cmain.o [5]
+__data_GetMemChunk       0x803'bb09     0x2c  Code  Gb  xgetmemchunk.o [3]
+__data_GetMemChunk::start
+                        0x2001'4b08      0x4  Data  Lc  xgetmemchunk.o [3]
+__exit                   0x803'bb35     0x14  Code  Gb  exit.o [6]
+__iar_Fail_s             0x803'cb75     0x1c  Code  Gb  xfail_s.o [3]
+__iar_Mbcurmax           0x803'cc5d      0xa  Code  Gb  xmbcurmax.o [3]
+__iar_Memchr             0x803'cc05           Code  Gb  memchr.o [5]
+__iar_Memset             0x804'0469           Code  Gb  ABImemset.o [5]
+__iar_Memset4_word       0x804'1ef5           Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word       0x804'1ef5           Code  Gb  ABImemset48.o [5]
+__iar_Memset_word        0x804'0471           Code  Gb  ABImemset.o [5]
+__iar_Strchr             0x803'cb41           Code  Gb  strchr.o [5]
+__iar_ceil64             0x804'4a35           Code  Gb  ceil.o [4]
+__iar_dadd               0x803'd361           Code  Gb  DblSub.o [4]
+__iar_data_init3         0x804'8fd1     0x28  Code  Gb  data_init.o [5]
+__iar_dlmalloc           0x803'b7cd    0x2b6  Code  Gb  dlmalloc.o [3]
+__iar_dsub               0x803'd6c5           Code  Gb  DblAdd.o [4]
+__iar_dsubStart          0x803'd6d7           Code  Gb  DblAdd.o [4]
+__iar_floor64            0x804'4a9d           Code  Gb  floor.o [4]
+__iar_frexp              0x803'd0f1           Code  Gb  frexp.o [4]
+__iar_frexpl             0x803'd0f1           Code  Gb  frexp.o [4]
+__iar_globLocale        0x2000'00d4     0x48  Data  Lc  xlocale_c.o [3]
+__iar_global_Locale      0x803'cac9      0x4  Code  Gb  xlocale_c.o [3]
+__iar_init_vfp           0x804'901d           Code  Gb  fpinit_M.o [4]
+__iar_ldexp64            0x803'd1b5           Code  Gb  ldexp.o [4]
+__iar_lz77_init_single3
+                         0x803'ba8f     0x7a  Code  Gb  lz77_init_single.o [5]
+__iar_program_start      0x804'91b1           Code  Gb  cstartup_M.o [5]
+__iar_scalbln64          0x803'd1b5           Code  Gb  ldexp.o [4]
+__iar_scalbn64           0x803'd1b5           Code  Gb  ldexp.o [4]
+__iar_softfp___iar_frexp64
+                         0x803'd0e5           Code  Gb  frexp.o [4]
+__iar_softfp_frexp       0x803'd0e5           Code  Gb  frexp.o [4]
+__iar_softfp_frexpl      0x803'd0e5           Code  Gb  frexp.o [4]
+__iar_vfp___iar_ceil64   0x804'4a25           Code  Gb  ceil.o [4]
+__iar_vfp___iar_floor64
+                         0x804'4a8d           Code  Gb  floor.o [4]
+__iar_vfp_ceil           0x804'4a25           Code  Gb  ceil.o [4]
+__iar_vfp_ceill          0x804'4a25           Code  Gb  ceil.o [4]
+__iar_vfp_floor          0x804'4a8d           Code  Gb  floor.o [4]
+__iar_vfp_floorl         0x804'4a8d           Code  Gb  floor.o [4]
+__iar_zero_init3         0x803'ca8f     0x3a  Code  Gb  zero_init3.o [5]
+__low_level_init         0x804'90bf      0x4  Code  Gb  low_level_init.o [3]
+__vector_table           0x800'0000           Data  Gb  startup_stm32f407xx.o [1]
+_aState                 0x2001'46f4     0x58  Data  Lc  GUI_OnKey.o [2]
+_aStateLast             0x2001'48f4     0x18  Data  Lc  WM_Touch.o [2]
+_aX                     0x2001'4a00     0x18  Data  Lc  GUI_FillPolygon.o [2]
+_acmap                   0x800'0188  0x3a980  Data  Lc  map.o [1]
+_atan2                   0x804'2087     0x84  Code  Lc  GUI_DrawLine.o [2]
+_call_main               0x804'90ad           Code  Gb  cmain.o [5]
+_cmd_help                0x804'6475     0x18  Code  Lc  cmd.o [1]
+_exit                    0x804'90c9           Code  Gb  cexit.o [5]
+_gLocale_mblen           0x803'cb2d      0x4  Code  Gb  xlocale_c.o [3]
+_gLocale_mblenInt        0x803'caf1     0x2c  Code  Gb  xlocale_c.o [3]
+_gLocale_wctomb          0x803'cb31      0x4  Code  Gb  xlocale_c.o [3]
+_gLocale_wctombInt       0x803'cb29      0x4  Code  Gb  xlocale_c.o [3]
+_gm_                    0x2001'4120    0x1d8  Data  Lc  dlmalloc.o [3]
+_main                    0x804'90bb           Code  Gb  cmain.o [5]
+_pFirstExit             0x2001'4af4      0x4  Data  Lc  GUI_Core.o [2]
+_pReadKey               0x2000'0080      0x4  Data  Lc  GUI_OnKey.o [2]
+_pWriteKey              0x2000'0084      0x4  Data  Lc  GUI_OnKey.o [2]
+_pcbMotion              0x2001'492c      0x4  Data  Lc  WM_Touch.o [2]
+_pcbToolTip             0x2001'4930      0x4  Data  Lc  WM_Touch.o [2]
+_pfColor2IndexBulk      0x2001'4aa8      0x4  Data  Lc  GUICC_M565.o [2]
+_pfIndex2ColorBulk      0x2001'4aac      0x4  Data  Lc  GUICC_M565.o [2]
+_pfSignalEvent          0x2001'4af8      0x4  Data  Lc  GUI_WaitEvent.o [2]
+aSin                     0x804'24b4     0x24  Data  Lc  GUI_DrawLine.o [2]
+aTan                     0x804'24d8     0x24  Data  Gb  GUI_DrawLine.o [2]
+abort                    0x803'ba89      0x6  Code  Gb  abort.o [3]
+acFont8ASCII             0x804'7b80    0x2f8  Data  Lc  F08_ASCII.o [2]
+acFont8x16               0x803'd830    0xa30  Data  Lc  F8x16.o [2]
+add_segment              0x803'aed1    0x1f2  Code  Lc  dlmalloc.o [3]
+bmmap                    0x804'911c     0x14  Data  Gb  map.o [1]
+buffer_count            0x2001'4acc      0x4  Data  Gb  cmd.o [1]
+can_callback_add         0x804'6501     0x1e  Code  Gb  can_utils.o [1]
+can_callback_table      0x2001'4ac0      0x4  Data  Lc  can_utils.o [1]
+can_exc_callback         0x804'651f     0x1a  Code  Gb  can_utils.o [1]
+can_exc_callback_flag   0x2001'4a8c      0x4  Data  Gb  can_utils.o [1]
+can_func_init            0x804'66b5     0x10  Code  Gb  can_func.o [1]
+can_init                 0x804'64cd     0x34  Code  Gb  can_utils.o [1]
+can_rx_data             0x2001'4a90      0x8  Data  Gb  can_utils.o [1]
+can_std_mask_filter_conf
+                         0x804'65e9     0x8a  Code  Gb  can_utils.o [1]
+can_text_cnt            0x2001'4b11      0x1  Data  Gb  GUI_Frame.o [1]
+can_window_update        0x804'1bad     0x74  Code  Gb  GUI_Frame.o [1]
+cbBackWin                0x803'ee5d     0x4a  Code  Lc  WM.o [2]
+ceil                     0x804'4a35           Code  Gb  ceil.o [4]
+ceill                    0x804'4a35           Code  Gb  ceil.o [4]
+cmd_add                  0x804'6335     0x54  Code  Gb  cmd.o [1]
+cmd_argv                0x2001'4934     0x30  Data  Gb  cmd.o [1]
+cmd_exec                 0x804'62e9     0x2c  Code  Gb  cmd.o [1]
+cmd_func_init            0x804'6689     0x10  Code  Gb  cmd_func.o [1]
+cmd_hello_func           0x804'6699      0xe  Code  Gb  cmd_func.o [1]
+cmd_help_func            0x804'6319     0x1c  Code  Gb  cmd.o [1]
+cmd_init                 0x804'61b5     0x26  Code  Gb  cmd.o [1]
+cmd_parse                0x804'62a1     0x48  Code  Gb  cmd.o [1]
+cmd_table               0x2001'4ac4      0x4  Data  Lc  cmd.o [1]
+cmpAtom                  0x804'67b5      0xe  Code  Lc  hash.o [1]
+delim                   0x2000'0000      0x4  Data  Lc  cmd.o [1]
+drawCoordiantes          0x804'16fd    0x1a2  Code  Gb  GUI_Frame.o [1]
+drawMainFrame            0x804'189f     0x9a  Code  Gb  GUI_Frame.o [1]
+draw_map_point           0x804'66c5     0x12  Code  Gb  can_func.o [1]
+draw_point_onMap         0x804'1cbd     0x86  Code  Gb  GUI_Frame.o [1]
+emWin_LCD_Init           0x803'fd01     0x8c  Code  Gb  LCD.o [2]
+exit                     0x804'90c3      0x4  Code  Gb  exit.o [3]
+floor                    0x804'4a9d           Code  Gb  floor.o [4]
+floorl                   0x804'4a9d           Code  Gb  floor.o [4]
+freeKeyAtom              0x804'67c7      0x2  Code  Lc  hash.o [1]
+hadc1                   0x2001'47ec     0x48  Data  Gb  adc.o [1]
+hashAtom                 0x804'67c3      0x4  Code  Lc  hash.o [1]
+hashStr                  0x804'67c9     0x26  Code  Gb  hash.o [1]
+hash_id                  0x804'6675      0x4  Code  Lc  can_utils.o [1]
+hcan1                   0x2001'4994     0x28  Data  Gb  can.o [1]
+hcrc                    0x2001'4aa0      0x8  Data  Gb  crc.o [1]
+hdma_adc1               0x2001'45d4     0x60  Data  Gb  adc.o [1]
+hdma_usart1_rx          0x2001'4634     0x60  Data  Gb  usart.o [1]
+hdma_usart1_tx          0x2001'4694     0x60  Data  Gb  usart.o [1]
+hsram1                  0x2001'474c     0x50  Data  Gb  fsmc.o [1]
+htim3                   0x2001'4874     0x40  Data  Gb  tim.o [1]
+huart1                  0x2001'48b4     0x40  Data  Gb  usart.o [1]
+id_cmp                   0x804'6679     0x10  Code  Lc  can_utils.o [1]
+init_mparams             0x803'ab23     0x32  Code  Lc  dlmalloc.o [3]
+init_top                 0x803'ab55     0x36  Code  Lc  dlmalloc.o [3]
+lcddev                  0x2001'4a60     0x10  Data  Gb  ILI93xx.o [1]
+ldexp                    0x803'd1b5           Code  Gb  ldexp.o [4]
+ldexpl                   0x803'd1b5           Code  Gb  ldexp.o [4]
+ledpwm_set_intensity     0x804'3c65     0x74  Code  Gb  ledpwm.o [1]
+localeconv               0x803'cb35      0x4  Code  Gb  xlocale_c.o [3]
+main                     0x804'1dbd     0x6c  Code  Gb  main.o [1]
+memchr                   0x803'cc05           Code  Gb  memchr.o [5]
+menu1Rect               0x2000'001c      0x8  Data  Gb  GUI_Frame.o [1]
+menu2Rect               0x2000'0024      0x8  Data  Gb  GUI_Frame.o [1]
+menu3Rect               0x2000'002c      0x8  Data  Gb  GUI_Frame.o [1]
+menu4Rect               0x2000'0034      0x8  Data  Gb  GUI_Frame.o [1]
+menu5Rect               0x2000'003c      0x8  Data  Gb  GUI_Frame.o [1]
+menu6Rect               0x2000'0044      0x8  Data  Gb  GUI_Frame.o [1]
+menu_clear_window        0x804'1a19     0x1a  Code  Gb  GUI_Frame.o [1]
+menu_function            0x804'1a33    0x11c  Code  Gb  GUI_Frame.o [1]
+menu_pagedown            0x804'1939     0x20  Code  Gb  GUI_Frame.o [1]
+menu_pageup              0x804'1959     0x26  Code  Gb  GUI_Frame.o [1]
+menu_update              0x804'197f     0x9a  Code  Gb  GUI_Frame.o [1]
+mparams                 0x2001'4a34     0x18  Data  Lc  dlmalloc.o [3]
+now_state               0x2000'011c      0x1  Data  Gb  GUI_Frame.o [1]
+prepend_alloc            0x803'ab8b    0x346  Code  Lc  dlmalloc.o [3]
+print_buffer            0x2001'44a4     0x68  Data  Gb  cmd.o [1]
+rx_buffer               0x2001'4a98      0x8  Data  Lc  can_utils.o [1]
+rx_id                   0x2001'4abc      0x4  Data  Lc  can_utils.o [1]
+s                       0x2000'0004     0x18  Data  Lc  cmd.o [1]
+scalbln                  0x803'd1b5           Code  Gb  ldexp.o [4]
+scalblnl                 0x803'd1b5           Code  Gb  ldexp.o [4]
+scalbn                   0x803'd1b5           Code  Gb  ldexp.o [4]
+scalbnl                  0x803'd1b5           Code  Gb  ldexp.o [4]
+scale                    0x803'c31f     0x46  Code  Lc  xprintffull.o [3]
+sec_hand                0x2001'4b04      0x4  Data  Lc  xfail_s.o [3]
+segment_holding          0x803'ab09     0x1a  Code  Lc  dlmalloc.o [3]
+send_wave                0x804'63cf     0x8a  Code  Gb  cmd.o [1]
+send_wave_flag          0x2001'4ad0      0x4  Data  Gb  flags.o [1]
+show_robocon_map         0x804'16ed     0x10  Code  Gb  GUI_Frame.o [1]
+show_state              0x2000'011d      0x1  Data  Gb  GUI_Frame.o [1]
+show_system_time         0x804'1c9d     0x20  Code  Gb  GUI_Frame.o [1]
+show_time                0x804'1c29     0x6a  Code  Gb  GUI_Frame.o [1]
+simplelib_init           0x804'2ec5     0x22  Code  Gb  simplelib.o [1]
+simplelib_run            0x804'2ee9     0x46  Code  Gb  simplelib.o [1]
+std_id                  0x2001'4ab8      0x4  Data  Gb  can_utils.o [1]
+str_cmp                  0x804'6459     0x1c  Code  Lc  cmd.o [1]
+strchr                   0x803'cb41           Code  Gb  strchr.o [5]
+strcmp                   0x804'6a79           Code  Gb  strcmp.o [5]
+strcpy                   0x804'69d9           Code  Gb  strcpy.o [5]
+strcspn                  0x804'6ad3     0x22  Code  Gb  strcspn.o [3]
+strlen                   0x803'cbb5           Code  Gb  strlen.o [5]
+strspn                   0x804'6ab1     0x22  Code  Gb  strspn.o [3]
+strtok                   0x804'69f1     0x4c  Code  Gb  strtok.o [3]
+sys_alloc                0x803'b0c9    0x164  Code  Lc  dlmalloc.o [3]
+time_1ms_cnt            0x2001'4ae0      0x4  Data  Gb  GUI_Frame.o [1]
+time_1s_cnt             0x2001'4adc      0x4  Data  Gb  GUI_Frame.o [1]
+time_1s_flag            0x2001'4ad8      0x4  Data  Gb  GUI_Frame.o [1]
+tmalloc_large            0x803'b239    0x386  Code  Lc  dlmalloc.o [3]
+tmalloc_small            0x803'b5bf    0x200  Code  Lc  dlmalloc.o [3]
+uprintf                  0x804'6389     0x44  Code  Gb  cmd.o [1]
+usart_DMA_init           0x804'6189     0x2c  Code  Gb  cmd.o [1]
+usart_exc_DMA            0x804'61db     0x3e  Code  Gb  cmd.o [1]
+usart_text_cnt          0x2001'4b10      0x1  Data  Gb  GUI_Frame.o [1]
+usart_window_update      0x804'1b4f     0x5e  Code  Gb  GUI_Frame.o [1]
+uwTick                  0x2001'4ae8      0x4  Data  Gb  stm32f4xx_hal.o [1]
+uwTickFreq              0x2000'011e      0x1  Data  Gb  stm32f4xx_hal.o [1]
+uwTickPrio              0x2000'004c      0x4  Data  Gb  stm32f4xx_hal.o [1]
+vsnprintf                0x804'6a3d     0x3c  Code  Gb  vsnprint.o [3]
 
 
 [1] = D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM\DisplayLCD\Obj
@@ -962,9 +1557,9 @@ uwTickPrio              0x2000'001c     0x4  Data  Gb  stm32f4xx_hal.o [1]
 [5] = rt7M_tl.a
 [6] = shb_l.a
 
-  22 106 bytes of readonly  code memory
-   5 748 bytes of readonly  data memory
-  53 804 bytes of readwrite data memory
+   51 838 bytes of readonly  code memory
+  248 177 bytes of readonly  data memory
+   88 081 bytes of readwrite data memory
 
 Errors: none
 Warnings: 1

@@ -239,11 +239,11 @@ static void _FillRect(GUI_DEVICE * pDevice, int x0, int y0, int x1, int y1) {
       }
     }
   } else {
-    for (; y0 <= y1; y0++) {
-      for (x = x0; x <= x1; x++) {
-        _SetPixelIndex(pDevice, x, y0, PixelIndex);
-      }
-    }
+     for (; y0 <= y1; y0++) {
+       for (x = x0; x <= x1; x++) {
+         _SetPixelIndex(pDevice, x, y0, PixelIndex);
+       }
+     }
     //LCD_Fill(x0,y0,x1,y1,PixelIndex);
   }
 }

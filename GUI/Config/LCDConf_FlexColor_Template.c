@@ -166,13 +166,14 @@ static void LcdReadDataMultiple(U16 * pData, int NumItems) {
 *
 */
 void LCD_X_Config(void) {
-  GUI_DEVICE * pDevice;
-  CONFIG_FLEXCOLOR Config = {0};
-  GUI_PORT_API PortAPI = {0};
+  // GUI_DEVICE * pDevice;
+  // CONFIG_FLEXCOLOR Config = {0};
+  // GUI_PORT_API PortAPI = {0};
   //
   // Set display driver and color conversion
   //
-  pDevice = GUI_DEVICE_CreateAndLink(&GUIDRV_Template_API, GUICC_M565, 0, 0);
+  //pDevice = GUI_DEVICE_CreateAndLink(&GUIDRV_Template_API, GUICC_M565, 0, 0);
+  GUI_DEVICE_CreateAndLink(&GUIDRV_Template_API, GUICC_M565, 0, 0);
   //
   // Display driver configuration, required for Lin-driver
   //

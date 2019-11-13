@@ -25,6 +25,16 @@ D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM/../GUI/OS
 -I
 D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM/../GUI_Func
 -I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM/../simplelib
+-I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM/../simplelib/can
+-I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM/../simplelib/cmd
+-I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM/../simplelib/utils
+-I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\EWARM/../simplelib/core
+-I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\inc
 -I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\inc\c
@@ -48,6 +58,16 @@ D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\GUI\Inc
 D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\GUI\OS
 -I
 D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\GUI_Func
+-I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\simplelib
+-I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\simplelib\can
+-I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\simplelib\cmd
+-I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\simplelib\utils
+-I
+D:\Users\zohycao\Documents\BUPT\RobotTeam\Project\DisplayLCD\simplelib\core
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

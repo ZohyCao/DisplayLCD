@@ -178,6 +178,7 @@ typedef struct
 #define LBBLUE           0X2B12 //浅棕蓝色(选择条目的反色)
 	    															  
 void TFT_LCD_Init(void);													   	//初始化
+void LCD_ReInit(void);//
 void LCD_DisplayOn(void);													//开显示
 void LCD_DisplayOff(void);													//关显示
 void LCD_Clear(u16 Color);	 												//清屏

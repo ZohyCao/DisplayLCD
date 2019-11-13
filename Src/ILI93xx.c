@@ -122,7 +122,7 @@ void LCD_WriteReg(u16 LCD_Reg,u16 LCD_RegValue)
 u16 LCD_ReadReg(u16 LCD_Reg)
 {										   
 	LCD_WR_REG(LCD_Reg);		//写入要读的寄存器序号
-	HAL_Delay(5);
+	HAL_Delay(10);
         //delay_us(5);		  
 	return LCD_RD_DATA();		//返回读到的值
 }   
@@ -428,19 +428,19 @@ void TFT_LCD_Init(void)
 	TFTSRAM_Handler.Init.ContinuousClock=FSMC_CONTINUOUS_CLOCK_SYNC_ASYNC;
     
 	//FMC读时序控制寄存器
-	FSMC_ReadWriteTim.AddressSetupTime=0x0F;       	//地址建立时间（ADDSET）为16个HCLK 1/168M=6ns*16=96ns
+	FSMC_ReadWriteTim.AddressSetupTime=0x09;       	//地址建立时间（ADDSET）为16个HCLK 1/168M=6ns*16=96ns
 	FSMC_ReadWriteTim.AddressHoldTime=0;
-	FSMC_ReadWriteTim.DataSetupTime=60;				//数据保存时间为60个HCLK	=6*60=360ns
+	FSMC_ReadWriteTim.DataSetupTime=0x31;				//数据保存时间为60个HCLK	=6*60=360ns
 	FSMC_ReadWriteTim.AccessMode=FSMC_ACCESS_MODE_A;//模式A
 	//FMC写时序控制寄存器
 	FSMC_WriteTim.BusTurnAroundDuration=0;			//总线周转阶段持续时间为0，此变量不赋值的话会莫名其妙的自动修改为4。导致程序运行正常
-	FSMC_WriteTim.AddressSetupTime=9;          		//地址建立时间（ADDSET）为9个HCLK =54ns 
+	FSMC_WriteTim.AddressSetupTime=0x08;          		//地址建立时间（ADDSET）为9个HCLK =54ns 
 	FSMC_WriteTim.AddressHoldTime=0;
-	FSMC_WriteTim.DataSetupTime=8;              	//数据保存时间为6ns*9个HCLK=54n
+	FSMC_WriteTim.DataSetupTime=0x09;              	//数据保存时间为6ns*9个HCLK=54n
 	FSMC_WriteTim.AccessMode=FSMC_ACCESS_MODE_A;    //模式A
 	HAL_SRAM_Init(&TFTSRAM_Handler,&FSMC_ReadWriteTim,&FSMC_WriteTim);	
 
-	HAL_Delay(50); // delay 50 ms 
+	HAL_Delay(100); // delay 50 ms 
   
   
     //delay_ms(10);
@@ -553,7 +553,7 @@ void TFT_LCD_Init(void)
 	LCD_WR_DATA(0x55);
 	
 	LCD_WR_REG(0x11);
-        HAL_Delay(120);
+        HAL_Delay(200);
 	//delay_ms(120);
 	LCD_WR_REG(0x29);
 	
@@ -577,7 +577,126 @@ void TFT_LCD_Init(void)
 
 	LCD_LED=1;				//点亮背光
 	//LCD_Clear(RED);
-}  
+} 
+
+
+void LCD_ReInit(void){
+	HAL_Delay(100);
+	LCD_WR_REG(0XF9);
+	LCD_WR_DATA(0x00);
+	LCD_WR_DATA(0x08);
+	
+	LCD_WR_REG(0xC0);
+	LCD_WR_DATA(0x19);//VREG1OUT POSITIVE
+	LCD_WR_DATA(0x1a);//VREG2OUT NEGATIVE
+	
+	LCD_WR_REG(0xC1);
+	LCD_WR_DATA(0x45);//VGH,VGL    VGH>=14V.
+	LCD_WR_DATA(0x00);
+	
+	LCD_WR_REG(0xC2);
+	LCD_WR_DATA(0x33);
+	
+	LCD_WR_REG(0XC5);
+	LCD_WR_DATA(0x00);
+	LCD_WR_DATA(0x28);//VCM_REG[7:0]. <=0X80.
+	
+	LCD_WR_REG(0xB1);
+	LCD_WR_DATA(0xA0);//0XB0 =70HZ, <=0XB0.0xA0=62HZ
+	LCD_WR_DATA(0x11);
+	
+	LCD_WR_REG(0xB4);
+	LCD_WR_DATA(0x02); //2 DOT FRAME MODE,F<=70HZ.
+	
+	LCD_WR_REG(0xB6);
+	LCD_WR_DATA(0x00);
+	LCD_WR_DATA(0x42);//0 GS SS SM ISC[3:0];
+	LCD_WR_DATA(0x3B);
+	
+	
+	LCD_WR_REG(0xB7);
+	LCD_WR_DATA(0x07);
+	
+	LCD_WR_REG(0xE0);
+	LCD_WR_DATA(0x1F);
+	LCD_WR_DATA(0x25);
+	LCD_WR_DATA(0x22);
+	LCD_WR_DATA(0x0B);
+	LCD_WR_DATA(0x06);
+	LCD_WR_DATA(0x0A);
+	LCD_WR_DATA(0x4E);
+	LCD_WR_DATA(0xC6);
+	LCD_WR_DATA(0x39);
+	LCD_WR_DATA(0x00);
+	LCD_WR_DATA(0x00);
+	LCD_WR_DATA(0x00);
+	LCD_WR_DATA(0x00);
+	LCD_WR_DATA(0x00);
+	LCD_WR_DATA(0x00);
+	
+	LCD_WR_REG(0XE1);
+	LCD_WR_DATA(0x1F);
+	LCD_WR_DATA(0x3F);
+	LCD_WR_DATA(0x3F);
+	LCD_WR_DATA(0x0F);
+	LCD_WR_DATA(0x1F);
+	LCD_WR_DATA(0x0F);
+	LCD_WR_DATA(0x46);
+	LCD_WR_DATA(0x49);
+	LCD_WR_DATA(0x31);
+	LCD_WR_DATA(0x05);
+	LCD_WR_DATA(0x09);
+	LCD_WR_DATA(0x03);
+	LCD_WR_DATA(0x1C);
+	LCD_WR_DATA(0x1A);
+	LCD_WR_DATA(0x00);
+	
+	LCD_WR_REG(0XF1);
+	LCD_WR_DATA(0x36);
+	LCD_WR_DATA(0x04);
+	LCD_WR_DATA(0x00);
+	LCD_WR_DATA(0x3C);
+	LCD_WR_DATA(0x0F);
+	LCD_WR_DATA(0x0F);
+	LCD_WR_DATA(0xA4);
+	LCD_WR_DATA(0x02);
+	
+	LCD_WR_REG(0XF2);
+	LCD_WR_DATA(0x18);
+	LCD_WR_DATA(0xA3);
+	LCD_WR_DATA(0x12);
+	LCD_WR_DATA(0x02);
+	LCD_WR_DATA(0x32);
+	LCD_WR_DATA(0x12);
+	LCD_WR_DATA(0xFF);
+	LCD_WR_DATA(0x32);
+	LCD_WR_DATA(0x00);
+	
+	LCD_WR_REG(0XF4);
+	LCD_WR_DATA(0x40);
+	LCD_WR_DATA(0x00);
+	LCD_WR_DATA(0x08);
+	LCD_WR_DATA(0x91);
+	LCD_WR_DATA(0x04);
+	
+	LCD_WR_REG(0XF8);
+	LCD_WR_DATA(0x21);
+	LCD_WR_DATA(0x04);
+	
+	LCD_WR_REG(0x36);
+	LCD_WR_DATA(0x48);
+	
+	LCD_WR_REG(0x3A);
+	LCD_WR_DATA(0x55);
+	
+	LCD_WR_REG(0x11);
+        HAL_Delay(200);
+	//delay_ms(120);
+	LCD_WR_REG(0x29);
+	LCD_WriteReg(0x36,(1<<3)|(1<<5)|(0<<6)|(1<<7));//BGR==1,MV==1,MX==0,MY==1
+	LCD_LED=1;				//点亮背光
+	
+}
 //清屏函数
 //color:要清屏的填充色
 void LCD_Clear(u16 color)
