@@ -7,7 +7,9 @@ int time_1s_flag = 0;
 int time_1s_cnt = 0;
 int time_1ms_cnt = 0;
 uint8_t usart_text_cnt = 0;
+uint32_t usart_rx_rate = 0;
 uint8_t can_text_cnt = 0;
+uint32_t can_rx_rate = 0;
 
 extern GUI_BITMAP bmroboconnew;
 void show_robocon_image(void)
@@ -266,7 +268,7 @@ void usart_window_update(char *text)
     usart_text_cnt = 0;
 }
 
-void can_window_update(CAN_RxHeaderTypeDef *pHeader,uint8_t aData[])
+void can_window_update(uint32_t Std_ID,uint8_t aData[])
 {
   if (now_state != MENU_CAN)
     return;
@@ -276,7 +278,7 @@ void can_window_update(CAN_RxHeaderTypeDef *pHeader,uint8_t aData[])
   GUI_SetColor(GUI_LIGHTGREEN);
   GUI_SetFont(GUI_FONT_8X18);
   show_time(81, 21 + 20 * can_text_cnt);
-  GUI_DispDecAt(pHeader->IDE, 150, 21 + 20 * can_text_cnt,9);
+  GUI_DispDecAt(Std_ID, 150, 21 + 20 * can_text_cnt,9);
   //GUI_DispStringAt(pHeader->IDE, 150, 21 + 20 * can_text_cnt);
   GUI_DispStringAtCEOL(aData, 300, 21 + 20 * can_text_cnt);
   can_text_cnt++;

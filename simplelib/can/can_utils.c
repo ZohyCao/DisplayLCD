@@ -63,6 +63,7 @@ void can_callback_add(const uint32_t id, void (*callback)(can_msg *data)) {
 }
 
 void can_exc_callback(void) {
+    can_window_update(rx_id,rx_buffer.ui8);
     void (*callback_func)(can_msg *) = (void(*)(can_msg*))HashTable_get(can_callback_table, &rx_id);
     if (callback_func) {
         callback_func(&rx_buffer);
@@ -72,7 +73,7 @@ void can_exc_callback(void) {
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 
     HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, can_rx_data.ui8);
-    can_window_update(&RxHeader,can_rx_data.ui8);
+    // can_window_update(&RxHeader,can_rx_data.ui8);
     rx_id = RxHeader.StdId;
     rx_buffer.df = can_rx_data.df;
     can_exc_callback_flag = 1;

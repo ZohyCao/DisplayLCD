@@ -26,7 +26,7 @@ void menu_pagedown(void);//窗口下翻页
 void menu_clear_window(void);//窗口清空
 void show_time(signed short x,signed short y);//时钟显示
 void usart_window_update(char *text);//串口控制显示
-void can_window_update(CAN_RxHeaderTypeDef *pHeader,uint8_t aData[]);
+void can_window_update(uint32_t Std_ID,uint8_t aData[]);//can控制显示
 void GUI_main();//GUI主函数
 void GUI_Reload();//重新初始化屏幕，程序白屏时恢复显示
-void draw_point_onMap(float x,float y);
+void draw_point_onMap(float x,float y);//在XY图上画点
