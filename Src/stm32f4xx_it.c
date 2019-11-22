@@ -194,7 +194,9 @@ void SysTick_Handler(void)
   time_1ms_cnt++;
   if(time_1ms_cnt % 1000 == 0)
     {
+      
       time_1s_flag = 1;
+
     } 
   if(time_1ms_cnt >= 60000)
     {

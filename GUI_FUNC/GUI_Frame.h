@@ -30,3 +30,5 @@ void can_window_update(uint32_t Std_ID,uint8_t aData[]);//can控制显示
 void GUI_main();//GUI主函数
 void GUI_Reload();//重新初始化屏幕，程序白屏时恢复显示
 void draw_point_onMap(float x,float y);//在XY图上画点
+void show_rate();//显示接收速率
+void clear_rate();//每秒清空一次速率记录

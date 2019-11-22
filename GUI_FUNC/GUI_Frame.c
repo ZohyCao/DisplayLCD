@@ -18,8 +18,9 @@ void show_robocon_image(void)
 }
 
 extern GUI_BITMAP bmmap;
-void show_robocon_map(void){
-  GUI_DrawBitmap(&bmmap,80,20);
+void show_robocon_map(void)
+{
+  GUI_DrawBitmap(&bmmap, 80, 20);
 }
 
 //绘制坐标系
@@ -37,30 +38,34 @@ void drawCoordiantes(int x0, int y0, int x1, int y1)
   GUI_SetColor(GUI_WHITE);
   /*横轴坐标*/
   int count = 0;
-  j=-4;//起始值
-  for (i = x0 + 20; i <= x1; i += 20){
+  j = -4; //起始值
+  for (i = x0 + 20; i <= x1; i += 20)
+  {
     count++;
-    if(count%2==0)
+    if (count % 2 == 0)
       continue;
     GUI_SetFont(GUI_FONT_8_ASCII);
     GUI_SetTextMode(GUI_TM_NORMAL);
-    if(j<0)
-      GUI_DispDecAt(j++,i+8, (y0 + y1) / 2+5,2);//15 and 10 are offset
-    else GUI_DispDecAt(j++,i+10, (y0 + y1) / 2+5,1);//15 and 10 are offset
+    if (j < 0)
+      GUI_DispDecAt(j++, i + 8, (y0 + y1) / 2 + 5, 2); //15 and 10 are offset
+    else
+      GUI_DispDecAt(j++, i + 10, (y0 + y1) / 2 + 5, 1); //15 and 10 are offset
   }
 
   /*纵轴坐标*/
   count = 0;
   i = 4;
-  for (j = y0 + 20; j <= y1; j += 20){
+  for (j = y0 + 20; j <= y1; j += 20)
+  {
     count++;
-    if(count%2==0)
+    if (count % 2 == 0)
       continue;
     GUI_SetFont(GUI_FONT_8_ASCII);
     GUI_SetTextMode(GUI_TM_NORMAL);
-    if(i<0)
-      GUI_DispDecAt(i--,(x0 + x1) / 2-14,j-16,2);//15 and 10 are offset
-    else GUI_DispDecAt(i--,(x0 + x1) / 2-9, j-16,1);//15 and 10 are offset
+    if (i < 0)
+      GUI_DispDecAt(i--, (x0 + x1) / 2 - 14, j - 16, 2); //15 and 10 are offset
+    else
+      GUI_DispDecAt(i--, (x0 + x1) / 2 - 9, j - 16, 1); //15 and 10 are offset
   }
   GUI_SetPenSize(3);
   GUI_SetColor(GUI_GREEN);
@@ -251,9 +256,9 @@ void menu_function(void)
   }
 }
 
-
 void usart_window_update(char *text)
 {
+  usart_rx_rate = usart_rx_rate + sizeof(text);
   if (now_state != MENU_USART)
     return;
   if (usart_text_cnt == 0)
@@ -268,8 +273,9 @@ void usart_window_update(char *text)
     usart_text_cnt = 0;
 }
 
-void can_window_update(uint32_t Std_ID,uint8_t aData[])
+void can_window_update(uint32_t Std_ID, uint8_t aData[])
 {
+  can_rx_rate++;
   if (now_state != MENU_CAN)
     return;
   if (can_text_cnt == 0)
@@ -278,14 +284,13 @@ void can_window_update(uint32_t Std_ID,uint8_t aData[])
   GUI_SetColor(GUI_LIGHTGREEN);
   GUI_SetFont(GUI_FONT_8X18);
   show_time(81, 21 + 20 * can_text_cnt);
-  GUI_DispDecAt(Std_ID, 150, 21 + 20 * can_text_cnt,9);
+  GUI_DispDecAt(Std_ID, 150, 21 + 20 * can_text_cnt, 9);
   //GUI_DispStringAt(pHeader->IDE, 150, 21 + 20 * can_text_cnt);
   GUI_DispStringAtCEOL(aData, 300, 21 + 20 * can_text_cnt);
   can_text_cnt++;
   if (can_text_cnt == 15)
     can_text_cnt = 0;
 }
-
 
 void show_time(signed short x, signed short y)
 {
@@ -298,38 +303,67 @@ void show_time(signed short x, signed short y)
   GUI_DispDecAt(time_1s_cnt % 60, x + 26 + 15, y, 2);
 }
 
-void show_system_time(void){
-  if(time_1s_flag){
-      time_1s_cnt++;
-      show_time(4,0);
-      time_1s_flag = 0;
+void show_system_time(void)
+{
+  if (time_1s_flag)
+  {
+    time_1s_cnt++;
+    show_time(4, 0);
+    clear_rate();
+    time_1s_flag = 0;
   }
 }
 
-void draw_point_onMap(float x,float y){
-  if(now_state!=MENU_XY)
-     return;
+void draw_point_onMap(float x, float y)
+{
+  if (now_state != MENU_XY)
+    return;
   int covert_x = (int)(x * 40);
   int covert_y = (int)(y * 40);
   //原点坐标：280，179
   GUI_SetColor(GUI_RED);
   GUI_SetPenSize(3);
   //GUI_DrawPoint(400,10); //测试用
-  GUI_DrawPoint(280+covert_x,179-covert_y);
+  GUI_DrawPoint(280 + covert_x, 179 - covert_y);
 
   GUI_SetFont(GUI_FONT_8X18);
-  GUI_DispStringAt("x:",423,287);
-  GUI_DispFloat(x,5);
-  GUI_DispStringAt("y:",423,305);
-  GUI_DispFloat(y,5);
+  GUI_DispStringAt("x:", 423, 287);
+  GUI_DispFloat(x, 5);
+  GUI_DispStringAt("y:", 423, 305);
+  GUI_DispFloat(y, 5);
 }
 
-void GUI_main(void){
+void GUI_main(void)
+{
+  show_rate();
   show_system_time();
   menu_function();
 }
 
-void GUI_Reload(){
+void GUI_Reload()
+{
   LCD_ReInit();
   drawMainFrame();
+}
+
+void show_rate()
+{
+
+  if (time_1ms_cnt % 1000 == 0)
+  {
+    GUI_SetColor(GUI_ORANGE);
+    GUI_SetBkColor(GUI_BLACK);
+    GUI_SetFont(GUI_FONT_8X18);
+    GUI_SetTextMode(GUI_TM_NORMAL);
+    GUI_DispStringAt("U:", 150, 0);
+    GUI_DispDecMin(usart_rx_rate);
+    GUI_DispStringAt("C:", 200, 0);
+    GUI_DispDecMin(can_rx_rate);
+  }
+}
+
+void clear_rate()
+{
+  can_rx_rate = 0;
+  usart_rx_rate = 0;
 }
